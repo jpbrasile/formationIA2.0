@@ -3,4 +3,4 @@
 [Canva : Pour créer facilement du contenu visuel :graphiques, images, présentations, vidéos ](https://www.canva.com/?continue_in_browser=true)
 
 
-[View the Video](https://github.com/jpbrasile/images/raw/main/d977b906-e2a1-40fa-ac8f-b4e98de8d05d%20(2).mp4)
+[View the Video](https://www.canva.com/design/DAF54YcMkC4/1kiYKpHL819res1SvzJ37g/watch?utm_content=DAF54YcMkC4&utm_campaign=designshare&utm_medium=link&utm_source=editor)
