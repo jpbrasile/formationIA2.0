@@ -1,4 +1,29 @@
 # formationIA2.0
+
+## ChatGPT C'est quoi ?
+- [00:00](https://www.youtube.com/watch?v=PNjh4z8WF9M&t=0s) 🤖 Qu'est-ce que ChatGPT ?
+
+  - ChatGPT est une machine à approximer qui fournit des réponses basées sur ce qu'il a appris.
+  - Il est efficace pour interpoler mais peut fournir de fausses réponses en l'absence de données suffisantes.
+  - L'apprentissage de ChatGPT nécessite l'ajustement de ses paramètres en fonction des données d'entrée, et il a utilisé des milliards de données pour ajuster ses paramètres.
+
+- [01:11](https://www.youtube.com/watch?v=PNjh4z8WF9M&t=71s) 📚 Comment instruire ChatGPT ?
+
+  - Pour instruire ChatGPT, il faut lui donner des directives sur son comportement.
+  - Alimenter la machine avec une nouvelle base de données de type question-réponse lui permet de mimer ce type de résultat.
+  - Des gardes-fous sont nécessaires pour censurer certaines réponses et inculquer les bonnes manières.
+
+- [02:09](https://www.youtube.com/watch?v=PNjh4z8WF9M&t=129s) 💻 Implantation de ChatGPT
+
+  - ChatGPT est principalement disponible en ligne via le Cloud, en raison de son coût de développement.
+  - Le contrôle sur l'utilisation de ChatGPT est difficile, ce qui soulève des préoccupations concernant la divulgation d'informations sensibles.
+  - Un mouvement open source travaille sur des versions plus légères de ChatGPT pour des utilisations locales.
+
+- [03:18](https://www.youtube.com/watch?v=PNjh4z8WF9M&t=198s) 🧠 La taille et le contexte des LLM
+
+  - Les LLM (Large Language Models) sont en constante évolution pour devenir plus légers tout en maintenant leur performance.
+  - La taille des LLM est mesurée en milliards de bytes, et des versions plus compactes sont développées.
+  - Le contexte, ou mémoire à court terme, est crucial pour stocker des informations pertinentes lors de l'interaction avec un LLM.
 ## Formation à l'IA 2024: 
 
 | Niveau        | Objectif                              | Quels outils                             | Mon prompt                                           | RAG                                                   | Scraping                                            | Context                                             | Multimodal                                         | API                                                | GPTs                                               | Agents                                             | RH                                                 |
