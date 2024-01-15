@@ -12,6 +12,9 @@ Avec Wolfram Alpha, vous pouvez apprendre et réaliser une multitude de tâches,
 - **Éducation**: Utiliser Wolfram Alpha comme un outil d'apprentissage pour comprendre et résoudre des problèmes mathématiques [3](https://www.01net.com/telecharger/loisirs/logiciels_educatifs/wolfram-alpha.html).
 
 Wolfram Alpha est donc un outil puissant pour l'apprentissage et la résolution de problèmes dans divers domaines, en particulier pour ceux qui s'intéressent aux mathématiques et à la science des données
+## Avec Colab
+
+[Tuto d'emploi des notebooks colab avec "l'outpainting" en exemple](https://bytexd.com/how-to-use-outpainting-with-stable-diffusion-infinity-colab/)
 
 ## Accès direct sur le Web (inscription rapide et gratuite)
 [Elevenlabs: Pour transformer du texte en voix](https://elevenlabs.io/)
