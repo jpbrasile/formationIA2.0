@@ -39,3 +39,12 @@
   - Importation de la séquence d'images dans Adobe Premiere.
   - Création d'une vidéo à partir des images.
   - Aperçu rapide du processus d'assemblage dans Premiere.
+ 
+## Créer un [audiobook](https://blog.finxter.com/how-i-created-an-audiobook-app-with-streamlit/) avec streamlit
+- L'auteur a créé un didacticiel sur la création d'une application d'audiobook avec Streamlit.
+- L'application permet aux utilisateurs de télécharger des livres au format PDF, TXT, DOCX ou EPUB.
+- Le texte est extrait des fichiers en fonction de leur format.
+- Le texte extrait est converti en audio à l'aide de la bibliothèque gTTS (Google Text-to-Speech).
+- Un lecteur audio est intégré à l'application pour permettre aux utilisateurs d'écouter l'audiobook.
+- L'application est conçue pour les développeurs Python qui souhaitent ajouter un projet à leur portfolio.
+-L'auteur encourage les lecteurs à déployer l'application sur Streamlit Cloud pour une utilisation pratique.
