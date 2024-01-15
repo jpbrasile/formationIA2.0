@@ -26,6 +26,19 @@
 - **Prompts Contextuels**: Offre des prompts intelligents en fonction du contexte de la page web.
 - **Activation**: S'active facilement avec un clic ou en utilisant le raccourci Alt+A.
 
+- ### Principale conclusion
+La principale conclusion de la page est que Perplexity est un outil multifonction AI Chatbot & Search qui excelle dans la recherche alimentée par l'IA.
+
+### Résumé
+- Perplexity est un outil AI Chatbot & Search qui se distingue par son moteur de recherche alimenté par l'IA.
+- Il peut répondre à des requêtes de recherche simples et complexes.
+- Il permet de créer des recettes, de planifier des voyages et de collaborer avec d'autres utilisateurs.
+- Perplexity offre des fonctionnalités de recherche AI-Boosted Search (ABS) dans différentes catégories, telles que Academic, Writing, Wolfram | Alpha, YouTube et Reddit.
+- Il peut également résumer des documents et analyser des données avec des questions AI-Prompted Follow-Ups.
+- L'utilisation de Perplexity est recommandée pour ceux qui ont besoin d'un outil de recherche multifonction ou comme point de départ par défaut pour des recherches alimentées par l'IA.
+- L'outil encourage l'expérimentation et l'utilisation de l'IA pour améliorer la productivité.
+- En fin de compte, il met en avant l'idée que les humains utilisant l'IA surpasseront ceux qui ne le font pas.
+
 
 ## Tutoriel [Perplexity.ai](https://www.perplexity.ai/)
 
@@ -36,6 +49,9 @@
 - **Recherche sur Internet**: Capable de naviguer et de rechercher sur Internet pour fournir des réponses éclairées correspondant à la requête.
 - **Citation de Sources**: Cite ses sources pour une transparence et une vérifiabilité accrues.
 - **Chatbot Intégré**: Interagit comme un chatbot avancé, répondant à une variété de requêtes.
+- **Permet de créer des recettes, de planifier des voyages et de collaborer avec d'autres utilisateurs.**
+- **Recherche AI-Boosted Search (ABS)** dans différentes catégories, telles que Academic, Writing, Wolfram | Alpha, YouTube et Reddit.
+- **Permet de résumer des documents et analyser des données avec des questions AI-Prompted Follow-Ups.**
 - **Accès à Wolfram Alpha** : C'est un outil puissant pour l'apprentissage et la résolution de problèmes dans divers domaines, en particulier pour ceux qui s'intéressent aux mathématiques et à la science des données. 
 - **Guide pour Harpa.ai**: Par exemple, en demandant "donne-moi un guide pour Harpa.ai", Perplexity.ai fournit des informations détaillées et utiles.
 
