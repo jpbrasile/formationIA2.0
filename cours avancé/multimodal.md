@@ -48,3 +48,43 @@
 - Un lecteur audio est intégré à l'application pour permettre aux utilisateurs d'écouter l'audiobook.
 - L'application est conçue pour les développeurs Python qui souhaitent ajouter un projet à leur portfolio.
 -L'auteur encourage les lecteurs à déployer l'application sur [Streamlit Cloud](https://sree369nidhi-audiobook-pdf-to-audiobook-42v3t3.streamlit.app/) pour une utilisation pratique.
+### Faire en sorte qu'il s'active dès l'ouverture de la page
+- Pour lire automatiquement un fichier audio dans une application Streamlit après l'avoir généré avec la bibliothèque de synthèse vocale Google Text-to-Speech, vous pouvez utiliser le code suivant comme exemple. Ce code repose sur l'utilisation d'une fonction personnalisée pour encoder le fichier audio en base64 et l'insérer dans un élément HTML `<audio>` avec l'attribut `autoplay` activé.
+
+- La [référence](https://discuss.streamlit.io/t/how-to-play-an-audio-file-automatically-generated-using-text-to-speech-in-streamlit/33201) qui a permis à Harpa.ai de générer le code 
+
+- Voici un exemple complet d'application Streamlit pour jouer automatiquement un fichier audio :
+
+```python
+import streamlit as st
+import base64
+
+# Fonction pour lire automatiquement un fichier audio
+def autoplay_audio(file_path: str):
+    with open(file_path, "rb") as audio_file:
+        audio_data = audio_file.read()
+    audio_base64 = base64.b64encode(audio_data).decode()
+    audio_html = f"""
+    <audio controls autoplay="true">
+    <source src="data:audio/mp3;base64,{audio_base64}" type="audio/mp3">
+    </audio>
+    """
+    st.markdown(audio_html, unsafe_allow_html=True)
+
+# Exemple d'utilisation de la fonction
+st.write("# Application de lecture automatique d'audio")
+st.write("Cet audio se jouera automatiquement à l'ouverture de la page.")
+
+# Indiquez ici le chemin vers votre fichier audio
+file_path = "votre_fichier_audio.mp3"
+autoplay_audio(file_path)
+```
+
+Ce code fonctionne de la manière suivante :
+- La fonction `autoplay_audio` prend le chemin d'un fichier audio et le lit.
+- Elle encode ensuite le contenu du fichier en base64, nécessaire pour l'incorporer dans un élément HTML.
+- Un élément HTML `<audio>` est créé avec l'attribut `autoplay` pour lancer la lecture dès que la page est chargée.
+- L'élément HTML est inséré dans la page Streamlit avec `st.markdown` et `unsafe_allow_html=True`.
+
+Assurez-vous que le fichier audio que vous voulez jouer (`votre_fichier_audio.mp3`) est accessible par le script.
+
