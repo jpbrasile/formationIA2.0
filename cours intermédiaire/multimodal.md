@@ -9,3 +9,16 @@
 - Ces [performances](https://github.com/VikParuchuri/surya?tab=readme-ov-file#benchmarks)
 - 
 ## [Apprendre Python](https://learnpythonfast.up.railway.app/) : une application texte et voix
+
+## [Détection d'objets en temps réel](https://github.com/Deci-AI/super-gradients?tab=readme-ov-file#implemented-model-architectures):
+
+- La page présente le projet open source Deci-AI/super-gradients.
+- La bibliothèque est sous licence Apache-2.0.
+- Elle offre des fonctionnalités pour former et affiner des modèles de vision par ordinateur.
+- Elle met en avant les architectures YOLO-NAS et YOLO-NAS-POSE pour des performances de pointe en termes de précision et de vitesse.
+- **Elle propose des modèles pré-entraînés pour la classification, la segmentation sémantique, la détection d'objets et l'estimation de la pose.Notebook colab disponibles**
+- Elle facilite l'intégration des modèles dans des outils de déploiement tels que TensorRT et OpenVINO.
+- Des exemples de code sont fournis pour l'utilisation de la bibliothèque.
+- La page contient des informations sur les versions récentes de la bibliothèque, des tutoriels et des informations sur l'installation.
+- Elle mentionne également des architectures de modèles prises en charge, des ensembles de données implémentés, de la documentation, et la possibilité de contribuer au projet.
+- Enfin, la page présente la licence Apache 2.0 et des informations sur la plateforme Deci pour le déploiement de modèles d'apprentissage profond.
