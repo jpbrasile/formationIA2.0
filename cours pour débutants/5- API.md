@@ -28,6 +28,25 @@ Wolfram Alpha est donc un outil puissant pour l'apprentissage et la résolution 
 [Pika.art: création de vidéos](https://pika.art/)
 
 ## Des outils 
+### AMPHION:
+- [GitHub](https://github.com/open-mmlab/Amphion)
+
+- [Technical Report](https://arxiv.org/abs/2312.09911)
+
+- [HF space](https://huggingface.co/spaces/amphion)
+
+- [00:02](https://www.youtube.com/watch?v=1aw0HhcggvQ&t=2s) 🎤 Introduction à Amphion
+
+  - Amphion est un outil qui permet de produire des sons, de la musique et de chanter.
+
+- [00:35](https://www.youtube.com/watch?v=1aw0HhcggvQ&t=35s) 🎶 Capacités musicales de l'outil
+
+  - Amphion peut créer de la musique et des mélodies.
+
+- [01:01](https://www.youtube.com/watch?v=1aw0HhcggvQ&t=61s) 🌐 Développeurs d'Amphion
+
+  - Amphion a été développé par une équipe dirigée par le professeur Zhizheng Wu de l'Université chinoise de Hong Kong.
+### Autres outils:
 - [00:29](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=29s) 🤖 Feedeo permet de créer des vidéos interactives avec des personnages AI pour le marketing.
 - [01:21](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=81s) 🛡️ [Luma Labs](https://lumalabs.ai/) transforme vos vidéos en scènes 3D sans compétences techniques.
 - [03:23](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=203s) 🧞 [Genie](https://lumalabs.ai/discord) par Luma Labs transforme du texte en modèles 3D gratuitement.
@@ -43,7 +62,7 @@ Wolfram Alpha est donc un outil puissant pour l'apprentissage et la résolution 
 - [08:26](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=506s) 🌨️ "Snowflakes Falling" est une chanson créée avec AI sur Sunno.
 
 
-
+### 14 Autres outils:
 Voici un résumé des 14 meilleurs outils gratuits d'IA pour la création d'images et de vidéos en 2024, selon Alexander Young :
 
 1. **[Pika](https://pikalabs.io/?ref=blog.alexanderfyoung.com)** : Un générateur de vidéos IA à partir de texte, accessible via Discord. Permet d'animer des images 2D ou de générer des vidéos à partir de textes.
