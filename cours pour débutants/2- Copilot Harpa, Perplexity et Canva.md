@@ -1,3 +1,5 @@
+## Pour plus d'aide : "Alt A" sur la page concernée par le problème est Harpa.ai vous répond
+
 ## Tutoriel [Copilot](https://copilot.microsoft.com/) 
 -  J'utilise **GPT4** et **je sais produire des dessins Dall-E 3**. 
 - Voici une liste de ce que je peux faire :
