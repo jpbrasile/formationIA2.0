@@ -31,11 +31,13 @@ The image: {{page}}"
 
 ## Révision sur le prompting de base: 
 OpenAI a publié un [guide](https://briansolis.com/2024/01/prompt-engineering-six-strategies-for-getting-better-results/) de référence pour améliorer les résultats de ChatGPT ou d'autres plateformes d'IA générative.
+
 Les six stratégies pour obtenir de meilleurs résultats sont les suivantes :
-Rédiger des instructions claires.
-Fournir un texte de référence.
-Diviser les tâches complexes en sous-tâches plus simples.
-Donner à l'IA le temps de "réfléchir".
-Utiliser des outils externes pour compenser les lacunes de l'IA.
-Tester systématiquement les modifications apportées aux instructions.
+- Rédiger des instructions claires.
+- Fournir un texte de référence.
+- Diviser les tâches complexes en sous-tâches plus simples. 
+- Donner à l'IA le temps de "réfléchir".
+- Utiliser des outils externes pour compenser les lacunes de l'IA.
+- Tester systématiquement les modifications apportées aux instructions.
+
 Ces stratégies visent à améliorer la qualité des réponses générées par l'IA
