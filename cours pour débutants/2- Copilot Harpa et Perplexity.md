@@ -36,5 +36,6 @@
 - **Recherche sur Internet**: Capable de naviguer et de rechercher sur Internet pour fournir des réponses éclairées correspondant à la requête.
 - **Citation de Sources**: Cite ses sources pour une transparence et une vérifiabilité accrues.
 - **Chatbot Intégré**: Interagit comme un chatbot avancé, répondant à une variété de requêtes.
+- **Accès à Wolfram Alpha** : C'est un outil puissant pour l'apprentissage et la résolution de problèmes dans divers domaines, en particulier pour ceux qui s'intéressent aux mathématiques et à la science des données. 
 - **Guide pour Harpa.ai**: Par exemple, en demandant "donne-moi un guide pour Harpa.ai", Perplexity.ai fournit des informations détaillées et utiles.
 
