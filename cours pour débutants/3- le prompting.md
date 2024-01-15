@@ -31,6 +31,7 @@
 - **Analyse Approfondie :** `Discutez en détail des avantages et des inconvénients de [concept ou proposition].`
 - **Récapitulation Concise :** `Récapitulez de manière concise et complète : [contexte spécifique].`
 - **Combinaison de Techniques :** `Appliquez [Chain of Thought] combinée à [Role Playing] pour une analyse complète de [sujet d'étude].`
+- **Comment j'ai fait ce tuto ?:**  Avec le prompt :"fais un guide pratique au format ``markdown ... ```" sur la page web avec Harpa.ai. 
 
 
 [BACK](https://github.com/jpbrasile/formationIA2.0/wiki/z1-Road-Map-(WIP))
