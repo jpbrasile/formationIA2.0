@@ -99,7 +99,35 @@ Ces outils couvrent un large éventail de fonctionnalités, de la génération d
 
 [Alexander Young © 2024](https://blog.alexanderfyoung.com/?ref=mail.google.com) 
 
+## Toujours plus !
+
+-[00:00](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 🤖 [WikiChat](https://github.com/stanford-oval/WikiChat), un projet révolutionnaire développé par le laboratoire d'analyse visuelle en ligne de Stanford, améliore la précision des modèles de langage en utilisant Wikipedia pour garantir des réponses factuelles et fiables.
+
+-[01:09](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 🛠️ [Priompt](https://github.com/anysphere/priompt) redéfinit la conception des interfaces utilisateur en attribuant des priorités aux éléments des prompts pour une expérience utilisateur plus intuitive et efficace.
+
+-[05:28](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 🌐 [NextChat](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)  permet un accès polyvalent aux modèles de langage avancés, Chat GPT et Gemini, sur plusieurs plateformes, offrant une personnalisation et un contrôle accrus.
+
+-[07:33](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 🗣️ [Espnet](https://github.com/espnet/espnet) est une trousse d'outils de traitement de la parole qui révolutionne le domaine en proposant une solution complète pour diverses tâches liées à la parole.
+
+-[09:22](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 🧠 [Common GenEval](https://github.com/allenai/CommonGen-Eval), une initiative de l'Institut Allen pour l'intelligence artificielle, évalue les performances des modèles de langage en se concentrant sur des tâches de raisonnement et de communication humaine.
+
+-[11:14](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 📜 [LongLM](https://github.com/datamllab/LongLM) étend la capacité des modèles de langage à traiter des séquences de texte plus longues, ouvrant de nouvelles possibilités pour les applications d'IA.
+
+-[13:06](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 🤖 [Rest GPT](https://github.com/Yifan-Song793/RestGPT
+) permet aux modèles de langage de contrôler et d'interagir avec des applications du monde réel, introduisant un nouveau niveau d'intégration entre l'IA et la technologie.
+
+-[14:43](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 📟 [Atuin](https://github.com/atuinsh/atuin) révolutionne la gestion de l'historique des commandes shell en offrant une synchronisation sécurisée et des fonctionnalités de recherche avancées.
+
+-[16:19](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 🌟 Super Gradients est une bibliothèque de formation complète pour les modèles d'apprentissage en profondeur en vision par ordinateur, accélérant le développement d'applications de vision.
+
+-[17:39](https://www.youtube.com/watch?v=lgsvo2Q8O5k) 🖥️ [DSPy](https://github.com/stanfordnlp/dspy
+) révolutionne la programmation avec des modèles de langage en permettant des solutions plus complexes et efficaces pour une gamme de tâches d'IA et de NLP.
   
+
+
+
+
+
 
 
  - 
