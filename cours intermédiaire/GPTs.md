@@ -1,3 +1,17 @@
+## [Menta](https://github.com/AbanteAI/mentat): Un assistant pour le codage:
+- Mentat est un assistant à la programmation basé sur l'IA.
+- Contrairement à Copilot, Mentat peut coordonner les modifications sur plusieurs emplacements et fichiers.
+- Mentat est conçu pour avoir une compréhension du contexte de votre projet, ce qui évite le copier-coller.
+- Il peut aider à comprendre de nouveaux projets de code, ajouter de nouvelles fonctionnalités ou refacturer du code existant.
+- La page présente des vidéos d'exemples montrant comment Mentat fonctionne.
+- Elle explique comment installer Mentat, avec des options pour l'installation depuis PyPI, GitHub ou en clonant le référentiel.
+- Vous pouvez également fournir à Mentat votre clé API OpenAI via un fichier .env ou en l'exportant dans votre terminal.
+- Mentat s'intègre à Git et permet d'ajouter des fichiers ou des répertoires au contexte pour les éditions.
+- La page évoque des plans d'amélioration future, notamment une interface utilisateur améliorée, une utilisation avec d'autres modèles d'IA et une meilleure qualité d'édition.
+- Cet outil semble être un puissant allié pour les développeurs dans leurs projets de programmation.
+
+
+
 ## Sélection 1/2024:
 - [00:00](https://www.youtube.com/watch?v=EERI0tMELQk&t=0s) 📢 Introduction à la compilation des meilleurs GPTs en 2024.
 - [00:27](https://www.youtube.com/watch?v=EERI0tMELQk&t=27s) 💡 Deux catégories principales de GPTs : simplificateurs de tâches courtes et GPTs plus complexes.
