@@ -28,3 +28,30 @@
 [Lmstudio](https://lmstudio.ai/)
 
 [memgpt](https://github.com/cpacker/MemGPT)
+
+## AutoGen studio
+### Installation depuis la source
+- Clonez le dépôt AutoGen Studio
+- Installez les dépendances Python
+- Naviguez vers le répertoire frontend et installez les dépendances Node.js
+- Exécutez l'application avec autogenstudio ui --port 8081
+### Utilisation
+- Définissez et modifiez les flux de travail des agents
+- Interagissez avec les agents et les sessions
+- Développez les compétences des agents
+### Concepts
+- Agent Workflow : spécification d'un ensemble d'agents travaillant ensemble pour accomplir une tâche
+- Session : période d'interaction continue avec un flux de travail d'agent
+- Compétences : fonctions décrivant comment résoudre une tâche
+### Exemple d'utilisation
+- Exemple de requête : "Tracez un graphique du prix des actions NVDA et TESLA depuis le début de l'année. Enregistrez le résultat dans un fichier nommé nvda_tesla.png."
+
+### FAQ
+- Comment ajuster les configurations par défaut des compétences, des agents et des flux de travail ?
+- Comment réinitialiser une conversation avec un agent ?
+- Comment afficher la sortie et les messages générés par les agents pendant les interactions ?
+### Remerciements
+- AutoGen Studio est basé sur le projet AutoGen et a été adapté à partir d'un prototype de recherche construit en octobre 2023.
+
+[GitHub de AutoGen Studio](https://github.com/microsoft/autogen/tree/main/samples/apps/autogen-studio)
+
