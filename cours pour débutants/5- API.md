@@ -43,6 +43,43 @@ Wolfram Alpha est donc un outil puissant pour l'apprentissage et la résolution 
 - [08:26](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=506s) 🌨️ "Snowflakes Falling" est une chanson créée avec AI sur Sunno.
 
 
+
+Voici un résumé des 14 meilleurs outils gratuits d'IA pour la création d'images et de vidéos en 2024, selon Alexander Young :
+
+1. **[Pika](https://pikalabs.io/?ref=blog.alexanderfyoung.com)** : Un générateur de vidéos IA à partir de texte, accessible via Discord. Permet d'animer des images 2D ou de générer des vidéos à partir de textes.
+
+2. **[ClipDrop](https://clipdrop.co/?ref=blog.alexanderfyoung.com)** : Suite d'outils d'édition d'images IA de Stability.ai, incluant un outil de suppression d'arrière-plan et un agrandisseur d'images. Inclut Stable DiffusionXL Turbo pour la génération facile d'images.
+
+3. **[Midjourney](https://midjourney.com/?ref=blog.alexanderfyoung.com)** : Outil de génération d'images IA disponible sur Discord, reconnu pour ses résultats originaux et impressionnants.
+
+4. **[DALLE](https://labs.openai.com/?ref=blog.alexanderfyoung.com)** : Outil de génération d'images d'OpenAI, avec une version améliorée DALLE-3 disponible via ChatGPT.
+
+5. **[Microsoft Image Creator](https://www.microsoft.com/en-us/bing/image-creator/?ref=blog.alexanderfyoung.com)** : Intégré à Bing, cet outil permet de générer des images à partir de prompts et de les éditer directement dans Microsoft designer.
+
+6. **[Ideogram](https://ideogram.com/?ref=blog.alexanderfyoung.com)** : Nouvel outil de génération d'images IA offrant divers styles prédéfinis, dont la typographie et le rendu 3D.
+
+7. **[Leonardo.Ai](https://leonardo.ai/?ref=blog.alexanderfyoung.com)** : Propose une sélection de modèles d'IA pour la génération d'images, alliant modèles ajustés et contrôles manuels. Offre un quota quotidien de tokens dans sa version gratuite.
+
+8. **[AI Playground](https://aiplayground.co/?ref=blog.alexanderfyoung.com)** : Suite d'outils d'IA pour l'art, utilisant des modèles d'image fine-tuned et une interface de style canvas.
+
+9. **[Magic Studio](https://magicstudio.com/?ref=blog.alexanderfyoung.com)** : Suite d'outils d'IA pour la génération et l'édition d'images, avec des cas d'utilisation spécifiques comme la création de photos de produits en 3D.
+
+10. **[LeiaPix](https://leiapix.com/?ref=blog.alexanderfyoung.com)** : Transforme les images 2D en animations 3D, avec un éditeur de carte de profondeur avancé pour une personnalisation puissante.
+
+11. **[AutoDraw](https://autodraw.com/?ref=blog.alexanderfyoung.com)** : Outil de dessin assisté par IA de Google, transformant des croquis en dessins plus professionnels.
+
+12. **[Skybox](https://skybox.com/?ref=blog.alexanderfyoung.com)** : Crée des panoramas à 360 degrés générés par IA, idéal pour le développement de jeux vidéo.
+
+13. **[Luma AI](https://luma.ai/?ref=blog.alexanderfyoung.com)** : Permet de transformer des images 2D ou des vidéos en modèles 3D, avec une nouvelle fonctionnalité Genie AI disponible sur Discord.
+
+14. **[PlayPhrase.me](https://playphrase.me/?ref=blog.alexanderfyoung.com)** : Un outil de recherche et de lecture de clips de dialogues de films et de séries TV basé sur des mots-clés.
+
+15. **[Runway](https://runway.com/?ref=blog.alexanderfyoung.com)** : Leader en matière de text to video AI, offrant une suite d'outils pour la synthèse vidéo, y compris la génération de vidéos et l'édition en direct.
+
+Ces outils couvrent un large éventail de fonctionnalités, de la génération d'images à partir de textes à l'animation de dessins et la création de bandes-annonces de films, offrant des possibilités étendues dans le domaine de la création visuelle assistée par l'IA.
+
+[Alexander Young © 2024](https://blog.alexanderfyoung.com/?ref=mail.google.com) 
+
   
 
 
