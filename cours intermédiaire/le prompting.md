@@ -1,0 +1,18 @@
+## Des templates pour chaque besoin avec [metricsmule](https://metricsmule.com/chatgpt-prompt-genius/)
+- 👉 [ChatGPT Prompt Genius Engineering] Qu'est-ce que l'ingénierie des prompts ChatGPT ? Comment trouver des prompts ChatGPT ? Comment transformer ChatGPT en un ingénieur de prompts ? Ce guide vous donne des réponses.
+- 🚀 [Premium Prompts] Des prompts premium pour ChatGPT qui vont encore plus loin.
+- 🔍 [SEO Prompts] Des prompts ChatGPT pour améliorer votre référencement, votre marketing, et votre contenu pour vous aider à vous classer en première page de Google.
+- 🎨 [AI Art Prompts] Générez de magnifiques œuvres d'art AI pour Midjourney, Leonardo AI, Adobe Firefly, et plus encore.
+- 📺 [Featured YouTube Video Prompts] Des prompts ayant été présentés dans des vidéos YouTube.
+- 🧩 [The Midjourney Everything Prompt] Un prompt SEO pour le contenu Web.
+- 💰 [Prix] Accédez à plus de 1900 prompts pour seulement $8.97.
+- 💡 [ChatGPT Genius Prompts] Obtenez plus de 100 prompts d'ingénierie ChatGPT.
+- 🔄 [Mega Prompts Bundle] Obtenez la base de données de prompts mega plus le livre de prompts photoréalistes.
+- 🖼️ [Prompts to Generate Logos] Créez des logos époustouflants avec ces prompts pour Midjourney, Leonardo AI, ou Adobe Firefly.
+- 🤖 [ChatGPT SEO Prompts] Des prompts liés au SEO, à la création de contenu, et aux plugins ChatGPT.
+- 🌟 [ChatGPT AI Art Prompts] Des prompts pour créer des œuvres d'art AI avec Midjourney, Leonardo AI, Adobe Firefly, et plus encore.
+- 💻 [ChatGPT Prompt Engineering] Transformez ChatGPT en une machine de génération de prompts.
+- 📚 [Photorealistic Prompt Ebook] Obtenez un ebook de prompts photoréalistes.
+- 🛒 [Acheter] Accédez à ces prompts et ebooks à partir de $6.99.
+- 🌐 [Accès Instantané] Obtenez un accès instantané à la base de données de prompts via un lien Airtable et Notion.
+- 🛒 [Boutique] Découvrez d'autres produits et services liés au SEO et à ChatGPT sur la boutique MetricsMule.
