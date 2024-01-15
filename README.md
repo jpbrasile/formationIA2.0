@@ -3,7 +3,7 @@
 ## Formation à l'IA 2024: 
 
 Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et avancé
-- **Quels** outils ?: Ceux à maîtriser pour être efficace: Vous avez un problème ? Halte aux problèmeq ! Euh non !  "**Alt A <Problème>**" et Harpa.ai vous répondra !
+- **Quels** outils ?: Ceux à maîtriser pour être efficace: Vous avez un problème ? Halte aux problème ! Euh non !  "**Alt A <Problème>**" et Harpa.ai vous répondra !
 - **Mon prompt** : Comment parler avec le chatbot pour que sa réponse soit pertinente ?
 - **RAG** : Comment le chatbot peut prendre en compte mes données ?
 - **Scraping**: Comment faire pour qu'il prenne les données pertinantes sur le cloud ?
