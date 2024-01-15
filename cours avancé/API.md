@@ -10,3 +10,11 @@
 
 ### Essais sur [colab](https://t.ly/Ge1Pj)
 - Utiliser un GPU T4 dans le notebook
+- Synthèse:
+    - 🌟 RavenV2.ipynb est un document qui introduit l'appel de fonctions et Raven, un modèle de traitement du langage naturel open source.
+    - 🤖 L'appel de fonctions, dans le contexte des modèles de langage, consiste à identifier et exécuter des fonctions prédéfinies avec des arguments pertinents.
+    - 👍 L'appel de fonctions est important car il permet aux modèles de langage d'interagir avec divers outils fournis par les utilisateurs, ce qui élargit leur utilité et leur capacité à répondre de manière précise aux requêtes.
+    - 🦅 Raven est non seulement compétent en appel de fonctions, mais il fournit également des explications sur les appels qu'il a émis, ce qui rend la génération plus interprétable.
+    - 🌡️ L'exemple de l'API météo montre comment Raven utilise des fonctions pour répondre à une question sur la météo à Seattle en obtenant d'abord les coordonnées de la ville, puis en récupérant les données météo actuelles.
+    - 🚀 Vous pouvez personnaliser les fonctions fournies dans le prompt et expérimenter avec Raven pour répondre à vos propres questions.
+    - 📡 L'URL de l'API pour interagir avec Raven est fournie, ainsi que des fonctions pour envoyer des requêtes et obtenir des réponses.
