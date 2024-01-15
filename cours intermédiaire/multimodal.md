@@ -6,3 +6,4 @@
 - [05:57](https://youtu.be/k6nIxWGdrS4?t=357s) 📸 Prévisualisation de la création d'images en temps réel à partir de descriptions, utilisant Fast Whisperer et d'autres techniques.
 
 ## Un OCR multilingue en [colab notebook](https://colab.research.google.com/drive/17NBCTfYXp3Dr-3lXf_IHCKaCl9FgpNy_?usp=sharing)
+- Ces [performances](https://github.com/VikParuchuri/surya?tab=readme-ov-file#benchmarks)
