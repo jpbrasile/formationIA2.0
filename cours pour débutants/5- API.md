@@ -26,3 +26,24 @@ Wolfram Alpha est donc un outil puissant pour l'apprentissage et la résolution 
 - [Exemple de résultat](https://www.canva.com/design/DAF54YcMkC4/1kiYKpHL819res1SvzJ37g/watch?utm_content=DAF54YcMkC4&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 [Pika.art: création de vidéos](https://pika.art/)
+
+## Des outils 
+- [00:29](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=29s) 🤖 Feedeo permet de créer des vidéos interactives avec des personnages AI pour le marketing.
+- [01:21](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=81s) 🛡️ [Luma Labs](https://lumalabs.ai/) transforme vos vidéos en scènes 3D sans compétences techniques.
+- [03:23](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=203s) 🧞 [Genie](https://lumalabs.ai/discord) par Luma Labs transforme du texte en modèles 3D gratuitement.
+- [03:51](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=231s) 🪄 [Insta 3D](https://www.insta3d.top/) crée des animations d'images 3D impressionnantes.
+- [04:32](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=272s) 🎥 [Pika Labs](https://pika.art/) permet l'animation de texte, d'images et de vidéos gratuitement.
+- [05:00](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=300s) 🎨 [Lexica]( https://lexica.art/) génère de l'art AI à partir de descriptions.
+- [05:28](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=328s) 📜 [textFX](https://textfx.withgoogle.com/) par Google offre 10 outils pour la manipulation de texte.
+- [06:10](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=370s) 🖼️ [LeiaPix](https://www.leiapix.com/) ajoute des animations de profondeur à vos images statiques.
+- [06:36](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=396s) 🧠 [Perplexity](https://www.perplexity.ai/) offre des informations précises à partir du web.
+- [07:02](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=422s) 🎵 [Mubert](https://mubert.com/AI) génère des morceaux de musique uniques.
+- [07:28](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=448s) 😂 [Supermem AI](https://www.supermeme.ai/ ) crée des mèmes hilarants.
+- [07:41](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=461s) 🎶 [Suno](https://www.suno.ai/) permet de générer de la musique en tapant un sujet.
+- [08:26](https://www.youtube.com/watch?v=9I3Jaj81IOU&t=506s) 🌨️ "Snowflakes Falling" est une chanson créée avec AI sur Sunno.
+
+
+  
+
+
+ - 
