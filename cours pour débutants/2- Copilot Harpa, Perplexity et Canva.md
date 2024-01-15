@@ -74,7 +74,43 @@ Canva est un outil de conception graphique en ligne qui permet de créer facilem
 2. Choisissez le format de fichier que vous souhaitez, puis cliquez sur "Télécharger".
 3. Pour partager votre design, cliquez sur "Partager" dans le coin supérieur droit. Vous pouvez alors choisir de partager le lien vers votre design, ou de l'envoyer directement à quelqu'un par e-mail.
 
-### Conclusion
+### Canva Magic Write
+
+- [00:00](https://www.youtube.com/watch?v=51XTK5fXlmA&t=0s) 🚀 Introduction à Canva Magic Write
+
+  - Présentation de Canva Magic Write,
+  - L'importance de Canva Magic Write pour la génération de prompts.
+
+- [01:08](https://www.youtube.com/watch?v=51XTK5fXlmA&t=68s) 🎩 Découverte de Canva Magic Write
+
+  - Présentation des différentes fonctionnalités de Canva Magic Write,
+  - Comparaison avec d'autres outils de génération de prompts.
+
+- [03:25](https://www.youtube.com/watch?v=51XTK5fXlmA&t=205s) 🖼️ Génération de prompts pour la création d'images AI
+
+  - Utilisation de Canva Magic Write pour générer des prompts,
+  - Exemple de génération de prompts pour des images AI.
+
+- [05:32](https://www.youtube.com/watch?v=51XTK5fXlmA&t=332s) 📝 Génération de titres pour le contenu
+
+  - Utilisation de Canva Magic Write pour créer des titres accrocheurs,
+  - Comparaison des titres générés avec ceux de Chat GPT.
+
+- [08:04](https://www.youtube.com/watch?v=51XTK5fXlmA&t=484s) 🧐 Génération de prompts pour l'optimisation SEO
+
+  - Utilisation de Canva Magic Write pour générer des questions liées aux mots-clés,
+  - Exemple de génération de prompts pour l'optimisation SEO.
+
+- [10:43](https://www.youtube.com/watch?v=51XTK5fXlmA&t=643s) 💡 Génération de prompts pour des articles de blog
+
+  - Utilisation de Canva Magic Write pour créer des prompts d'articles de blog,
+  - Transformation des prompts en articles de blog complets.
+
+- [13:19](https://www.youtube.com/watch?v=51XTK5fXlmA&t=799s) 📊 Génération de prompts pour la finance
+
+  - Utilisation de Canva Magic Write pour générer des guides sur l'investissement,
+  - Démonstration de la capacité de Canva Magic Write à répondre à des demandes diverses et complexes.
+
+ ### Conclusion
 
 Canva est un outil puissant et facile à utiliser pour la conception graphique. Avec un peu de pratique, vous serez en mesure de créer des designs professionnels en un rien de temps.
-
