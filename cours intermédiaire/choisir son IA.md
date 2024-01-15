@@ -30,3 +30,40 @@ Les utilisateurs peuvent explorer les modèles en fonction de différentes caté
 
 ### Multimodal
 - [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
+
+## Avec Colab:
+
+
+### Synthèse du [Notebook](https://colab.research.google.com/drive/1tbNU3sT375kwDPm6jEpwp9KiORmsGcrU#scrollTo=Byov1aYybtaS)
+
+Ce notebook présente différentes étapes pour générer des images à l'aide d'un modèle de génération de texte vers image appelé "Stable Diffusion". Voici un résumé des étapes principales :
+
+1. **Installation des dépendances** :
+   - Les packages `diffusers` et `transformers` sont installés à l'aide de la commande `!pip install`.
+
+2. **Chargement du modèle Stable Diffusion** :
+   - Un modèle de génération d'image Stable Diffusion est chargé à partir de Hugging Face Model Hub.
+
+3. **Définition de la fonction de génération d'image** :
+   - Une fonction `get_completion_sd(prompt)` est définie pour générer une image à partir d'une requête textuelle.
+
+4. **Exécution de la génération d'image** :
+   - Une requête textuelle (prompt) est fournie pour générer une image. Par exemple, le prompt peut être "baby llama, wearing red muffler, grazing, open field, sunset".
+
+5. **Enregistrement de l'image générée** :
+   - L'image générée est enregistrée sous le nom "llama.jpg".
+
+6. **Installation de Gradio** :
+   - Le package Gradio est installé pour créer une interface utilisateur permettant d'interagir avec le modèle de génération.
+
+7. **Définition de la fonction Gradio** :
+   - Une fonction `get_completion(prompt)` est définie pour intégrer le modèle Stable Diffusion avec Gradio.
+
+8. **Création de l'interface utilisateur Gradio** :
+   - Une interface utilisateur Gradio est créée pour permettre aux utilisateurs de saisir un prompt et de générer une image.
+
+9. **Lancement de l'application** :
+   - L'application Gradio est lancée, ce qui permet aux utilisateurs d'interagir avec le modèle de génération d'image en fournissant des prompts.
+
+En résumé, ce notebook présente un flux de travail pour utiliser un modèle de génération Stable Diffusion pour créer des images à partir de prompts textuels, et il offre une interface utilisateur conviviale pour cette tâche.
+
