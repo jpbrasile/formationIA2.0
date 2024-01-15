@@ -39,3 +39,42 @@
 - **Accès à Wolfram Alpha** : C'est un outil puissant pour l'apprentissage et la résolution de problèmes dans divers domaines, en particulier pour ceux qui s'intéressent aux mathématiques et à la science des données. 
 - **Guide pour Harpa.ai**: Par exemple, en demandant "donne-moi un guide pour Harpa.ai", Perplexity.ai fournit des informations détaillées et utiles.
 
+## Tutoriel [Canva](https://www.canva.com/)
+
+
+### Introduction
+
+Canva est un outil de conception graphique en ligne qui permet de créer facilement des designs pour les réseaux sociaux, les présentations, les affiches, et bien plus encore.
+
+### Création d'un compte
+
+1. Allez sur le site de [Canva](https://www.canva.com/).
+2. Cliquez sur "S'inscrire" et suivez les instructions pour créer un compte.
+
+### Utilisation des outils de Canva
+
+#### Création d'un nouveau design
+
+1. Cliquez sur "Créer un design" dans le coin supérieur droit.
+2. Choisissez le type de design que vous souhaitez créer (par exemple, une publication Instagram ou une présentation).
+
+#### Ajout d'éléments à votre design
+
+1. Utilisez le menu de gauche pour ajouter des éléments à votre design. Vous pouvez ajouter du texte, des images, des formes, et bien plus encore.
+2. Cliquez sur l'élément que vous souhaitez ajouter, puis faites-le glisser sur votre design.
+
+#### Modification des éléments de votre design
+
+1. Cliquez sur l'élément que vous souhaitez modifier.
+2. Utilisez les options qui apparaissent pour changer la couleur, la taille, la police, et bien plus encore.
+
+### Téléchargement et partage de votre design
+
+1. Une fois que vous avez terminé votre design, cliquez sur "Télécharger" dans le coin supérieur droit.
+2. Choisissez le format de fichier que vous souhaitez, puis cliquez sur "Télécharger".
+3. Pour partager votre design, cliquez sur "Partager" dans le coin supérieur droit. Vous pouvez alors choisir de partager le lien vers votre design, ou de l'envoyer directement à quelqu'un par e-mail.
+
+### Conclusion
+
+Canva est un outil puissant et facile à utiliser pour la conception graphique. Avec un peu de pratique, vous serez en mesure de créer des designs professionnels en un rien de temps.
+
