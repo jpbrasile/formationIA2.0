@@ -12,19 +12,17 @@
 ### Tutorial:
 
 ## AutoGen, MemGPT avec des LLM locaux
-- [00:00](https://youtu.be/JwiyM74OhRA?t=0s) 📹 Le vidéo aborde l'intégration d'AutoGen, MemGPT, et des LLM locaux en utilisant LM Studio pour créer une solution SaaS.
-- [01:06](https://youtu.be/JwiyM74OhRA?t=66s) 🧩 Vous pouvez télécharger différents modèles depuis Hugging Face pour cette démonstration, ici utilisant "ménestral dolphin" en format GGF.
-- [02:13](https://youtu.be/JwiyM74OhRA?t=133s) 🖥️ LM Studio permet de démarrer un serveur pour connecter AutoGen et MemGPT, sans nécessiter de clé API.
-- [03:28](https://youtu.be/JwiyM74OhRA?t=208s) 📦 Pour commencer, installez les packages Pi mgpt, Pi autogen et OpenAI.
-- [04:36](https://youtu.be/JwiyM74OhRA?t=276s) 🚀 Configurez les paramètres nécessaires, tels que l'API de base et la clé API OpenAI.
-- [05:45](https://youtu.be/JwiyM74OhRA?t=345s) 🤖 Créez un agent pour gérer le dialogue entre les modèles et les messages du système.
-- [06:57](https://youtu.be/JwiyM74OhRA?t=417s) 💬 Utilisez "create autogen mgpt" pour exécuter le modèle MemGPT dans le dialogue.
-- [08:06](https://youtu.be/JwiyM74OhRA?t=486s) 🌐 Démarrez le serveur LM Studio pour connecter les modèles AutoGen et MemGPT, puis utilisez l'application Python pour voir les résultats.
-- [09:25](https://youtu.be/JwiyM74OhRA?t=565s) 🧰 Le modèle MemGPT génère des réponses utiles pour des requêtes spécifiques, comme la conception d'une solution de gestion de la chaîne d'approvisionnement.
-- [10:47](https://youtu.be/JwiyM74OhRA?t=647s) 📣 Vous pouvez expérimenter avec cette approche et trouver des utilisations plus avancées pour améliorer la génération de code et d'autres tâches.
 
-  
-[Github code](https://github.com/InsightEdge01/Autogen-Memgpt-localllm-Lmstudio)
+- [00:00](https://www.youtube.com/watch?v=8RtxvXIx61Y&t=0s) 🤖 Pour utiliser LM Studio avec un LLM open source et MGPT, commencez par télécharger et installer LM Studio sur votre système.
+- [01:09](https://www.youtube.com/watch?v=8RtxvXIx61Y&t=69s) 🧩 Vous pouvez rechercher et télécharger des modèles open source LLM depuis LM Studio en utilisant des critères tels que la popularité ou la récence.
+- [02:04](https://www.youtube.com/watch?v=8RtxvXIx61Y&t=124s) ⚙️ Après le téléchargement, chargez le modèle dans LM Studio et démarrez le serveur local pour interagir avec le LLM sans nécessiter une clé API.
+- [03:28](https://www.youtube.com/watch?v=8RtxvXIx61Y&t=208s) 🧰 Préparez Autogen et MGPT en créant un nouveau projet, en définissant des variables d'environnement et en configurant les agents.
+- [06:00](https://www.youtube.com/watch?v=8RtxvXIx61Y&t=360s) 🧪 Configurez le LLM en spécifiant des paramètres tels que le numéro de graine et le délai de réponse pour obtenir des réponses cohérentes.
+- [07:11](https://www.youtube.com/watch?v=8RtxvXIx61Y&t=431s) 🤖 Créez des agents, tels que l'agent utilisateur et l'agent assistant, pour interagir avec le LLM en définissant leurs rôles et configurations.
+- [08:32](https://www.youtube.com/watch?v=8RtxvXIx61Y&t=512s) 💡 Si vous le souhaitez, utilisez MGPT comme agent de codage pour obtenir des réponses de codage spécifiques.
+- [10:36](https://www.youtube.com/watch?v=8RtxvXIx61Y&t=636s) 📝 Exécutez le code, interagissez avec le modèle LLM en utilisant les agents et examinez les résultats dans LM Studio ou votre environnement de développement.
+- [12:13](https://www.youtube.com/watch?v=8RtxvXIx61Y&t=733s) 🌐 En utilisant un LLM open source avec Autogen, vous n'avez pas besoin de clé API, ce qui peut être économique lors des tests. Prochainement, une vidéo détaillée sur Autogen et ses agents.
+
 
 [Lmstudio](https://lmstudio.ai/)
 
