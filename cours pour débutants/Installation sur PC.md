@@ -9,14 +9,14 @@
 ## Contrôle parental pour les enfants:
 Pour mettre en place le contrôle parental sur un PC Windows 10, vous devez d'abord créer un compte enfant et vous mettre en tant qu'administrateur. Voici un guide étape par étape pour vous aider à le faire :
 
-## Création d'un compte enfant
+### Création d'un compte enfant
 
 1. Ouvrez le menu Démarrer de Windows, accédez aux Paramètres, puis cliquez sur Comptes [5](https://www.avast.com/fr-fr/c-parental-controls-windows).
 2. Sélectionnez "Famille et autres utilisateurs", puis cliquez sur "Ajouter un membre de la famille".
 3. Suivez les instructions à l'écran pour créer un compte pour votre enfant.
 4. Une fois le compte créé, il apparaîtra lors de l'ouverture de session Windows [4](https://forums.cnetfrance.fr/tutoriels-windows-10/613739-windows-10-comment-creer-un-compte-enfant-et-activer-le-controle-parental).
 
-## Configuration du contrôle parental
+### Configuration du contrôle parental
 
 1. Connectez-vous à votre compte sur family.microsoft.com [1](https://support.microsoft.com/fr-fr/account-billing/configurer-des-filtres-web-et-de-recherche-pour-le-contr%C3%B4le-parental-640d6535-d1ba-332c-0a8d-4a0872bef885).
 2. Recherchez le membre de votre famille, puis accédez à "Filtres de contenu > web et recherche".
