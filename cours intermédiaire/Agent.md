@@ -104,3 +104,15 @@
 
 [GitHub de AutoGen Studio](https://github.com/microsoft/autogen/tree/main/samples/apps/autogen-studio)
 
+## CrewAI : l'alternative à AutoGen
+- [00:00](https://www.youtube.com/watch?v=qFNge4IrERk&t=0s) 🤖 [Crew AI](https://github.com/joaomdmoura/crewAI) est un nouveau framework qui permet de créer des agents et de leur assigner des tâches.
+- [00:27](https://www.youtube.com/watch?v=qFNge4IrERk&t=27s) 🚀 Vous pouvez créer un agent de recherche et un agent de rédaction avec Crew AI pour rechercher des tendances en intelligence artificielle et écrire un article.
+- [01:08](https://www.youtube.com/watch?v=qFNge4IrERk&t=68s) 💼 Pour commencer, vous devez installer Crew AI, activer l'environnement, et configurer votre clé API OpenAI.
+- [02:16](https://www.youtube.com/watch?v=qFNge4IrERk&t=136s) 🎯 Vous pouvez définir des agents avec des rôles et des objectifs spécifiques, comme un agent de recherche et un agent de rédaction.
+- [03:35](https://www.youtube.com/watch?v=qFNge4IrERk&t=215s) 🔄 Vous initialisez le processus de Crew AI en créant une liste d'agents et de tâches, puis en lançant le processus.
+- [04:30](https://www.youtube.com/watch?v=qFNge4IrERk&t=270s) 🧩 Les agents travaillent ensemble, le chercheur recherchant des informations et le rédacteur créant un article en fonction des résultats.
+- [05:37](https://www.youtube.com/watch?v=qFNge4IrERk&t=337s) 💡 Vous pouvez intégrer des modèles de langage tels qu'OlaMa pour améliorer la qualité des tâches de recherche et de rédaction.
+- [06:59](https://www.youtube.com/watch?v=qFNge4IrERk&t=419s) 📚 La qualité des résultats peut dépendre de la puissance du modèle de langage que vous utilisez avec Crew AI.
+- [07:28](https://www.youtube.com/watch?v=qFNge4IrERk&t=448s) ✅ En suivant ces étapes, vous pouvez créer et utiliser vos propres agents Crew AI pour effectuer des tâches spécifiques en intelligence artificielle.
+
+- [**Exemples d'emploi**](https://mer.vin/2024/01/crewai-example-code/)
