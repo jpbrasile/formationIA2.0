@@ -1,3 +1,26 @@
+## Text to Speech gratuit
+- [00:00](https://www.youtube.com/watch?v=EvszOni8x8w&t=4s) 🎯 Générer des revenus sur TikTok sans montrer son visage
+  - L'importance de publier au moins 5 vidéos par jour sur TikTok.
+  - Limitation de caractères avec l'abonnement Premium d'Eleven Labs.
+  - Solution pour générer du contenu illimité gratuitement.
+
+- [01:10](https://www.youtube.com/watch?v=EvszOni8x8w&t=70s) 🤖 Utilisation de [clipchamp](clipchamp.com) pour la synthèse vocale
+  - Création d'un compte sur clipchamp.com.
+  - Utilisation de la synthèse vocale en choisissant la langue et la voix.
+  - Possibilité de générer des voix d'une durée de 10 minutes gratuitement.
+
+- [02:47](https://www.youtube.com/watch?v=EvszOni8x8w&t=167s) 🧠 Comparaison avec l'expérience de Daniel Canman
+  - Mention de l'expérience de Daniel Canman avec deux groupes de personnes.
+  - Illustration de la supériorité de l'intelligence artificielle mentionnée sur Eleven Labs.
+  - Exportation de l'audio généré par l'IA.
+
+- [03:56](https://www.youtube.com/watch?v=EvszOni8x8w&t=236s) 💻 Bonus : Utilisation de Capcut pour extraire le son
+  - Importation de la vidéo dans Capcut.
+  - Extraction du fichier audio de la vidéo.
+  - Conclusion de la vidéo et incitation à s'abonner pour plus de tutoriels.
+
+clipchamp.com
+
 ## MUSIQUE
 [CassetteAI](https://cassetteai.com/dashboard) est une plateforme qui utilise l'intelligence artificielle pour produire de la musique en convertissant du texte en production musicale complexe. Il permet de créer de la musique professionnelle en utilisant des descriptions textuelles comme point de départ, et il peut également générer des effets sonores en plus de la musique. CassetteAI permet de définir la durée de sortie des créations et d'utiliser des genres et des balises pour guider le processus de création. En résumé, CassetteAI est votre co-pilote pour la création musicale alimentée par l'IA.
 
