@@ -5,8 +5,16 @@
 - [01:23](https://www.youtube.com/watch?v=Sg3KgA3_fPU&t=83s) 📊 Le tutoriel montre un nouveau design de mise en page et l'utilisation de nœuds personnalisés pour la distribution de données.
 - [03:12](https://www.youtube.com/watch?v=Sg3KgA3_fPU&t=192s) 🎭 Le flux de travail est organisé en groupes dédiés à des tâches spécifiques, tels que l'échange de visages ou la segmentation d'image.
 - [19:07](https://www.youtube.com/watch?v=Sg3KgA3_fPU&t=1147s) 🌄 L'ajout d'adaptateurs d'image influence fortement les résultats de l'animation, permettant de contrôler les arrière-plans et les tenues des personnages.
-
-
+### Tuto 3
+- [00:00](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=0s) 📌 Un "latent image" en IA ne contient pas d'image réelle, mais plutôt des points latents.
+- [01:27](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=87s) 📊 Le workflow de base pour créer une image à partir de texte comprend un checkpoint, des prompts textuels, une image latente vide et un VAE.
+- [02:34](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=154s) 🖼️ Pour des images de plus haute résolution, il est nécessaire d'effectuer une mise à l'échelle (upscale) de l'image latente.
+- [03:17](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=197s) 🛠️ Vous pouvez désactiver des parties de votre workflow pour économiser du temps et de la puissance GPU.
+- [05:31](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=331s) 🖼️ L'étape d'upscale latent permet d'augmenter la taille de l'image en multipliant la largeur et la hauteur.
+- [06:23](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=383s) 🎨 Vous pouvez influencer le résultat de l'upscale en ajustant les prompts textuels et en utilisant différents samplers.
+- [07:03](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=423s) 🧹 Un débruitage élevé est recommandé pour les images upscale latentes pour éliminer le bruit.
+- [08:10](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=490s) ✂️ L'upscale latent peut améliorer la qualité et la précision de l'image avant d'utiliser l'ultimate upscaler pour une taille encore plus grande.
+- [**Le Workflow**](https://openart.ai/workflows/oliviosarikas/lesson-3---comfy-academy/8n40kHT7p1krLwCdihdY)
 ## Transcript en temps réel
 - [00:00](https://youtu.be/k6nIxWGdrS4?t=0s) 🎙️ Création d'une transcription en temps réel à quasi-zéro latence.
 - [00:27](https://youtu.be/k6nIxWGdrS4?t=27s) 🚀 Utilisation de Fast Whisperer pour une transcription rapide en temps réel.
