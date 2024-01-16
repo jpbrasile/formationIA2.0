@@ -1,0 +1,11 @@
+## [Pinecone Serverless](https://www.pinecone.io/blog/serverless/)
+- 🚀 Pinecone annonce Pinecone Serverless, une base de données vectorielle complètement réinventée pour construire facilement des applications GenAI rapides et précises, avec jusqu'à 50 fois moins de coûts.
+- 💡 Pinecone Serverless offre une accessibilité publique en prévisualisation, avec 100 $ de crédits d'utilisation gratuits.
+- 💼 L'objectif de Pinecone est d'aider les développeurs à créer des applications AI remarquables, en mettant l'accent sur l'importance de la connaissance.
+- 📊 L'utilisation de Pinecone avec Retrieval Augmented Generation (RAG) améliore la qualité des réponses AI en fonction de la quantité de données disponibles.
+- 🌐 Pinecone Serverless propose une architecture innovante avec une séparation des lectures, écritures et stockage, réduisant significativement les coûts.
+- 🏷️ Les prix sont basés sur l'utilisation réelle, ce qui peut réduire les coûts pour des charges de travail variables.
+- 🚗 Pinecone Serverless est jusqu'à 50 fois moins cher que les index basés sur des pods.
+- 🌟 Il offre une expérience sans serveur, éliminant la nécessité de gérer l'infrastructure.
+- 🔍 Les résultats de recherche vectorielle restent rapides, frais, filtrés et pertinents.
+- 💻 Pinecone Serverless est en prévisualisation publique et est déjà utilisé par des entreprises telles que Notion, Gong, CS Disco, et d'autres.
