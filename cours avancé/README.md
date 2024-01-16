@@ -1,3 +1,5 @@
+## POUR ALLER PLUS LOIN
+
 - [00:00](https://www.youtube.com/watch?v=5OneHs9GV0Y&t=0s) 🤖 Cours sur les bases de l'IA pour tous par IBM
 
   - Cours gratuit de Corsera pour renforcer vos connaissances fondamentales en IA.
@@ -11,7 +13,7 @@
   - Identifiez les avantages et les limites de Chat GPT.
 
 - [03:31](https://www.youtube.com/watch?v=5OneHs9GV0Y&t=211s) 🐍 Cours Python pour tout le monde sur Coursera
-## POUR ALLER PLUS LOIN
+
   - Apprenez la programmation en Python pour l'analyse de données et l'IA.
   - Développez des compétences en programmation et en analyse de données.
   - Obtenez un certificat de Coursera et de l'Université du Michigan.
