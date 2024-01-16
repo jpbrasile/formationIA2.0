@@ -1,3 +1,12 @@
+## ComfyUI
+### Stable Diffusion Animation
+- [00:00](https://www.youtube.com/watch?v=Sg3KgA3_fPU&t=0s) 📹 Le tutoriel explique comment utiliser Stable Diffusion Animation pour changer facilement les arrière-plans et les tenues des personnages dans une animation.
+- [00:13](https://www.youtube.com/watch?v=Sg3KgA3_fPU&t=13s) 🤖 L'animateur a amélioré son flux de travail d'animation grâce aux suggestions de ses amis IA, rendant le processus plus fluide.
+- [01:23](https://www.youtube.com/watch?v=Sg3KgA3_fPU&t=83s) 📊 Le tutoriel montre un nouveau design de mise en page et l'utilisation de nœuds personnalisés pour la distribution de données.
+- [03:12](https://www.youtube.com/watch?v=Sg3KgA3_fPU&t=192s) 🎭 Le flux de travail est organisé en groupes dédiés à des tâches spécifiques, tels que l'échange de visages ou la segmentation d'image.
+- [19:07](https://www.youtube.com/watch?v=Sg3KgA3_fPU&t=1147s) 🌄 L'ajout d'adaptateurs d'image influence fortement les résultats de l'animation, permettant de contrôler les arrière-plans et les tenues des personnages.
+
+
 ## Transcript en temps réel
 - [00:00](https://youtu.be/k6nIxWGdrS4?t=0s) 🎙️ Création d'une transcription en temps réel à quasi-zéro latence.
 - [00:27](https://youtu.be/k6nIxWGdrS4?t=27s) 🚀 Utilisation de Fast Whisperer pour une transcription rapide en temps réel.
