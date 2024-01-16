@@ -12,7 +12,7 @@ Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et
 - **APi**: Comment faire que le chatbot accède à des ressources externes disponibles sur le web ?
 - **GPTs** : Comment créer des chatbots spécialisés pour remplir certaines tâches ?
 - **Agents**: Comment créer des chatbots travaillant en équipe
-- **RH** : Comment faire pour que les Chatbot apprennet de leurs erreurs ?
+- **RL** : Comment faire pour que les Chatbot apprennet de leurs erreurs ?
 
 | Niveau        | Objectif                              | Quels outils                             | Mon prompt                                           | RAG                                                   | Scraping                                            | Context                                             | Multimodal                                         | API                                                | GPTs                                               | Agents                                             | RH                                                 |
 |---------------|---------------------------------------|-----------------------------------------|------------------------------------------------------|------------------------------------------------------|-----------------------------------------------------|----------------------------------------------------|---------------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------------------------------------------|
