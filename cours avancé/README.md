@@ -1,3 +1,54 @@
+### Résumé Clé
+L'[article](https://towardsdatascience.com/solving-reasoning-problems-with-llms-in-2023-6643bdfd606d#1acd) souligne l'évolution importante des modèles de langage à grande échelle (LLM) en 2023, notamment dans la résolution de problèmes de raisonnement et l'utilisation d'outils. Il met en évidence les progrès dans l'utilisation d'outils externes et les capacités de raisonnement interne des LLM, ainsi que l'exploration de nouvelles méthodes pour améliorer ces capacités.
+
+### Résumé
+- **Introduction et Contexte**
+  - ChatGPT a fêté son premier anniversaire en 2024.
+  - L'année 2023 a été marquée par de nombreux développements dans le domaine des LLM.
+
+- **Utilisation des Outils**
+  - Les LLM ont été équipés d'outils externes tels que les moteurs de recherche et les interpréteurs de code.
+  - La méthode d'apprentissage en contexte permet une utilisation plus efficace des outils.
+  - L'article aborde des projets spécifiques comme Toolformer, Chameleon, et ToolkenGPT.
+
+- **Raisonnement**
+  - Accent sur la résolution de problèmes complexes via les capacités de raisonnement internes des LLM.
+  - Exploration des limites et des moyens d'étendre les capacités de raisonnement des LLM.
+
+- **Création de Propres Outils par les LLM**
+  - Des travaux préliminaires ont exploré la capacité des LLM à créer des outils, en particulier des fonctions Python et des règles textuelles.
+
+- **Planification et Séries Auto**
+  - Les méthodes comme le raisonnement via la planification et les séries auto démontrent des avancées dans le raisonnement plus complexe et l'auto-amélioration des LLM.
+
+- **Observations et Évaluations**
+  - Des études ont été menées sur la capacité de mémorisation des LLM et leur tendance à mémoriser des solutions plutôt qu'à raisonner de manière autonome.
+
+- **Prévisions pour 2024**
+  - Prédictions sur l'évolution future des LLM, incluant l'intégration multimodale et une meilleure compréhension du processus de raisonnement.
+
+- **Divers**
+  - L'article mentionne également des travaux connexes et des blogs sur le raisonnement des LLM.
+
+- **Conclusion**
+  - L'année 2023 a été significative pour le développement et l'utilisation des LLM dans la résolution de problèmes de raisonnement et l'utilisation d'outils, posant des bases pour de futures avancées dans ce domaine.
+ 
+
+#### In-context learning 
+-[Toolformer](https://arxiv.org/abs/2302.04761)
+- [Chameleon](https://arxiv.org/abs/2304.09842)
+- [Visual reasoning](https://arxiv.org/abs/2211.11559)
+- [ToolkenGPT](https://arxiv.org/abs/2305.11554)
+#### Most used tools: code interpreters and retrievers
+-[COT](https://arxiv.org/abs/2201.11903)
+-[program aided](https://arxiv.org/abs/2211.10435)
+-[program of Thougth](https://arxiv.org/abs/2211.12588)
+-[planning tasks](https://arxiv.org/abs/2305.16653)
+- [Retrieval Augmented generation](https://arxiv.org/abs/2005.11401)
+- [IRCoT](https://arxiv.org/abs/2212.10509)
+- [LeanDojo](https://arxiv.org/abs/2306.15626)
+- [DSPy](https://arxiv.org/abs/2310.03714)
+
 ## POUR ALLER PLUS LOIN
 
 - [00:00](https://www.youtube.com/watch?v=5OneHs9GV0Y&t=0s) 🤖 Cours sur les bases de l'IA pour tous par IBM
