@@ -55,6 +55,25 @@
 19. Correcteur d'orthographe et de grammaire : https://chat.openai.com/g/g-5lyTNaNVQ...
 20. No talk; just code : https://chat.openai.com/g/g-3FSzWjgg6...
 
+## D'autres GPTs:
+1. [Video Summarizer](https://chat.openai.com/g/g-GvcYCKPIH-video-summarizer-ai) : Generate educational summaries from lengthy videos in any language
+2. [Invideo AI](http://invideo.io/videoai)
+3. [DesignerGPT](https://chat.openai.com/g/g-2Eo3NxuS7-designergpt):Creates and hosts beautiful websites
+4. [Grimoire](https://chat.openai.com/g/g-n7Rs0IK86-grimoire):Coding Wizard🧙‍♂️ Create a website (or anything) with a sentence
+5. [Canva](https://chat.openai.com/g/g-alKfVrz9K-canva): Effortlessly design anything: presentations, logos, social media posts and more.
+6. [Sticker Whiz](https://chat.openai.com/g/g-gPRWpLspC-sticker-whiz): I'll help turn your wildest dreams into die-cut stickers
+7. [Simpsonize Me](https://chat.openai.com/g/g-ZQrx5GsBW-simpsonise-me): Draw me like one of your Simpsons girls
+8a. [Consensus](https://chat.openai.com/g/g-bo0FiWLY7-consensus): Your AI Research Assistant. Search 200M academic papers from Consensus, get science-based answers, and draft content with accurate citations
+8b. [Scholar GPT](https://chat.openai.com/g/g-kZ0eYXlJe-scholar-gpt): Enhance research with 200M+ resources and built-in critical reading skills. Access Google Scholar, PubMed, JSTOR, Arxiv, and more, effortlessly
+9. [AI GPT](https://chat.openai.com/g/g-agCdZedbZ-ai-gpt):AI & ML Expert adept in deep learning frameworks
+10. [Finance Wizard](https://chat.openai.com/g/g-szDdJUX9V-finance-wizard): I predict future stock market prices. AI analyst. Your trading analysis assistant. Ask me about stocks, options, crypto, futures, forex
+11. [The Negotiator](https://chat.openai.com/g/g-TTTAK9GuS-the-negotiator): I'll help you advocate for yourself and get better outcomes. Become a great negotiator
+12. [FAQ Generator AI](https://chat.openai.com/g/g-2SIKCFdeL-faq-generator-ai):  Expert in transforming webpages into FAQs! 📄🤖🌐 
+13. [PlaylistAI](https://chat.openai.com/g/g-KkxbQAVuk-playlistai-music-playlist-maker): Connect your Spotify, Apple Music, Amazon Music, or Deezer account to create music playlists in your library
+14. [Sous Chef](https://chat.openai.com/g/g-3VrgJ1GpH-sous-chef) : I’ll give you recipes based on the foods you love and ingredients you have.
+15. [Convert Anything](https://chat.openai.com/g/g-kMKw5tFmB-convert-anything): The ultimate file converter for images, audio, video, documents and more. It handles individual or batch uploads, supports ZIPs, and provides a download link
+
+
 
   ## [Documentez](https://github.com/fynnfluegge/doc-comments-ai) votre code :
 ### ✨   Features
