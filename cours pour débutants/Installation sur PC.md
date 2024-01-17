@@ -5,6 +5,7 @@
 - Créer un compte Gmail (Google) et un compte Outlook (Microsoft).
 - S'inscrire à Perplexity.ai avec le mail Google, le mettre dans la barre favori de Chrome.
 - S'inscrire à Copilot de microsoft avec le mail outlook, le mettre dans la barre favori de Chrome.
+- S'i,nscrire à ChatGPT
 
 ## Contrôle parental pour les enfants:
 Pour mettre en place le contrôle parental sur un PC Windows 10, vous devez d'abord créer un compte enfant et vous mettre en tant qu'administrateur. Voici un guide étape par étape pour vous aider à le faire :
