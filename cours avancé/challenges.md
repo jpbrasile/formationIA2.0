@@ -7,3 +7,9 @@
   
 ## Emulateur de microcontrôleur
 - Faire un Chatbot qui écrit du code pour un microcontrôleur et qui le valide sur un [émulateur](https://github.com/lrusso/ArduinoSimulator)
+## Rendre un LLM local open source plus performant que GPT4 turbo:
+- En l'alimentant avec les bases de données pertinentes
+- Avec [Pinecone](https://www.pinecone.io/blog/rag-study/)
+
+- ![Capture d'écran 2024-01-17 090906](https://github.com/jpbrasile/formationIA2.0/assets/8331027/9f15f1a5-69e0-4b0a-9db5-1cfa67aea343)
+ 
