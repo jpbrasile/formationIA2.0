@@ -66,3 +66,22 @@ Le site propose une bibliothèque complète pour l'entraînement et la fine-tuni
 
   - Vérification du modèle quantifié téléchargé dans le référentiel Hugging Face.
   - Confirmation du succès du processus de quantification et de téléchargement.
+ 
+  ## RoSA : mieux que LORA
+  - [00:00](https://www.youtube.com/watch?v=p1ER6aNkEMQ&t=0s) 🔍 Introduction à la méthode Rosa en PFT
+
+  - La PFT (Parameter Efficient Tuning) est une technique de ML,
+  - La méthode Rosa est une adaptation à faible rang qui prétend surpasser Laura,
+  - Rosa est basée sur l'analyse robuste des composantes principales.
+
+- [01:20](https://www.youtube.com/watch?v=p1ER6aNkEMQ&t=80s) 📊 Performance de Rosa dans des tâches génératives
+
+  - Rosa a surpassé Laura et la fine-tuning sparse dans les tâches génératives,
+  - Ils ont introduit un support système pour Rosa, notamment des GPU épars pour une efficacité mémoire et computationnelle,
+  - Le code de Rosa n'est pas encore disponible, ce qui est un inconvénient.
+
+- [03:08](https://www.youtube.com/watch?v=p1ER6aNkEMQ&t=188s) 🧐 Résumé et attente du code
+
+  - Présentation des comparaisons de mémoire entre Lama, fft, Laura, Spa et Rosa,
+  - Le code de Rosa n'est pas encore disponible, ce qui est une préoccupation,
+  - L'auteur invite les commentaires et les abonnements à la chaîne.
