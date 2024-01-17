@@ -114,3 +114,14 @@
 - [07:28](https://www.youtube.com/watch?v=qFNge4IrERk&t=448s) ✅ En suivant ces étapes, vous pouvez créer et utiliser vos propres agents Crew AI pour effectuer des tâches spécifiques en intelligence artificielle.
 
 - [**Exemples d'emploi**](https://mer.vin/2024/01/crewai-example-code/)
+- **Autre exemple:**
+  - Je vais extraire les points clés du prochain extrait de la transcription vidéo :
+  
+  - [00:00](https://www.youtube.com/watch?v=U5TAI_SGllA&t=0s) 🤖 Présentation des agents de création de publications LinkedIn avec Crew AI, y compris le coach, l'influenceur et le critique, chacun utilisant un modèle de langage différent.
+  - [00:26](https://www.youtube.com/watch?v=U5TAI_SGllA&t=26s) 🧰 Étape initiale : Installation des modules de langage, création d'un fichier app.py et importation des bibliothèques nécessaires.
+  - [01:09](https://www.youtube.com/watch?v=U5TAI_SGllA&t=69s) 🛠️ Initialisation des modèles de langage, y compris Mistral AI, Gemini Pro et Azure Chat GPT, avec les clés API appropriées.
+  - [03:00](https://www.youtube.com/watch?v=U5TAI_SGllA&t=180s) 👩‍💼👨‍💼 Création d'agents, dont le coach, l'influenceur et le critique, avec des tâches spécifiques, comme la recherche de tendances en IA et la création de publications LinkedIn.
+  - [04:25](https://www.youtube.com/watch?v=U5TAI_SGllA&t=265s) 🚀 Création de l'équipage avec la liste des agents et des tâches, puis déclenchement de l'équipage pour commencer le processus.
+  - [05:06](https://www.youtube.com/watch?v=U5TAI_SGllA&t=306s) 📝 Exécution du code et suivi du flux de travail, du coach à l'influenceur et enfin au critique, créant une publication LinkedIn sur les nouvelles compétences en IA pour 2024.
+  
+  Ces points clés résument les étapes du processus de création de publications LinkedIn à l'aide de Crew AI avec différents modèles de langage.
