@@ -55,7 +55,7 @@
 19. Correcteur d'orthographe et de grammaire : https://chat.openai.com/g/g-5lyTNaNVQ...
 20. No talk; just code : https://chat.openai.com/g/g-3FSzWjgg6...
 
-## D'autres GPTs:
+## [D'autres GPTs](https://www.youtube.com/watch?v=l7fSX2ss1gA):
 1. [Video Summarizer](https://chat.openai.com/g/g-GvcYCKPIH-video-summarizer-ai) : Generate educational summaries from lengthy videos in any language
 2. [Invideo AI](http://invideo.io/videoai)
 3. [DesignerGPT](https://chat.openai.com/g/g-2Eo3NxuS7-designergpt):Creates and hosts beautiful websites
