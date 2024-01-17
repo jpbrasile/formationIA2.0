@@ -21,3 +21,13 @@
 - [05:03](https://www.youtube.com/watch?v=vvZ4cyxl99Q&t=303s) 📋 Le parser "comma separated list output parser" transforme une chaîne en un tableau JavaScript.
 - [10:18](https://www.youtube.com/watch?v=vvZ4cyxl99Q&t=618s) 🏷️ Le parser "structured output parser" permet de convertir une réponse en un objet JavaScript structuré.
 - [11:54](https://www.youtube.com/watch?v=vvZ4cyxl99Q&t=714s) 🌟 Le parser "from Zod schema" permet de créer des structures complexes et d'extraire des informations de manière avancée.
+
+
+| Explications | Code Python |
+|---------------|-------------|
+| **Importation de Modules** : `import { ChatOpenAI } from "@langchain/openai";` importe une fonctionnalité de `ChatOpenAI` depuis le module `langchain/openai`. `import readline from "readline";` et `import * as dotenv from "dotenv";` importent les modules `readline` et `dotenv`. | `import { ChatOpenAI } from "@langchain/openai";`<br>`import readline from "readline";`<br>`// Import environment variables`<br>`import * as dotenv from "dotenv";`<br>`dotenv.config();` |
+| **Configuration des Variables d'Environnement** : `dotenv.config();` charge les variables d'environnement. | `dotenv.config();` |
+| **Création d'une Interface de Lecture** : `const rl = readline.createInterface({...});` crée une interface de lecture pour lire les entrées de l'utilisateur. | `// Create a readline interface to read user input`<br>`const rl = readline.createInterface({ input: process.stdin, output: process.stdout, });` |
+| **Fonction de Communication avec l'IA** : `async function chatCompletion(text){...}` est une fonction asynchrone qui utilise le modèle `gpt-3.5-turbo` d'OpenAI pour obtenir une réponse. | `// Create a function to call the Langchain API`<br>`async function chatCompletion(text) {`<br>`const model = new ChatOpenAI({ modelName: "gpt-3.5-turbo", temperature: 0.9, });`<br>`const response = await model.invoke(text);`<br>`console.log("AI:", response.content); }` |
+| **Affichage de la Réponse de l'IA** : `console.log("AI:", response.content);` affiche la réponse de l'IA. | `console.log("AI:", response.content);` |
+| **Fonction pour Demander l'Entrée de l'Utilisateur** : `function getPrompt() {...}` pose une question et appelle `chatCompletion` ou ferme l'interface. | `// Create a function to ask for user input`<br>`function getPrompt() { rl.question("Enter your prompt: ", (input) => { if (input.toUpperCase() === "EXIT") { rl.close(); } else { chatCompletion(input).then(() => getPrompt()); } }); }`<br>`getPrompt(); // Start the prompt` |
