@@ -34,4 +34,4 @@
 - **Comment j'ai fait ce tuto ?:**  Avec le prompt :"fais un guide pratique au format ``markdown ... ```" sur la page web avec Harpa.ai. 
 
 
-[BACK](https://github.com/jpbrasile/formationIA2.0/wiki/z1-Road-Map-(WIP))
+
