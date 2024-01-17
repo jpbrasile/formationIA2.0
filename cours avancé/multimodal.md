@@ -88,3 +88,6 @@ Ce code fonctionne de la manière suivante :
 
 Assurez-vous que le fichier audio que vous voulez jouer (`votre_fichier_audio.mp3`) est accessible par le script.
 
+## Animer une image à partir d'une vidéo:
+
+https://www.youtube.com/watch?v=vPziSNI35Io&t=12s 
