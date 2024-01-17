@@ -1,4 +1,4 @@
-## [Menta](https://github.com/AbanteAI/mentat): Un assistant pour le codage:
+## [Mentat](https://github.com/AbanteAI/mentat): Un assistant pour le codage:
 - Mentat est un assistant à la programmation basé sur l'IA.
 - Contrairement à Copilot, Mentat peut coordonner les modifications sur plusieurs emplacements et fichiers.
 - Mentat est conçu pour avoir une compréhension du contexte de votre projet, ce qui évite le copier-coller.
