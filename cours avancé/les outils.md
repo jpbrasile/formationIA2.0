@@ -1,7 +1,4 @@
 # Pour le fine tuning 
-
-
-
 ## Affiner un modèle avec ses données 
 - [00:00](https://www.youtube.com/watch?v=jcABWwH1FBE&t=0s) 🤖 Vous pouvez affiner le modèle Orca 2 pour répondre aux questions de manière personnalisée en utilisant des données d'entraînement.
 - [00:16](https://www.youtube.com/watch?v=jcABWwH1FBE&t=16s) 🛠️ Ce tutoriel débutant vous guide étape par étape pour affiner le modèle Orca 2.
@@ -39,3 +36,33 @@ Le site [Deci-AI/super-gradients](https://github.com/Deci-AI/super-gradients?tab
 - Une plateforme appelée Deci Platform est également mentionnée, offrant des fonctionnalités pour la compilation et la quantification automatiques de modèles.
 
 Le site propose une bibliothèque complète pour l'entraînement et la fine-tuning de modèles de vision par ordinateur, avec un accent sur le modèle YOLO-NAS.
+# Pour la "quantification
+- [00:00](https://youtu.be/Kj0OIkWpfHs?t=0s) 📋 Introduction à la quantification de modèle
+
+  - La quantification de modèle est le processus de mise en correspondance des valeurs continues avec des valeurs discrètes pour l'apprentissage automatique.
+  - La quantification permet d'exécuter de grands modèles de langage sur les CPU et de décharger certaines couches vers les GPU pour accélérer les calculs.
+  - Le format le plus populaire de quantification de nos jours est le TTF (Transformers Tensilica Format).
+
+- [02:45](https://youtu.be/Kj0OIkWpfHs?t=165s) 🎯 Préparation de l'environnement et du modèle
+
+  - Configuration d'un environnement Google Colab avec un GPU T4 gratuit et un compte Hugging Face.
+  - Définition du modèle à quantifier (Neural BigLE, 147 milliards de paramètres).
+
+- [06:47](https://youtu.be/Kj0OIkWpfHs?t=407s) 💾 Conversion en virgule flottante 16 bits
+
+  - La conversion du modèle en virgule flottante 16 bits réduit la consommation de mémoire et améliore l'efficacité énergétique.
+
+- [08:39](https://youtu.be/Kj0OIkWpfHs?t=519s) ⚙️ Processus de quantification
+
+  - Exploration de la méthode de quantification Q4 KM.
+  - Quantification du modèle couche par couche, réduisant les besoins en mémoire et le temps de traitement.
+
+- [11:23](https://youtu.be/Kj0OIkWpfHs?t=683s) 📤 Téléchargement du modèle quantifié sur Hugging Face
+
+  - Connexion à Hugging Face, initialisation de l'API et création d'un référentiel pour le modèle quantifié.
+  - Téléchargement du modèle quantifié dans le référentiel Hugging Face.
+
+- [12:52](https://youtu.be/Kj0OIkWpfHs?t=772s) 🧐 Vérification du modèle téléchargé
+
+  - Vérification du modèle quantifié téléchargé dans le référentiel Hugging Face.
+  - Confirmation du succès du processus de quantification et de téléchargement.
