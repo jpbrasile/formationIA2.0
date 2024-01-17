@@ -5,3 +5,5 @@
 ## ChatGPT local
 -  Faire un équivalent d'un GPTs d'OpenAI en local open source (avec scraping des GPTs d'openAI)
   
+## Emulateur de microcontrôleur
+- Faire un Chatbot qui écrit du code pour un microcontrôleur et qui le valide sur un [émulateur](https://github.com/lrusso/ArduinoSimulator)
