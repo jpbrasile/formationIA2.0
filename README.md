@@ -21,7 +21,7 @@ Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et
 | Avancé        | Créer avec l'IA       | Finetuning, Création de MOE | Prompt optimisé par programmation                   | Création de base de données locales       | AgentSearch et Wiki search | Gestion avancée du contexte (compactage)                        | Développement de solutions multimodales personnalisées | Conception d'API robustes pour des applications à grande échelle | Utilisation de GPT-4 et autres modèles avancés     | Développement d'agents autonomes capables d'apprentissage continu | Stratégies pour le développement de talents en IA et gestion des changements technologiques |
 
 ## ChatGPT C'est quoi ? : 
-- [00:00](https://www.youtube.com/watch?v=PNjh4z8WF9M&t=0s) 🤖 Qu'est-ce que ChatGPT ? [A la naissance un Large Language Model de base](https://github.com/jpbrasile/formationIA2.0/wiki/1.-LLM%E2%80%90Base) 
+- [00:00](https://www.youtube.com/watch?v=PNjh4z8WF9M&t=0s) 🤖 Qu'est-ce que ChatGPT ? [Large Language Model Base: un LLM à la maternelle](https://github.com/jpbrasile/formationIA2.0/wiki/1.-LLM%E2%80%90Base) 
 
   - ChatGPT est une machine à approximer qui fournit des réponses basées sur ce qu'il a appris.
   - Il est efficace pour interpoler mais peut fournir de fausses réponses en l'absence de données suffisantes.
