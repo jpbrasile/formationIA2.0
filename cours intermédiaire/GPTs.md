@@ -71,7 +71,25 @@
 12. [FAQ Generator AI](https://chat.openai.com/g/g-2SIKCFdeL-faq-generator-ai):  Expert in transforming webpages into FAQs! 📄🤖🌐 
 13. [PlaylistAI](https://chat.openai.com/g/g-KkxbQAVuk-playlistai-music-playlist-maker): Connect your Spotify, Apple Music, Amazon Music, or Deezer account to create music playlists in your library
 14. [Sous Chef](https://chat.openai.com/g/g-3VrgJ1GpH-sous-chef) : I’ll give you recipes based on the foods you love and ingredients you have.
-15. [Convert Anything](https://chat.openai.com/g/g-kMKw5tFmB-convert-anything): The ultimate file converter for images, audio, video, documents and more. It handles individual or batch uploads, supports ZIPs, and provides a download link
+15. [Convert Anything](https://chat.openai.com/g/g-kMKw5tFmB-convert-anything): The ultimate file converter for images, audio, video, documents and more. It handles individual or batch uploads, supports ZIPs, and provides a download link: il convertit même un fichier video au format mkv en audio mp3. En plus il fournit le code:
+
+```Python
+from moviepy.editor import VideoFileClip
+import os
+
+# File path for the uploaded MKV file
+input_file = '/mnt/data/2023-08-11 14-34-39.mkv'
+
+# Output file path
+output_file = '/mnt/data/2023-08-11 14-34-39.mp3'
+
+# Convert MKV to MP3
+video = VideoFileClip(input_file)
+video.audio.write_audiofile(output_file)
+
+# Provide download link
+output_file
+``` 
 
 
 
