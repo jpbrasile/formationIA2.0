@@ -54,3 +54,28 @@
 18. GPT Helper : https://chat.openai.com/g/g-iS3LMW2lB... &     
 19. Correcteur d'orthographe et de grammaire : https://chat.openai.com/g/g-5lyTNaNVQ...
 20. No talk; just code : https://chat.openai.com/g/g-3FSzWjgg6...
+
+
+  ## [Documentez](https://github.com/fynnfluegge/doc-comments-ai) votre code :
+### ✨   Features
+- 📝  Generate documentation comment blocks for all methods in a file
+e.g. Javadoc, JSDoc, Docstring, Rustdoc etc.
+
+- ✍️   Generate inline documentation comments in method bodies
+
+- 🌳  Treesitter integration
+
+- 💻  Local LLM support
+
+- 🌐  Azure OpenAI support
+
+## [Discutez](https://github.com/fynnfluegge/codeqai?tab=readme-ov-file) avec votre code:
+### ✨ Features
+- 🔎  Semantic code search
+- 💬  GPT-like chat with your codebase
+- ⚙️  Synchronize vector store and latest code changes with ease
+- 💻  100% local embeddings and llms
+sentence-transformers, instructor-embeddings, llama.cpp, Ollama
+- 🌐  OpenAI and Azure OpenAI support
+- 🌳  Treesitter integration
+
