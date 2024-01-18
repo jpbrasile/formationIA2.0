@@ -3,8 +3,8 @@
 - Progrès: Améliorations significatives depuis la dernière revue.
 - Capacités: Contrôle total de l'ordinateur, convivial pour les développeurs, et intégration de la vision par ordinateur.
 ## Installation d'Open Interpreter
-- Création d'un environnement Conda: conda create -n oi python=3.11.
-- Activation de l'environnement: conda activate oi.
+- Création d'un environnement Conda: conda create -n openinterpreter python=3.11.
+- Activation de l'environnement: conda activate openinterpreter.
 - Installation via Pip: pip install open-interpreter.
 - Exécution: Saisir interpreter dans le terminal.
 ## Utilisation d'Open Interpreter
@@ -23,3 +23,8 @@
 ## Conclusion
 Vision de l'Auteur: L'avenir de l'interaction avec les ordinateurs via des modèles de langage.
 Invitation à l'Expérimentation: Encouragement à tester Open Interpreter et à partager les retours d'expérience.
+
+## [Détails de son utilisation](https://github.com/KillianLucas/open-interpreter)
+## Fonctionne en local avec interpreter --local lancé dans un terminal avec wizardmath-7b-v1.1.Q6_K.gguf running dans lm studio
+- Nous avons fait :choco install sass dans un PowerShell mode administrateur
+## Colab : 
