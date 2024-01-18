@@ -1,5 +1,30 @@
 # FormationIA2.0
+<details>
+  <summary> <b>Les astuces à utiliser</b></summary>
+  <br> 
+  <details>
+    <summary> Impression d'écran sous windows?</summary>
+   
+    Touche Windows+MAj+S
+  </details>
+  <details>
+    <summary> Insérer l'image dans GitHub</summary>
 
+    Télécharger l'image puis simple upload au point de la page wiki où l'on veut mettre l'image
+  </details>
+  <details>
+    <summary> Pour obtenir de chatGPT un format markdown à couper/coller </summary>
+  
+    "Fournis le contenu formaté en Markdown, présenté sous forme de chaîne de caractères " 
+  </details>
+  <details>
+    <summary> Reprendre une nouvelle conversation avec Harpa </summary>
+  
+    Supprimer les conversations précédentes en cliquant sur l'onglet "H"  en haut à gauche, puis  <b>"DELETE ALL"</b>, puis <b></b>New Chat</b>    
+  </details>
+</details>
+
+ 
 ## Formation à l'IA en 2024: 
 
 Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et avancé
