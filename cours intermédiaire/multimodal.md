@@ -15,12 +15,7 @@
 - [07:03](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=423s) 🧹 Un débruitage élevé est recommandé pour les images upscale latentes pour éliminer le bruit.
 - [08:10](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=490s) ✂️ L'upscale latent peut améliorer la qualité et la précision de l'image avant d'utiliser l'ultimate upscaler pour une taille encore plus grande.
 - [**Le Workflow**](https://openart.ai/workflows/oliviosarikas/lesson-3---comfy-academy/8n40kHT7p1krLwCdihdY)
-## Transcript en temps réel
-- [00:00](https://youtu.be/k6nIxWGdrS4?t=0s) 🎙️ Création d'une transcription en temps réel à quasi-zéro latence.
-- [00:27](https://youtu.be/k6nIxWGdrS4?t=27s) 🚀 Utilisation de Fast Whisperer pour une transcription rapide en temps réel.
-- [01:36](https://youtu.be/k6nIxWGdrS4?t=96s) 💻 Configuration facile en utilisant Python et Whisper, avec des options de modèle et de langue.
-- [03:39](https://youtu.be/k6nIxWGdrS4?t=219s) 😄 Application de l'analyse de sentiment en temps réel avec GPT-4 pour des réponses positives, négatives ou neutres.
-- [05:57](https://youtu.be/k6nIxWGdrS4?t=357s) 📸 Prévisualisation de la création d'images en temps réel à partir de descriptions, utilisant Fast Whisperer et d'autres techniques.
+
 
 ## Un OCR multilingue en [colab notebook](https://colab.research.google.com/drive/17NBCTfYXp3Dr-3lXf_IHCKaCl9FgpNy_?usp=sharing)
 - Ces [performances](https://github.com/VikParuchuri/surya?tab=readme-ov-file#benchmarks)
@@ -39,3 +34,11 @@
 - La page contient des informations sur les versions récentes de la bibliothèque, des tutoriels et des informations sur l'installation.
 - Elle mentionne également des architectures de modèles prises en charge, des ensembles de données implémentés, de la documentation, et la possibilité de contribuer au projet.
 - Enfin, la page présente la licence Apache 2.0 et des informations sur la plateforme Deci pour le déploiement de modèles d'apprentissage profond.
+
+## Transcript en temps réel
+- [00:00](https://youtu.be/k6nIxWGdrS4?t=0s) 🎙️ Création d'une transcription en temps réel à quasi-zéro latence.
+- [00:27](https://youtu.be/k6nIxWGdrS4?t=27s) 🚀 Utilisation de Fast Whisperer pour une transcription rapide en temps réel.
+- [01:36](https://youtu.be/k6nIxWGdrS4?t=96s) 💻 Configuration facile en utilisant Python et Whisper, avec des options de modèle et de langue.
+- [03:39](https://youtu.be/k6nIxWGdrS4?t=219s) 😄 Application de l'analyse de sentiment en temps réel avec GPT-4 pour des réponses positives, négatives ou neutres.
+- [05:57](https://youtu.be/k6nIxWGdrS4?t=357s) 📸 Prévisualisation de la création d'images en temps réel à partir de descriptions, utilisant Fast Whisperer et d'autres techniques.
+## [Transcription voix (en anglais) -> texte avec parakeet](https://huggingface.co/spaces/nvidia/parakeet-rnnt-1.1b)
