@@ -42,3 +42,4 @@
 - [03:39](https://youtu.be/k6nIxWGdrS4?t=219s) 😄 Application de l'analyse de sentiment en temps réel avec GPT-4 pour des réponses positives, négatives ou neutres.
 - [05:57](https://youtu.be/k6nIxWGdrS4?t=357s) 📸 Prévisualisation de la création d'images en temps réel à partir de descriptions, utilisant Fast Whisperer et d'autres techniques.
 ## [Transcription voix (en anglais) -> texte avec parakeet](https://huggingface.co/spaces/nvidia/parakeet-rnnt-1.1b)
+- Meilleur que Whisper sur ce [leader board](https://huggingface.co/spaces/hf-audio/open_asr_leaderboard)
