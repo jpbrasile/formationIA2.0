@@ -12,4 +12,7 @@
 - Avec [Pinecone](https://www.pinecone.io/blog/rag-study/)
 
 - ![Capture d'écran 2024-01-17 090906](https://github.com/jpbrasile/formationIA2.0/assets/8331027/9f15f1a5-69e0-4b0a-9db5-1cfa67aea343)
+
+## Concevoir un LLM efficace pour coder
+[AlphaCodium](https://github.com/Codium-ai/AlphaCodium/tree/main) :[Premières discussions avec ChatGPT](https://chat.openai.com/share/d71b9fb2-2e41-4ec6-8219-6ecf2b8842e0)
  
