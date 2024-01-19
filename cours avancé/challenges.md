@@ -16,5 +16,6 @@
 ## Concevoir un LLM efficace pour coder
 [AlphaCodium](https://github.com/Codium-ai/AlphaCodium/tree/main) :[Premières discussions avec ChatGPT](https://chat.openai.com/share/d71b9fb2-2e41-4ec6-8219-6ecf2b8842e0)
 ### LLLM open source fait mieux que ChatGPT4 
-![Capture d'écran 2024-01-19 105926](https://github.com/jpbrasile/formationIA2.0/assets/8331027/3d135c46-d7b2-413b-a388-2624c8f080ef)
+![Capture d'écran 2024-01-19 105926](https://github.com/jpbrasile/formationIA2.0/assets/8331027/3d135c46-d7b2-413b-a388-2624c8f080ef) 
+[référence](https://www.codium.ai/blog/alphacodium-state-of-the-art-code-generation-for-code-contests/)
  
