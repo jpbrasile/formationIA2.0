@@ -18,7 +18,16 @@
 ### LLLM open source fait mieux que ChatGPT4 
 ![Capture d'écran 2024-01-19 105926](https://github.com/jpbrasile/formationIA2.0/assets/8331027/3d135c46-d7b2-413b-a388-2624c8f080ef) 
 [référence](https://www.codium.ai/blog/alphacodium-state-of-the-art-code-generation-for-code-contests/)
+### [Base du prompt](https://github.com/Codium-ai/AlphaCodium?tab=readme-ov-file) 
+First and foremost, we feel that the proposed AlphaCodium flow, with reasonable adjustments, can be used as a more general framework for other code generation tasks.
 
+Secondly, many of the design concepts, principles, and tricks we acquired in this work are broadly applicable as-is to any general code generation tasks. For example:
+
+YAML Structured output: asking the model to generate an output in YAML format, equivalent to a given Pydantic class
+Semantic reasoning via bullet points analysis: bullet points analysis encourage an in-depth understanding of the problem, and force the model to divide the output into logical semantic sections, leading to improved results
+LLMs do better when generating a modular code: when clearly asking the model to: divide the generated code into small sub-functions, with meaningful names and functionality, we observe a better-produced code, with fewer bugs, and higher success rates for the iterative fixing stages.
+Soft decisions with double validation: with a double validation process, we add an extra step where, given the generated output, the model is asked to re-generate the same output, but correct it if needed
+Leave room for exploration: since the model can be wrong, it’s better to avoid irreversible decisions, and leave room for exploration and code iterations with different possible solutions
 ### [Prompt généré par Grimoire](https://chat.openai.com/share/b20dde21-744a-4e48-b854-c422a38762ce) qui suit ce type de template:
 1. Problem Reflection
 Task: Describe the problem for {specific problem to code}.
