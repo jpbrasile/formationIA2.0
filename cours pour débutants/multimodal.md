@@ -62,3 +62,10 @@ clipchamp.com
 
   - Présentation du résultat final : un Avatar parlant créé gratuitement.
   - Instructions pour déconnecter de Google Colab après avoir terminé le processus.
+ 
+  ## Un avatar à partir de sa photo avec [Photomaker](https://photo-maker.github.io/)
+<div style="display:flex;">
+  <img src="https://github.com/jpbrasile/formationIA2.0/assets/8331027/07c95571-5e0e-4780-8938-8f91e012c679)" alt="Abby" style="width: 30%; height: auto;"/>
+  <img src="https://replicate.delivery/pbxt/cfDMVv1ILn0OKSuplUPQtwnMVYzwYGYAIDFZjDdN7EkeesckA/image_0.png" alt="et son avatar" style="width: 50%; height: auto;"/>
+</div>
+
