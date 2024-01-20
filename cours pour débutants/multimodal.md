@@ -1,3 +1,7 @@
+## Video to video avec Mootion
+![Capture d'écran 2024-01-20 151301](https://github.com/jpbrasile/formationIA2.0/assets/8331027/aa3472d7-af13-479c-842c-70d8eb91a692)
+
+
 ## Text to Speech gratuit
 - [00:00](https://www.youtube.com/watch?v=EvszOni8x8w&t=4s) 🎯 Générer des revenus sur TikTok sans montrer son visage
   - L'importance de publier au moins 5 vidéos par jour sur TikTok.
