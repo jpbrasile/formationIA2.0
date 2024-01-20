@@ -102,6 +102,44 @@
 
 [GitHub de AutoGen Studio](https://github.com/microsoft/autogen/tree/main/samples/apps/autogen-studio)
 
+## Autogen UI
+Résumé détaillé de la vidéo ["AutoGen 2.0 UI: AI-Powered Travel Agents transforming travel Industry"](https://www.youtube.com/watch?v=azT2QTSdvyA)
+
+### Introduction :
+
+#### Présentation de l'interface utilisateur AutoGen, permettant la création de chats de groupe et l'ajout de compétences à des agents virtuels pour collaborer ensemble.
+- Objectif : Créer des agents de voyage IA pour organiser des voyages de 7 jours.
+#### Configuration de l'AutoGen Studio UI :
+
+- Installation et activation d'AutoGen Studio sur Python 3.11.
+- Installation de la compétence de recherche "DougDoug Go" pour permettre aux agents de chercher des informations en ligne.
+- Lancement de l'interface utilisateur AutoGen Studio sur le port 8081.
+#### Création et configuration des agents :
+
+- Trois agents sont créés : le gestionnaire d'agents de voyage, l'expert en sélection de ville et l'agent local.
+- Chaque agent reçoit une compétence de recherche sur Internet et un message système spécifique.
+- Le gestionnaire d'agents de voyage organise l'itinéraire, la météo, les suggestions d'emballage et le budget.
+- L'expert en sélection de ville se concentre sur la météo, les événements saisonniers et autres informations locales.
+ - L'agent local fournit des informations détaillées sur les attractions, coutumes locales, événements spéciaux et recommandations d'activités quotidiennes.
+#### Création de workflows pour collaboration entre agents :
+
+- Un workflow de groupe de discussion est créé, intégrant les trois agents pour travailler ensemble.
+- Le gestionnaire de groupe de discussion coordonne l'interaction entre les agents.
+#### Démo de l'AutoGen Studio en action :
+
+- L'utilisateur demande aux agents de planifier un voyage à Londres en février 2024.
+- Les agents utilisent la compétence de recherche pour trouver des informations pertinentes sur Londres, y compris la météo, les événements et les coûts de voyage.
+- Résultat : Un itinéraire de 7 jours est généré, avec des détails sur les activités quotidiennes, le budget et les considérations météorologiques.
+#### Limitations et bugs observés :
+
+- Limitation à un maximum de neuf interactions dans l'interface utilisateur.
+- Quelques problèmes techniques avec la compétence de recherche, qui devraient être résolus dans les versions futures.
+#### Conclusion :
+
+- AutoGen 2.0 UI démontre l'efficacité des agents IA dans la planification de voyages, offrant des résultats rapides et détaillés.
+- Incitation à suivre la chaîne pour plus de vidéos similaires.
+- La vidéo montre comment AutoGen 2.0 UI utilise l'intelligence artificielle pour transformer l'industrie du voyage, en permettant une planification de voyage rapide et efficace grâce à la collaboration de plusieurs agents IA spécialisés
+
 ## CrewAI : l'alternative à AutoGen
 - [00:00](https://www.youtube.com/watch?v=qFNge4IrERk&t=0s) 🤖 [Crew AI](https://github.com/joaomdmoura/crewAI) est un nouveau framework qui permet de créer des agents et de leur assigner des tâches.
 - [00:27](https://www.youtube.com/watch?v=qFNge4IrERk&t=27s) 🚀 Vous pouvez créer un agent de recherche et un agent de rédaction avec Crew AI pour rechercher des tendances en intelligence artificielle et écrire un article.
