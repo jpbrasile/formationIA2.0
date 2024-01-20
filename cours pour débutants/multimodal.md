@@ -1,4 +1,4 @@
-## Video to video avec Mootion
+## Video to video avec [Mootion](https://www.youtube.com/watch?v=BabkaTF-kw0&t=3s)
 ![Capture d'écran 2024-01-20 151301](https://github.com/jpbrasile/formationIA2.0/assets/8331027/aa3472d7-af13-479c-842c-70d8eb91a692)
 
 
