@@ -1,3 +1,12 @@
+## Astuce pour maintenir Colab actif
+- Avec un fichier audio muet de 24 h !
+```Python
+#@title 1. Keep this tab alive to prevent Colab from disconnecting you { display-mode: "form" }
+
+#@markdown Press play on the music player that will appear below:
+%%html
+<audio src="https://oobabooga.github.io/silence.m4a" controls>
+```
 ## [Pour commencer](https://colab.research.google.com/?hl=fr) : Mixtral (sur HuggingFace) et Haystack
 - Le notebook Colab : https://colab.research.google.com/drive/15AQHnr0yshjc4Qvr4Vx3lyPHc-bCLXqj?hl=fr#scrollTo=N3K6-AzFJ2OR
 - [00:00](https://www.youtube.com/watch?v=_CBBz2lCR5U&t=0s) 📋 Présentation générale du sujet
