@@ -116,3 +116,33 @@ sentence-transformers, instructor-embeddings, llama.cpp, Ollama
 - 🌐  OpenAI and Azure OpenAI support
 - 🌳  Treesitter integration
 
+## Les meilleurs GPTs pour les programmeurs
+
+- [00:00](https://youtu.be/9OKaiPBj37M?t=0s) 🚀 Introduction aux meilleurs GPT pour les programmeurs
+
+  - Présentation des GPT utiles pour les programmeurs,
+  - Annonce des liens vers les GPT mentionnés.
+
+- [00:14](https://youtu.be/9OKaiPBj37M?t=14s) 🌐 Designer GPT : Création de sites Web simples
+
+  - Utilisation de Designer GPT pour créer des sites web,
+  - Exemple de création rapide d'un site web,
+  - Possibilité d'obtenir le code HTML du site généré.
+
+- [02:21](https://youtu.be/9OKaiPBj37M?t=141s) 📸 Screenshot to Code GPT : Conversion de captures d'écran en code HTML
+
+  - Utilisation de Screenshot to Code GPT pour convertir des captures d'écran en code HTML,
+  - Explication du processus de conversion,
+  - Démonstration de la génération de code à partir d'une capture d'écran.
+
+- [04:54](https://youtu.be/9OKaiPBj37M?t=294s) 🧠 Code Tutor : Aide à la réflexion pour résoudre des problèmes de codage
+
+  - Présentation de Code Tutor et de son approche pour aider à résoudre des problèmes de codage,
+  - Exemple d'une conversation avec Code Tutor pour comprendre les concepts de programmation,
+  - Comparaison avec d'autres GPT qui donnent des réponses immédiates.
+
+- [07:55](https://youtu.be/9OKaiPBj37M?t=475s) 📊 SC Scrape GPT : Extraction de données à partir de sites Web
+
+  - Utilisation de SC Scrape GPT pour extraire des données de sites Web,
+  - Démonstration de l'extraction de données à partir d'un site Web,
+  - Téléchargement des données extraites au format CSV.
