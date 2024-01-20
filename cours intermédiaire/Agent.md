@@ -114,6 +114,12 @@
 - [07:28](https://www.youtube.com/watch?v=qFNge4IrERk&t=448s) ✅ En suivant ces étapes, vous pouvez créer et utiliser vos propres agents Crew AI pour effectuer des tâches spécifiques en intelligence artificielle.
 
 - [**Exemples d'emploi**](https://mer.vin/2024/01/crewai-example-code/)
+  - Pour travailler avec un LLM de LM studio:
+```Python
+import os
+os.environ[OPENAI_API_KEY]="not used"
+os.environ[OPENAI_API-BASE]="http://localhost:1234.v1"
+```   
 - **Autre exemple:**
   - Je vais extraire les points clés du prochain extrait de la transcription vidéo :
   
