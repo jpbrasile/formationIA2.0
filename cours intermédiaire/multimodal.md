@@ -16,6 +16,20 @@
 - [08:10](https://www.youtube.com/watch?v=3W-_B_0F7-g&t=490s) ✂️ L'upscale latent peut améliorer la qualité et la précision de l'image avant d'utiliser l'ultimate upscaler pour une taille encore plus grande.
 - [**Le Workflow**](https://openart.ai/workflows/oliviosarikas/lesson-3---comfy-academy/8n40kHT7p1krLwCdihdY)
 
+## Tuto 4 :[Img2Img Painting in ComfyUI - Comfy Academy](https://www.youtube.com/watch?v=179OUihyihk)
+https://openart.ai/workflows/oliviosarikas/lesson-4---comfy-academy/33ECh584TbdXjPyitkff
+
+La vidéo de Comfy Academy, intitulée "Img2Img Painting in ComfyUI", est une présentation détaillée sur l'utilisation de l'intelligence artificielle (IA) pour la création d'images à partir d'autres images. Le formateur commence par expliquer comment télécharger et utiliser son flux de travail sur Open Art, en mettant l'accent sur l'aspect pratique de son atelier accessible dans le cloud sans installation nécessaire.
+
+Le cœur de la vidéo se concentre sur l'explication de son flux de travail pour transformer une image en pixels en une image latente à l'aide de l'encodage VAE. Cette technique permet de transformer de simples dessins en œuvres d'art complexes, en définissant les couleurs, la composition, et en pensant comme un artiste. L'intervenant souligne que même les dessins rudimentaires peuvent être utilisés pour guider l'IA dans la création d'images détaillées.
+
+L'exemple utilisé pour illustrer ce processus est un dessin simpliste d'un ange avec des ailes, où l'intervenant montre comment varier les détails du dessin, comme la texture des ailes, pour obtenir des résultats différents. Il met en lumière l'importance du réglage du niveau de débruitage (D noise) pour contrôler la liberté donnée à l'IA dans l'interprétation de l'image.
+
+La vidéo présente également des exemples de rendus basés sur des dessins et des prompts textuels variés, montrant l'effet des modifications apportées sur les résultats finaux. L'intervenant encourage à expérimenter avec différents dessins et paramètres pour explorer les capacités créatives de l'outil.
+
+Ensuite, il introduit une technique alternative utilisant des gradients comme entrées d'image, expliquant comment cela peut influencer la température de couleur et l'ambiance des images générées. L'utilisation de mélanges de latents et d'autres techniques permet de manipuler davantage les résultats.
+
+En conclusion, la vidéo met en évidence la puissance et la flexibilité de l'utilisation de l'IA pour la création artistique, en offrant des contrôles créatifs étendus au-delà des capacités de modèles standard. L'intervenant termine en anticipant un prochain tutoriel sur l'utilisation des entrées d'images latentes pour des créations plus avancées, et encourage les spectateurs à expérimenter avec les techniques présentées.
 
 ## Un OCR multilingue en [colab notebook](https://colab.research.google.com/drive/17NBCTfYXp3Dr-3lXf_IHCKaCl9FgpNy_?usp=sharing)
 - Ces [performances](https://github.com/VikParuchuri/surya?tab=readme-ov-file#benchmarks)
