@@ -74,7 +74,7 @@ clipchamp.com
 </div>
 
 ## Création de vidéo:
-- [00:00](https://www.youtube.com/watch?v=m_zpmwHRcVQ&t=0s) 📹 Présentation de Vidnoz AI
+- [00:00](https://www.youtube.com/watch?v=m_zpmwHRcVQ&t=0s) 📹 Présentation de [Vidnoz AI](https://www.vidnoz.com/)
 
   - Vidnoz AI est un outil gratuit de création de vidéos en ligne qui utilise l'intelligence artificielle pour générer des vidéos captivantes à partir de divers types de contenu.
   - Il propose plus de 300 modèles professionnels, plus de 300 avatars AI avec synchronisation labiale parfaite et gestes, ainsi que plus de 470 voix AI ultra-réalistes dans différentes langues et accents.
