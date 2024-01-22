@@ -28,3 +28,10 @@ Invitation à l'Expérimentation: Encouragement à tester Open Interpreter et à
 ## Fonctionne en local avec interpreter --local lancé dans un terminal avec wizardmath-7b-v1.1.Q6_K.gguf running dans lm studio
 - Nous avons fait :choco install sass dans un PowerShell mode administrateur
 ## Colab : 
+- An interactive demo is also available on Google Colab:
+[Open In Colab](https://colab.research.google.com/drive/1WKmRXZgsErej2xUriKzxrEAXdxMSgWbb?usp=sharing)
+
+- Along with an example voice interface, inspired by Her:
+[Open In Colab](https://colab.research.google.com/drive/1NojYGHDgxH6Y1G1oxThEBBb2AtyODBIK)
+
+
