@@ -134,3 +134,7 @@ clipchamp.com
   - Sélection de la couleur et du matériau du vêtement à ajouter.
   - Réglage de la force de débruitage pour améliorer la qualité de la modification.
   - Combinaison des résultats pour obtenir un changement de vêtements réaliste.
+ 
+  ## [Créer des illusions](https://huggingface.co/spaces/AP123/IllusionDiffusion)
+  [emilie en village médiéval](![WhatsApp Image 2024-01-22 at 07 51 53](https://github.com/jpbrasile/formationIA2.0/assets/8331027/ef31722a-e140-488b-8ac1-5e6a9e7dca4b)
+)
