@@ -16,6 +16,6 @@
 
 ![Capture d'écran 2024-01-22 141630](https://github.com/jpbrasile/formationIA2.0/assets/8331027/58ee0298-aa10-44c2-b83e-1e2ca77eeac9)
 
-- Taskweaver a la capacité de lire des fichiers locaux. En fait il crée le code ad hoc pour y arriver ! Malheureusement il perd du temps à itérer car les bibliothèques requises ne sont pas charger au départ ! Il perd donc quelques itérations à le constater et à faire les pip install nécessaire.
-- Donc bien que très lent , taskweaver est très performant car s'il n'a pas une fonctionnalité il crée le code pour s'en doter et l'exécute ensuite...
-- Il semble dans la doc que des codes puissent être mis en outils
+- Taskweaver a la capacité de lire des fichiers locaux. En fait il crée le code ad hoc pour y arriver ! Malheureusement il perd du temps à itérer car les bibliothèques requises ne sont pas charger au départ ! Il perd donc quelques itérations à le constater et à faire les "pip install" nécessaires.
+- Donc bien que très lent , taskweaver a une fonctionnalité intéressante: il crée le code pour se donner des fonctionnalités manquantes  et l'exécute ensuite...
+- Des plugins (codes disponibles pour être exécuté en fonction du contexte) existe aussi. 
