@@ -1,4 +1,24 @@
 # FormationIA2.0
+
+<details>
+<summary><b>Qu'est-ce que l'IA peut vous rapporter ?</b></summary>
+<p>Ce document est intéressant car il explore l'impact réel des Modèles de Langage à Grande Échelle (LLM), comme GPT-4, sur des tâches complexes et riches en connaissances. L'étude, menée avec le Boston Consulting Group, impliquait 758 consultants et visait à comprendre comment l'IA peut améliorer la performance humaine dans un contexte professionnel.</p>
+<p>Principales conclusions de l'étude :</p>
+<ul>
+    <li><strong>Productivité et Qualité Accrues</strong> : Les consultants utilisant l'IA étaient nettement plus productifs et produisaient un travail de meilleure qualité. En moyenne, ils ont complété 12,2 % de tâches en plus et ce, 25,1 % plus rapidement. De plus, la qualité de leur travail était supérieure de plus de 40 % par rapport à ceux n'utilisant pas l'IA.</li>
+    <li><strong>Bénéfices à Tous les Niveaux de Compétences</strong> : L'étude a révélé que l'augmentation par l'IA profitait significativement aux consultants à tous les niveaux de compétence. Ceux en dessous du seuil de performance moyen ont vu leur performance augmenter de 43 %, tandis que ceux au-dessus ont amélioré de 17 %.</li>
+    <li><strong>Limites de l'IA</strong> : L'étude a également identifié des tâches actuellement hors de portée de l'IA. Pour ces tâches, les consultants utilisant l'IA étaient 19 points de pourcentage moins susceptibles de produire des solutions correctes par rapport à ceux sans accès à l'IA.</li>
+    <li><strong>Modèles d'Intégration de l'IA</strong> : L'étude a observé deux modèles distincts dans la façon dont les consultants intégraient l'IA dans leur travail :
+        <ul>
+            <li><strong>Centaures</strong> : Certains consultants agissaient comme des Centaures, divisant les tâches entre eux et l'IA, déléguant certaines activités à l'IA.</li>
+            <li><strong>Cyborgs</strong> : D'autres agissaient plus comme des Cyborgs, intégrant complètement leur flux de travail avec l'IA et interagissant continuellement avec elle.</li>
+        </ul>
+    </li>
+</ul>
+<p>Pour plus de détails, consultez le document complet : <a href="https://www.hbs.edu/ris/Publication%20Files/24-013_d9b45b68-9e74-42d6-a1c6-c72fb70c7282.pdf">Lien vers l'étude</a>.</p>
+</details>
+
+
 <details>
   <summary> <b>Les astuces à utiliser</b></summary>
   <br> 
@@ -24,7 +44,7 @@
   </details>
 </details>
 
- 
+
 ## Formation à l'IA en 2024: 
 
 Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et avancé
