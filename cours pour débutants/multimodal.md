@@ -73,3 +73,37 @@ clipchamp.com
   <img src="https://replicate.delivery/pbxt/cfDMVv1ILn0OKSuplUPQtwnMVYzwYGYAIDFZjDdN7EkeesckA/image_0.png" alt="et son avatar" style="width: 50%; height: auto;"/>
 </div>
 
+## Création de vidéo:
+- [00:00](https://www.youtube.com/watch?v=m_zpmwHRcVQ&t=0s) 📹 Présentation de Vidnoz AI
+
+  - Vidnoz AI est un outil gratuit de création de vidéos en ligne qui utilise l'intelligence artificielle pour générer des vidéos captivantes à partir de divers types de contenu.
+  - Il propose plus de 300 modèles professionnels, plus de 300 avatars AI avec synchronisation labiale parfaite et gestes, ainsi que plus de 470 voix AI ultra-réalistes dans différentes langues et accents.
+
+- [01:06](https://www.youtube.com/watch?v=m_zpmwHRcVQ&t=66s) 📝 Étapes pour utiliser Vidnoz AI
+
+  - Étape 1 : Inscrivez-vous sur le site et connectez-vous.
+  - Étape 2 : Choisissez un modèle et une taille de vidéo, sélectionnez un avatar AI, personnalisez le fond, ajoutez des stickers, de la musique et des sous-titres.
+  - Étape 3 : Écrivez le script, enregistrez votre propre voix ou choisissez parmi les voix AI disponibles.
+  - Étape 4 : Générez la vidéo et téléchargez-la en résolution 720p gratuite ou partagez-la sur les réseaux sociaux.
+
+- [04:11](https://www.youtube.com/watch?v=m_zpmwHRcVQ&t=251s) 🎬 Résultats impressionnants
+
+  - Vidnoz AI génère rapidement des vidéos de qualité avec une variété d'options personnalisables.
+  - Vous pouvez télécharger la vidéo gratuitement en résolution 720p et la partager sur les réseaux sociaux.
+  - Des plans payants offrent encore plus de fonctionnalités et une qualité vidéo supérieure sans filigrane.
+ 
+    ![Capture d'écran 2024-01-22 105106](https://github.com/jpbrasile/formationIA2.0/assets/8331027/83640208-481c-4c76-9826-6f81adab3ab3)
+
+- Start AI video creation easily and for free:
+
+  - 3 Mins per Day
+  
+  - 300+ AI Avatars
+  
+  - 170+ Voices Available
+  
+  - 300+ Video Templates
+
+- 720P Export Resolution
+
+- Max 2,000 Characters per Scene
