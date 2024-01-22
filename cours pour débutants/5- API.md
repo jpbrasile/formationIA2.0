@@ -192,7 +192,17 @@ Ces outils couvrent un large éventail de fonctionnalités, de la génération d
   - [Cassette AI](https://cassetteai.com/dashboard) est un outil utile pour ceux qui ne sont pas des experts en musique.
 
 
+Voici la liste des outils AI mentionnés dans le contenu de la page web, avec leur fonction respective :
 
+1. [Adobe Speech Enhancer](https://podcast.adobe.com/enhance?ref=blog.alexanderfyoung.com): Nettoie l'audio en éliminant l'écho ou le bruit de fond des enregistrements audio.
+2. [Audiobox](https://audiobox.metademolab.com/?ref=blog.alexanderfyoung.com): Génère des voix et des effets sonores à partir d'entrées vocales et de textes en langage naturel, permettant la création d'audio personnalisé.
+3. [Mubert](https://mubert.com/?ref=blog.alexanderfyoung.com): Génère de la musique à partir de texte, avec des options pour choisir la longueur et le type de piste musicale.
+4. [Soundraw](https://soundraw.io/?ref=blog.alexanderfyoung.com): Utilise l'IA pour générer de la musique en fonction de l'ambiance ou du genre souhaité.
+5. [Voicemod AI](https://www.voicemod.net/text-to-song?ref=blog.alexanderfyoung.com): Offre des soundboards, un générateur de texte en parole, et des modificateurs de voix pour des échanges en ligne plus amusants.
+6. [Suno AI](https://app.suno.ai/): Génère de la musique à partir de texte avec une interface conviviale.
+7. [Vocal Remover](https://vocalremover.org/?ref=blog.alexanderfyoung.com): Fournit une suite d'outils audio AI gratuits pour améliorer l'audio, extraire la parole d'une piste audio mixte, etc.
+
+Veuillez noter que les liens sont basés sur le contenu de la page Web que vous avez fourni.
 
 
  - 
