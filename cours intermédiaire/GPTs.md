@@ -146,3 +146,33 @@ sentence-transformers, instructor-embeddings, llama.cpp, Ollama
   - Utilisation de SC Scrape GPT pour extraire des données de sites Web,
   - Démonstration de l'extraction de données à partir d'un site Web,
   - Téléchargement des données extraites au format CSV.
+ 
+  
+```text
+🛠 Using browser...
+```
+
+```text
+🛠 Using browser...
+```
+Je m'excuse, il semble y avoir eu une erreur lors de ma tentative de faire défiler la page. Cependant, j'ai déjà extrait des informations sur certains des GPT personnalisés mentionnés dans l'article. Voici la liste des GPTs mentionnés avec leur nom et ce qu'ils font :
+
+1. [Image Generator](https://chat.openai.com/g/g-QOowR3q4d-image-generation-assistant) : Un GPT spécialisé dans la création d'images en se basant sur les descriptions et les suggestions de l'utilisateur. Il guide l'utilisateur étape par étape dans la conception d'une image.
+
+2. [AI Cooking Assistant GPT]((https://chat.openai.com/g/g-48bv2Thom-ai-cooking-assistant)) : Un GPT personnalisé conçu pour suggérer des recettes, donner des conseils de cuisson et aider à réaliser des plats délicieux. Il peut générer automatiquement des illustrations des plats imaginés.
+
+3. [Ai PDF](https://chat.openai.com/g/g-V2KIUZSj0-ai-pdf)) : Ce GPT est conçu pour analyser les fichiers PDF que vous lui confiez et répondre à vos questions en se basant sur les informations du document.
+
+4. [Convert Anything](https://chat.openai.com/g/g-kMKw5tFmB-convert-anything) : Comme son nom l'indique, ce GPT est capable de convertir n'importe quel type de fichier dans le format souhaité par l'utilisateur.
+
+5. [ScreenShot To Code GPT](https://chat.openai.com/g/g-hz8Pw1quF-screenshot-to-code-gpt) : Un GPT spécialisé dans la conversion d'images en lignes de code HTML. Il peut prendre une capture d'écran d'un site web et générer le code correspondant.
+
+6. [Planty](https://chat.openai.com/g/g-6PKrcgTBL-planty) : Un GPT conçu pour fournir des conseils et des informations sur le jardinage. Il peut aider à prendre soin des plantes en fonction de leurs besoins spécifiques.
+
+7. [Scholar GPT](https://chat.openai.com/g/g-kZ0eYXlJe-scholar-gpt) : Un GPT spécialisé dans l'assistance à la recherche. Il peut fournir des analyses approfondies, des recherches académiques, résoudre des problèmes mathématiques complexes et traiter des données provenant de nombreuses sources.
+
+8. [Travel Planner](https://chat.openai.com/g/g-veMpTb39A-global-travel-planner) : Ce GPT peut créer un programme de voyage complet en fonction de vos préférences, de votre budget et des endroits que vous souhaitez visiter.
+
+9. [GPT Finder](https://chat.openai.com/g/g-P6MdNuLzH-gpt-finder) : Un GPT conçu pour rechercher d'autres GPT dans la boutique d'OpenAI en fonction de vos besoins spécifiques.
+
+Cela devrait vous donner une idée des GPT personnalisés mentionnés dans l'article et de ce qu'ils sont capables de faire. Si vous avez besoin de plus d'informations sur l'un de ces GPTs, n'hésitez pas à me le demander.
