@@ -107,3 +107,30 @@ clipchamp.com
 - 720P Export Resolution
 
 - Max 2,000 Characters per Scene
+
+  ## Changer les vêtements:
+  - [00:00](https://youtu.be/FiIyV7jw4SU?t=0s) 📸 Introduction et présentation du processus de changement de vêtements avec l'IA
+
+  - L'objectif est d'apprendre à changer les vêtements d'une image en utilisant la diffusion stable et l'inpainting.
+  - Le processus est simple et puissant, et il sera expliqué en détail dans la vidéo.
+  - L'importance de l'utilisation de modèles d'inpainting pour améliorer l'expérience.
+
+- [03:25](https://youtu.be/FiIyV7jw4SU?t=205s) 🖌️ Processus de modification des vêtements
+
+  - Utilisation de l'onglet "Image à image" et de l'onglet "Inpaint" pour commencer le processus.
+  - Utilisation de modèles d'inpainting pour masquer la zone à modifier.
+  - Choix de styles prédéfinis pour les vêtements, tels que cuir, soie, velours, etc.
+  - Ajustement des paramètres tels que la force de l'inpainting et le bruit latent en fonction des résultats souhaités.
+
+- [08:06](https://youtu.be/FiIyV7jw4SU?t=486s) ✨ Modification de la couleur et du matériau des vêtements
+
+  - Changement de la couleur des vêtements en utilisant le bruit latent au lieu de l'original.
+  - Expérimentation avec différents styles de vêtements pour obtenir des résultats variés.
+  - Ajustement de la force de débruitage pour obtenir le bon équilibre entre la structure et le nouveau style.
+  
+- [11:21](https://youtu.be/FiIyV7jw4SU?t=681s) ➕ Ajout de nouveaux vêtements
+
+  - Utilisation de l'onglet "Inpainting Sketch" pour ajouter de nouveaux vêtements à une image.
+  - Sélection de la couleur et du matériau du vêtement à ajouter.
+  - Réglage de la force de débruitage pour améliorer la qualité de la modification.
+  - Combinaison des résultats pour obtenir un changement de vêtements réaliste.
