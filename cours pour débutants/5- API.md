@@ -1,3 +1,7 @@
+## Il y a beaucoupde lien sur cette page mais tu eut demander à Harpa celui qui te convient:
+![Capture d'écran 2024-01-22 091255](https://github.com/jpbrasile/formationIA2.0/assets/8331027/65042fd5-a959-46fd-8758-da92c140bda2)
+
+
 ## Avec perplexity:
 Avec Wolfram Alpha, vous pouvez apprendre et réaliser une multitude de tâches, notamment dans les domaines des mathématiques, de la programmation, et de l'accès à des données factuelles. Voici quelques exemples de ce que vous pouvez faire avec Wolfram Alpha :
 
