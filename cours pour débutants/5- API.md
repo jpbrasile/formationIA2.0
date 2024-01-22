@@ -124,7 +124,64 @@ Ces outils couvrent un large éventail de fonctionnalités, de la génération d
 ) révolutionne la programmation avec des modèles de langage en permettant des solutions plus complexes et efficaces pour une gamme de tâches d'IA et de NLP.
   
 
+- [00:01](https://www.youtube.com/watch?v=Pn2T77pd7Eo&t=1s) 🖼️ Nouvel outil d'IA pour générer des images personnalisées
+  - demo realistic: https://huggingface.co/spaces/TencentARC/PhotoMaker
+  - demo style: https://huggingface.co/spaces/TencentARC/PhotoMaker-Style
+  - sur [replicate](https://replicate.com/jd7h/photomaker)
+  - sur [Huggingface](https://huggingface.co/spaces/TencentARC/PhotoMaker-Style)
+  - Cet outil utilise la diffusion stable pour créer des images de vous dans n'importe quelle situation.
 
+  - Il est actuellement gratuit et ne nécessite qu'une seule image de votre visage.
+
+  - Il fonctionne sans avoir besoin des 10 images nécessaires auparavant avec Dreambooth.
+
+- [02:21](https://www.youtube.com/watch?v=Pn2T77pd7Eo&t=141s) 📊 Microsoft [Copilot Pro](https://blogs.microsoft.com/blog/2024/01/15/bringing-the-full-power-of-copilot-to-more-people-and-businesses/) et création de GPT personnalisés
+
+  - Microsoft Copilot Pro offre une intégration native dans la suite Office 365, facilitant l'accès à GPT-4.
+
+  - Il propose des suggestions de prompts et une meilleure intégration pour les utilisateurs débutants.
+
+  - Microsoft envisage également de créer des versions personnalisées de GPT-4 avec un abonnement mensuel.
+
+- [03:44](https://www.youtube.com/watch?v=Pn2T77pd7Eo&t=224s) 💡 Utilisation de GPT pour la génération d'idées créatives
+
+  - Un [GPT spécifique](https://chat.openai.com/g/g-JaiQEuHRU-innovator) permet une génération d'idées plus approfondie en posant des questions et en utilisant des outils de recherche.
+
+  - Il est utile pour l'idéation et la création d'idées originales.
+
+  - Cette fonction est disponible pour les utilisateurs de chat GPT Plus.
+
+- [04:42](https://www.youtube.com/watch?v=Pn2T77pd7Eo&t=282s) 🎨 Texte vers modèle 3D avec Luma Labs Genie
+
+  - [Luma Labs Genie ](https://lumalabs.ai/genie?view=create)permet de créer des modèles 3D à partir de simples prompts textuels.
+
+  - Bien que non photoréaliste, il offre une option intéressante pour la création de modèles 3D stylisés.
+
+  - Il peut être utilisé pour des applications futures avec la réalité étendue (XR).
+
+- [05:38](https://www.youtube.com/watch?v=Pn2T77pd7Eo&t=338s) 📽️ Neira Studio : Création de vidéos avec avatars AI
+
+  - Neira Studio offre des outils AI pour créer des vidéos avec des avatars AI personnalisés.
+
+  - Il permet de transformer du texte en vidéo avec des avatars parlants dans plus de 140 langues.
+
+  - Neira Studio propose également une fonction de synthèse vocale pour des voix engageantes.
+
+- [07:05](https://www.youtube.com/watch?v=Pn2T77pd7Eo&t=425s) 📹 Expansion vidéo avec IA grâce à [Pika](https://pika.art/)
+
+  - Pika propose une fonction de "video expansion" avec IA qui transforme les vidéos verticales en horizontales.
+
+  - Cette fonction est payante, mais elle génère trois fois le contenu de la vidéo verticale originale.
+
+  - L'efficacité de cette fonction dépend du cas d'utilisation.
+
+- [08:03](https://www.youtube.com/watch?v=Pn2T77pd7Eo&t=483s) 🎶 Création de musique avec Cassette AI
+
+  - Cassette AI est un générateur de musique AI qui crée de la musique originale.
+
+  - Il propose des suggestions de genres musicaux pour faciliter l'utilisation, y compris la création de musique copyright-free.
+
+  - [Cassette AI](https://cassetteai.com/dashboard) est un outil utile pour ceux qui ne sont pas des experts en musique.
 
 
 
