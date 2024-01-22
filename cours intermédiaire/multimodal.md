@@ -1,3 +1,8 @@
+## [Ctrl C ctrl V !](https://openart.ai/workflows/home?appSort=featured) 
+![Capture d'écran 2024-01-22 092344](https://github.com/jpbrasile/formationIA2.0/assets/8331027/674dc59e-bdcf-41cf-9065-d55c5c894a72)
+
+## Transforme ta video en un avatar animé !
+The [video](https://www.youtube.com/watch?v=mHDRDHQjVlo&t=22s) is a  tutorial on using a complex AI-driven workflow for creating stable, high-quality AI-generated videos, specifically focusing on the utilization of stable diffusion and DV (Deep Vision) POS (Pose Estimation) inputs.
 ## ComfyUI
 ### Stable Diffusion Animation
 - [00:00](https://www.youtube.com/watch?v=Sg3KgA3_fPU&t=0s) 📹 Le tutoriel explique comment utiliser Stable Diffusion Animation pour changer facilement les arrière-plans et les tenues des personnages dans une animation.
