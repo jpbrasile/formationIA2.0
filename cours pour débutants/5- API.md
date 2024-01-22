@@ -159,6 +159,8 @@ Ces outils couvrent un large éventail de fonctionnalités, de la génération d
 
   - [Luma Labs Genie ](https://lumalabs.ai/genie?view=create)permet de créer des modèles 3D à partir de simples prompts textuels.
 
+<iframe src="https://example.com/3d-viewer.html?model="300a2dde1e43_755154d66aa4_a_cat_on_a_chair__c.glbL" width="640" height="480"></iframe>
+
   - Bien que non photoréaliste, il offre une option intéressante pour la création de modèles 3D stylisés.
 
   - Il peut être utilisé pour des applications futures avec la réalité étendue (XR).
