@@ -158,8 +158,9 @@ Ces outils couvrent un large éventail de fonctionnalités, de la génération d
 - [04:42](https://www.youtube.com/watch?v=Pn2T77pd7Eo&t=282s) 🎨 Texte vers modèle 3D avec Luma Labs Genie
 
   - [Luma Labs Genie ](https://lumalabs.ai/genie?view=create)permet de créer des modèles 3D à partir de simples prompts textuels.
-<iframe src="https://lumalabs.ai/genie?view=one&one=42e9b01d-0ae6-4fb4-8d0b-c54a3a9a7c98" width="800" height="600" frameborder="0"></iframe>
+    
 
+[vue 3D](https://lumalabs.ai/genie?view=one&one=42e9b01d-0ae6-4fb4-8d0b-c54a3a9a7c98)
 
 
   - Bien que non photoréaliste, il offre une option intéressante pour la création de modèles 3D stylisés.
