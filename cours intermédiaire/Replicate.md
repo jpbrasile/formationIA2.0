@@ -38,7 +38,7 @@ output = replicate.run(
         "top_k": 50,
         "top_p": 0.9,
         "prompt": "équation de la magnétostatique reliant le potentiel vecteur magnétique à la densité de courant. Raisonne pas à pas mais soit très concis: les formules sans commentaire",
-        "temperature": 0.6,
+        "temperature": 0.1,
         "max_new_tokens": 512,
         "prompt_template": "<s>[INST] {prompt} [/INST]"
     }
