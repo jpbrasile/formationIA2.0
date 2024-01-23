@@ -51,7 +51,7 @@ print(output_string)
 ```Python
 python run app.py
 ```
-et on obtient en sortie:
+et on obtient en sortie un résultat correct:
 ```
 La magnétostatique est décrite par l'équation de Maxwell-Ampère, qui relie le champ magnétique à la densité de courant :
 
