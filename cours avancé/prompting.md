@@ -63,4 +63,7 @@ https://github.com/stanfordnlp/dspy
 
   - DSPy est un projet open source, et vous pouvez contribuer en consultant le code source et la documentation.
   - Vous pouvez commencer par explorer la documentation et les problèmes ouverts sur GitHub pour trouver des moyens de contribuer.
-  
+ 
+  ### Exemple de génération automatique de prompt:
+  ![Capture d'écran 2024-01-23 100345](https://github.com/jpbrasile/formationIA2.0/assets/8331027/086b56c8-3fe0-4ce4-98ef-b6a4f2261a9a)
+
