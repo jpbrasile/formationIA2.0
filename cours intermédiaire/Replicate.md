@@ -14,49 +14,62 @@ Ce guide vous montrera comment installer et utiliser Replicate avec des exemples
 
 ## Étape 2 : Copiez Votre Clé API Replicate
 
-3. Après avoir créé votre compte, copiez votre clé API Replicate.
+3. Après avoir créé votre compte, copiez votre clé API Replicate dans un endroit sûr
 
-## Étape 3 : Installez le Client OpenAI
-
-4. Installez le client OpenAI si vous ne l'avez pas déjà. Vous pouvez l'installer en utilisant pip :
-
+## Étape 3 : Variable d'environnement:
+Dans un terminal powerShellrenseigner la variable avec votre clef
+```
+$env:REPLICATE_API_TOKEN = "r8....me" 
+```
+## Étape 4 : Exemple de code python: app.py :
    ```python
-   pip install openai
-   ```
+# Utilise l'environnement conda "replicate":
 
-## Étape 4 : Configurez Votre Clé API
+#conda create --name replicate python=3.9
+#conda activate replicate
+#pip install replicate
+# dans un terminal powershell : 
+#$env:REPLICATE_API_TOKEN = "r8_A7on1VwSgmGOPEjhdhRMUFS7TQUGWQy1QG9me"
 
-5. Utilisez votre clé API Replicate pour configurer le client OpenAI. Remplacez `"VOTRE_CLÉ_API_REPLICATE"` par votre propre clé API.
+import replicate
+output = replicate.run(
+    "mistralai/mixtral-8x7b-instruct-v0.1:cf18decbf51c27fed6bbdc3492312c1c903222a56e3fe9ca02d6cbe5198afc10",
+    input={
+        "top_k": 50,
+        "top_p": 0.9,
+        "prompt": "équation de la magnétostatique reliant le potentiel vecteur magnétique à la densité de courant. Raisonne pas à pas mais soit très concis: les formules sans commentaire",
+        "temperature": 0.6,
+        "max_new_tokens": 512,
+        "prompt_template": "<s>[INST] {prompt} [/INST]"
+    }
+)
+output_string = ''.join(output)
+print(output_string)
+```
 
-   ```python
-   import os
-   from openai import OpenAI
+## On lance le code dans un terminal avec
+```Python
+python run app.py
+```
+et on obtient en sortie:
+```
+La magnétostatique est décrite par l'équation de Maxwell-Ampère, qui relie le champ magnétique à la densité de courant :
 
-   client = OpenAI(
-       api_key="VOTRE_CLÉ_API_REPLICATE",
-       base_url="https://openai-proxy.replicate.com/v1",
-   )
-   ```
+ ∇ x B = μ₀J
 
-## Étape 5 : Utilisez le Modèle mixtral-8x7b-instruct-v0.1
+où B est le champ magnétique, J est la densité de courant, et μ₀ est la perméabilité magnétique du vide.
 
-6. Vous pouvez maintenant utiliser le modèle mistralai/mixtral-8x7b-instruct-v0.1 pour des tâches de traitement du langage naturel. Voici un exemple de demande au modèle :
+En utilisant le potentiel vecteur A défini par B = ∇ x A, on peut réécrire l'équation de Maxwell-Ampère sous la forme :
 
-   ```python
-   chat_completion = client.chat.completions.create(
-       messages=[
-           {"role": "system", "content": "Vous êtes un pirate."},
-           {"role": "user", "content": "Racontez-moi une blague."},
-       ],
-       model="mistralai/mixtral-8x7b-instruct-v0.1",
-   )
+∇ x (∇ x A) = μ₀J
 
-   print(chat_completion.choices[0].message.content)
-   ```
+En utilisant l'identité vectorielle ∇ x (∇ x A) = ∇ (∇ . A) - ∇²A, on obtient :
 
-## Étape 6 : Exécutez Votre Code
+- ∇²A = - μ₀J
 
-7. Exécutez votre code Python pour interagir avec le modèle Llama 2 70B. Vous obtiendrez des réponses en fonction de vos requêtes.
+Cette équation est l'équation de Poisson pour le potentiel vecteur A. Dans des situations où il n'y a pas de charges magnétiques (ce qui est généralement le cas en magnétostatique), on peut montrer que le terme ∇ (∇ . A) s'annule, et on obtient l'équation de Poisson simplifiée :
 
-C'est tout ! Vous êtes maintenant prêt à utiliser Replicate avec le modèle Llama 2 70B pour le traitement du langage naturel.
+- ∇²A = μ₀J
 
+Cette équation relie directement le potentiel vecteur A à la densité de courant J en magnétostatique.
+```
