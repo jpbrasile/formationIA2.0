@@ -55,21 +55,21 @@ et on obtient en sortie:
 ```
 La magnétostatique est décrite par l'équation de Maxwell-Ampère, qui relie le champ magnétique à la densité de courant :
 
- ∇ x B = μ₀J
+∇ x B = μ₀J
 
-où B est le champ magnétique, J est la densité de courant, et μ₀ est la perméabilité magnétique du vide.
+où B est le champ magnétique, J est la densité de courant, et μ₀ est la perméabilité du vide.
 
-En utilisant le potentiel vecteur A défini par B = ∇ x A, on peut réécrire l'équation de Maxwell-Ampère sous la forme :
+En utilisant le potentiel vecteur magnétique A, défini par B = ∇ x A, on peut réécrire l'équation de Maxwell-Ampère sous la forme :   
 
 ∇ x (∇ x A) = μ₀J
 
-En utilisant l'identité vectorielle ∇ x (∇ x A) = ∇ (∇ . A) - ∇²A, on obtient :
+En utilisant une identité vectorielle, on obtient l'équation de la magnétostatique en termes de A :
 
-- ∇²A = - μ₀J
+∇ (∇ . A) - ∇²A = μ₀J
 
-Cette équation est l'équation de Poisson pour le potentiel vecteur A. Dans des situations où il n'y a pas de charges magnétiques (ce qui est généralement le cas en magnétostatique), on peut montrer que le terme ∇ (∇ . A) s'annule, et on obtient l'équation de Poisson simplifiée :
+Comme il n'y a pas de charge monopolaire magnétique, on a ∇ . B = ∇ . (∇ x A) = 0, ce qui implique que ∇ . A est une constante. On peut donc choisir la jauge de Coulomb, où cette constante est nulle, ce qui simplifie l'équation en :
 
 - ∇²A = μ₀J
 
-Cette équation relie directement le potentiel vecteur A à la densité de courant J en magnétostatique.
+Cette équation montre que le potentiel vecteur magnétique A est directement proportionnel à la densité de courant J
 ```
