@@ -20,3 +20,4 @@ Cursor.sh est un éditeur de code orienté IA avec les fonctionnalités suivante
 6. Pour une transition en douceur, migrez vos extensions VSCode existantes en utilisant la fonction de migration en un clic.
 
 
+![Capture d'écran 2024-01-23 162151](https://github.com/jpbrasile/formationIA2.0/assets/8331027/199a5595-23a8-4f90-a871-c0b7aa657371)
