@@ -138,3 +138,57 @@ clipchamp.com
   ## [Créer des illusions](https://huggingface.co/spaces/AP123/IllusionDiffusion)
   [emilie en village médiéval](![WhatsApp Image 2024-01-22 at 07 51 53](https://github.com/jpbrasile/formationIA2.0/assets/8331027/ef31722a-e140-488b-8ac1-5e6a9e7dca4b)
 )
+
+### [FOOCUS](https://www.art-with-stable-diffusion.com/stable-diffusion-quick-start-guide/) dans Colab! 
+
+Avec Fooocus.ai, les utilisateurs peuvent s'engager dans une variété d'activités liées à la création d'images alimentée par l'IA :
+
+1. **Création d'images sans effort** : Fooocus.ai est conçu pour simplifier le processus de génération d'images à l'aide de l'IA. Il permet aux utilisateurs de créer des images rapidement et facilement sans avoir besoin d'ajustements manuels, en se concentrant sur l'utilisation de prompts pour guider le processus de création d'images[1].
+
+2. **Échange de visages** : La plateforme offre une technologie d'échange de visages sans soudure et réaliste, qui peut être utilisée pour créer du contenu numérique personnalisé pour des projets créatifs et des récits visuels.
+
+3. **Génération de texte en image** : Les utilisateurs peuvent saisir du texte dans le Générateur de texte en image, et Fooocus AI analysera le contexte pour générer des images correspondantes. Cette fonctionnalité est utile pour créer des visuels à partir de citations, de titres ou d'autres morceaux de texte.
+
+4. **Options de personnalisation** : Fooocus AI propose une large gamme de styles et de thèmes, permettant aux utilisateurs de sélectionner et de personnaliser leurs images pour correspondre à leur vision. Des ajustements peuvent être apportés aux couleurs, aux polices et aux mises en page.
+
+5. **Interface conviviale** : La plateforme est conçue avec une interface utilisateur intuitive, ce qui la rend accessible aux utilisateurs pour naviguer et se concentrer sur leur travail créatif sans distractions techniques.
+
+6. **Utilisation de ses propres points de contrôle** : Pour les utilisateurs avancés, Fooocus met l'accent sur la possibilité d'utiliser leurs propres points de contrôle, ce qui peut être important pour ceux qui veulent avoir plus de contrôle sur le processus de génération d'images.
+
+7. **Développement continu** : À mesure que la technologie évolue, Fooocus AI est continuellement mis à jour avec de nouvelles fonctionnalités et avancées pour améliorer l'expérience créative.
+
+Fooocus.ai représente un outil qui s'adresse aussi bien aux utilisateurs novices qu'expérimentés qui souhaitent générer de l'art et des images alimentés par l'IA, en mettant l'accent sur la facilité d'utilisation et la liberté créative[1].
+
+Citations:
+[1] https://aws.amazon.com/marketplace/pp/prodview-4xzjmoi4f3ml4
+
+- [00:00](https://www.youtube.com/watch?v=vvjcdGi8DUY&t=0s) 📺 Introduction à l'utilisation de Stable Diffusion dans Google Colab avec Focus
+
+  - Introduction à l'utilisation de Stable Diffusion avec Focus dans Google Colab.
+
+- [00:23](https://www.youtube.com/watch?v=vvjcdGi8DUY&t=23s) 📲 Connexion à l'environnement d'exécution et exécution de la première cellule
+
+  - Connexion à l'environnement d'exécution.
+  - Exécution de la première cellule pour obtenir les liens nécessaires.
+
+- [01:11](https://www.youtube.com/watch?v=vvjcdGi8DUY&t=71s) 📂 Chargement des modèles depuis Google Drive
+
+  - Préparation et chargement des modèles depuis Google Drive.
+  - Copie des chemins d'accès pour les modèles et les Loras.
+
+- [03:23](https://www.youtube.com/watch?v=vvjcdGi8DUY&t=203s) 📥 Téléchargement et importation de modèles CBT
+
+  - Téléchargement et importation de modèles CBT depuis le web.
+  - Configuration des chemins d'accès pour les modèles téléchargés.
+
+- [05:52](https://www.youtube.com/watch?v=vvjcdGi8DUY&t=352s) ⚙️ Configuration de Focus et génération d'images
+
+  - Configuration des paramètres de Focus, y compris la sélection des modèles et des dimensions d'image.
+  - Génération d'images avec les modèles configurés.
+
+- [08:33](https://www.youtube.com/watch?v=vvjcdGi8DUY&t=513s) 🌟 Utilisation des modèles XL et conclusion
+
+  - Utilisation des modèles XL pour Stable Diffusion.
+  - Conclusion de la démonstration de l'utilisation de Stable Diffusion dans [Google Colab](https://colab.research.google.com/drive/1L8n1_gxiIALyxg1csytXofnT8KmChjvn?usp=sharing)  avec Focus.
+ 
+    
