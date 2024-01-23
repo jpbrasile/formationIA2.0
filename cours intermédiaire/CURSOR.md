@@ -21,3 +21,7 @@ Cursor.sh est un éditeur de code orienté IA avec les fonctionnalités suivante
 
 
 ![Capture d'écran 2024-01-23 162151](https://github.com/jpbrasile/formationIA2.0/assets/8331027/199a5595-23a8-4f90-a871-c0b7aa657371)
+
+
+###Test de CURSOR avec snake game sans coder, mais quelques itérations 
+![Capture d'écran 2024-01-23 170642](https://github.com/jpbrasile/formationIA2.0/assets/8331027/5d98c71c-8d04-4477-a1a0-ba3b63c15d89)
