@@ -17,7 +17,7 @@ Ce guide vous montrera comment installer et utiliser Replicate avec des exemples
 3. Après avoir créé votre compte, copiez votre clé API Replicate dans un endroit sûr
 
 ## Étape 3 : Variable d'environnement:
-Dans un terminal powerShellrenseigner la variable avec votre clef
+Dans un terminal powerShell  renseignez la variable avec votre clef
 ```
 $env:REPLICATE_API_TOKEN = "r8....me" 
 ```
