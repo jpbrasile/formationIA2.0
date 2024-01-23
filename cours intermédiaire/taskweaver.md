@@ -18,7 +18,7 @@
 
 - Taskweaver a la capacité de lire des fichiers locaux. En fait il crée le code ad hoc pour y arriver ! Malheureusement il perd du temps à itérer car les bibliothèques requises ne sont pas charger au départ ! Il perd donc quelques itérations à le constater et à faire les "pip install" nécessaires.
 - Donc bien que très lent , taskweaver a une fonctionnalité intéressante: il crée le code pour se donner des fonctionnalités manquantes  et l'exécute ensuite...
-- Des plugins (codes disponibles pour être exécuté en fonction du contexte) existe aussi.
+- [Des plugins (codes disponibles pour être exécuté en fonction du contexte)](https://www.youtube.com/watch?v=o4zmEEKvdTY) existe aussi.
 - Il suffit d'ajouter dans le répertoire "C:\Users\test\Documents\Formation IA\taskweaver\TaskWeaver\project\plugins", les fichiers suivant (c'est un exemple)
 **stock_price.yaml**
 ```Python
