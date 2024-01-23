@@ -37,11 +37,15 @@
   
     "Fournis le contenu formaté en Markdown, présenté sous forme de chaîne de caractères " 
   </details>
-  <details>
-    <summary> Reprendre une nouvelle conversation avec Harpa </summary>
-  
-    Supprimer les conversations précédentes en cliquant sur l'onglet "H"  en haut à gauche, puis  <b>"DELETE ALL"</b>, puis <b></b>New Chat</b>    
+
+
+   <details>
+    <summary>accéder à toutes les commandes d'Harpa </summary>
+
+   il suffit de mettre "/" dans le chat; ex: "/clear": supprime l'historique des chats.
   </details>
+</details>
+  
 </details>
 
 
