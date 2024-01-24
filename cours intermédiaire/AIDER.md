@@ -9,7 +9,7 @@ Aider.chat est un outil d'assistance à la programmation par intelligence artifi
 - **Exécution de commandes shell**: Exécutez des commandes shell et ajoutez éventuellement la sortie au chat[1].
 - **Aide et astuces**: Utilisez `/help` pour afficher de l'aide sur toutes les commandes et recevoir des conseils pour une utilisation efficace[1].
   
-**Installation**
+**Installation**: Fait dans l'environnement conda "formation"
 ```Python
 $env:OPENAI_API_KEY="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"
 git config user.name "jpbrasile"
