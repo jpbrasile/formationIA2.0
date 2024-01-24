@@ -1,4 +1,4 @@
-### Aider.chat [1](https://aider.chat)
+## [Aider.chat](https://aider.chat)
 
 **Fonctionnalités:**
 Aider.chat est un outil d'assistance à la programmation par intelligence artificielle qui fonctionne dans le terminal. Il offre les fonctionnalités suivantes :
