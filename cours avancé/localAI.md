@@ -1,4 +1,4 @@
-# Guide de référence rapide pour LocalAI
+# Guide de référence rapide pour [LocalAI](https://localai.io/)
 
 ## Génération de texte (GPT)
 
