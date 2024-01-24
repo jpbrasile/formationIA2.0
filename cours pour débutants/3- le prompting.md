@@ -33,5 +33,17 @@
 - **Combinaison de Techniques :** `Appliquez [Chain of Thought] combinée à [Role Playing] pour une analyse complète de [sujet d'étude].`
 - **Comment j'ai fait ce tuto ?:**  Avec le prompt :"fais un guide pratique au format ``markdown ... ```" sur la page web avec Harpa.ai. 
 
+### Un tuto de [deepmind](https://www.youtube.com/watch?v=H4YK_7MAckk)
+- [00:00](https://www.youtube.com/watch?v=H4YK_7MAckk&t=0s) 🚀 Présentation du cours
+  - Introduction au cours sur l'ingénierie des prompts pour ChatGPT destinée aux développeurs.
+  - Le cours aborde les meilleures pratiques pour construire des applications avec des modèles de langage puissants.
 
+- [00:41](https://www.youtube.com/watch?v=H4YK_7MAckk&t=41s) 🎯 Objectifs du cours
+  - Le cours enseigne comment construire rapidement des applications puissantes avec des modèles de langage.
+  - Les domaines couverts incluent la summarisation, l'inférence, la transformation, l'expansion, et la création de chatbots personnalisés.
+  - Le cours vise à inspirer de nouvelles idées d'applications et à montrer comment les construire avec des modèles de langage.
+
+- [01:42](https://www.youtube.com/watch?v=H4YK_7MAckk&t=102s) 🌟 Conclusion du cours
+  - Une invitation à explorer les possibilités offertes par les grands modèles de langage.
+  - Encouragement à utiliser les connaissances acquises pour créer des applications innovantes.
 
