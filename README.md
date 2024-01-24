@@ -92,3 +92,7 @@ Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et
   - Les LLM (Large Language Models) sont en constante évolution pour devenir plus légers tout en maintenant leur performance.
   - La taille des LLM est mesurée en milliards de bytes, et des versions plus compactes sont développées.
   - Le contexte, ou mémoire à court terme, est crucial pour stocker des informations pertinentes lors de l'interaction avec un LLM.
+ 
+  ## L'open-source proche de GPT4
+  ![Capture d'écran 2024-01-24 155607](https://github.com/jpbrasile/formationIA2.0/assets/8331027/0ef1137e-e79c-405d-8816-cad6a82e41b6)
+
