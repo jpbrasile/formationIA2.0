@@ -33,6 +33,6 @@ voilà le résultat (ma demande en vert), le code javascript mis à jour !
 - On lance LM studio en mode API (par exemple avec neuralbeagle14-7b.Q6_K.gguf)
 - On lance AIDER avec:
 ```
-aider --openai-api-base http://localhost:1234/v1 --openai-api-key "sk" 
+aider --openai-api-base http://localhost:1234/v1 --openai-api-key "sk" hello.js
 ```
 
