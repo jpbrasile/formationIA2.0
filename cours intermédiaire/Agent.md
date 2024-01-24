@@ -169,3 +169,5 @@ os.environ[OPENAI_API-BASE]="http://localhost:1234.v1"
   - [05:06](https://www.youtube.com/watch?v=U5TAI_SGllA&t=306s) 📝 Exécution du code et suivi du flux de travail, du coach à l'influenceur et enfin au critique, créant une publication LinkedIn sur les nouvelles compétences en IA pour 2024.
   
   Ces points clés résument les étapes du processus de création de publications LinkedIn à l'aide de Crew AI avec différents modèles de langage.
+
+- [**Encore d'autres**:](https://github.com/joaomdmoura/crewAI-examples/)
