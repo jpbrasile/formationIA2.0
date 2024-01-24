@@ -1,4 +1,4 @@
-## Des templates pour chaque besoin avec [metricsmule](https://metricsmule.com/chatgpt-prompt-genius/)
+## Des templates pour chaque besoin avec [metricsmule](https://metricsmule.com/chatgpt-prompt-genius/) et [encore](https://metricsmule.com/ai/chatgpt-prompt-generator/)
 - 👉 [ChatGPT Prompt Genius Engineering] Qu'est-ce que l'ingénierie des prompts ChatGPT ? Comment trouver des prompts ChatGPT ? Comment transformer ChatGPT en un ingénieur de prompts ? Ce guide vous donne des réponses.
 - 🚀 [Premium Prompts] Des prompts premium pour ChatGPT qui vont encore plus loin.
 - 🔍 [SEO Prompts] Des prompts ChatGPT pour améliorer votre référencement, votre marketing, et votre contenu pour vous aider à vous classer en première page de Google.
