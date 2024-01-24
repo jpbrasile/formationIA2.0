@@ -29,3 +29,26 @@ voilà le résultat (ma demande en vert), le code javascript mis à jour !
 6. Pour parler à aider, activez la commande `/voice` et donnez vos instructions vocalement.
 7. En cas de besoin, tapez `/help` pour obtenir de l'aide sur les commandes disponibles.
 
+## [AIDER avec un modèle local](https://aider.chat/docs/faq.html#how-can-i-run-aider-locally-from-source-code) (LM studio)
+
+On met dans le fichier .aider.conf.yml :
+```
+openai-api-key:"not-needed"
+openai-api-base:http://localhost:1234/v1"
+```
+
+On lance AIDER avec:
+```
+# Clone the repository:
+git clone git@github.com:paul-gauthier/aider.git
+
+# Navigate to the project directory:
+cd aider
+
+# Install the dependencies listed in the `requirements.txt` file:
+pip install -r requirements.txt
+
+# Run the local version of Aider:
+python -m aider.main
+```
+
