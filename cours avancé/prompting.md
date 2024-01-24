@@ -67,3 +67,9 @@ https://github.com/stanfordnlp/dspy
   ### Exemple de génération automatique de prompt:
   ![Capture d'écran 2024-01-23 100345](https://github.com/jpbrasile/formationIA2.0/assets/8331027/086b56c8-3fe0-4ce4-98ef-b6a4f2261a9a)
 
+## [META-PROMPTING](https://github.com/suzgunmirac/meta-prompting)
+![Capture d'écran 2024-01-24 155118](https://github.com/jpbrasile/formationIA2.0/assets/8331027/3d93b211-5a6b-45d7-a723-f848ebadcef2)
+
+![Capture d'écran 2024-01-24 155216](https://github.com/jpbrasile/formationIA2.0/assets/8331027/10fdcae7-7795-4485-89b3-8dad0a75fc4f)
+
+
