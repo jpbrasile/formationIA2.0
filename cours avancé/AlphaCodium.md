@@ -50,4 +50,6 @@ python -m alpha_codium.solve_problem --dataset_name "C:\Users\test\Documents\For
  ```
  python -m alpha_codium.solve_problem --dataset_name "C:\Users\test\Documents\Formation IA\AlphaCodium\AlphaCodium\codecontests_valid_and_test_processed_alpha_codium\valid_and_test_processed" --split_name test --problem_number 0
  ```
+- Il faut rajouter:  "'\u2264'    # 0xE2 -> LESS-THAN OR EQUAL TO" dans le fichier C:\Users\test\anaconda3\envs\alphacodium\Lib\encodings\cp1252.py
+  
 
