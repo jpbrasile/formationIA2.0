@@ -36,3 +36,18 @@ python -m alpha_codium.solve_problem --dataset_name "C:\Users\test\Documents\For
 
 ```
 -  Il faut télécharger la base de données https://huggingface.co/datasets/talrid/CodeContests_valid_and_test_AlphaCodium/resolve/main/codecontests_valid_and_test_processed_alpha_codium.zip
+-  Nous avons modifié le code de "C:\Users\test\Documents\Formation IA\AlphaCodium\AlphaCodium\alpha_codium\llm\ai_handler.py" pour le faire fonctionner avec lm studio (mixtral-8x7b-instruct-v0.1.Q5_0.gguf)
+  ```   try:
+            if "gpt" in get_settings().get("config.model").lower():
+                #openai.api_key = get_settings().openai.key
+                openai.api_key = "not needed"
+                openai.api_base = "http://localhost:1234/v1"
+                litellm.api_base = "http://localhost:1234/v1"
+                #litellm.openai_key = get_settings().openai.key
+                litellm.openai_key = "not needed"
+   ```
+-AlphaCodium est lancé sur le premier problème avec :
+ ```
+ python -m alpha_codium.solve_problem --dataset_name "C:\Users\test\Documents\Formation IA\AlphaCodium\AlphaCodium\codecontests_valid_and_test_processed_alpha_codium\valid_and_test_processed" --split_name test --problem_number 0
+ ```
+
