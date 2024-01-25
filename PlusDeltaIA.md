@@ -72,3 +72,27 @@ Il est recommandé de vérifier les pré-requis, le programme proposé, et les d
 5
 .
 https://www.youtube.com/playlist?list=PLkDaE6sCZn6Fowk0hfL5O5uZWWQegaQz5
+
+
+## L'IA atteint 70% https://www.linkedin.com/pulse/pisa-meets-gpt-4-jens-nestel-5jvae/ par rapport aux étudiants:https://nces.ed.gov/surveys/pisa/pdf/items2_solving.pdf 
+| Problem        | Question | OECD Average | U.S. |
+|----------------|----------|--------------|------|
+| Movie Outing   | 1        | 68%          | 67%  |
+| Movie Outing   | 2        | 68%          | 67%  |
+| Design Numbers | 1        | 51%          | 41%  |
+| Design Numbers | 2        | 49%          | 47%  |
+| Design Numbers | 3        | 40%          | 31%  |
+| Transit System | 1        | 24%          | 15%  |
+| Course Design  | 1        | 32%          | 33%  |
+| Library System | 1        | 75%          | 75%  |
+| Library System | 2        | 15%          | 14%  |
+| Trip           | 1        | 46%          | 37%  |
+| Trip           | 2        | 36%          | 33%  |
+| Irrigation     | 1        | 63%          | 58%  |
+| Irrigation     | 2        | 52%          | 45%  |
+| Irrigation     | 3        | 55%          | 52%  |
+| Energy Needs   | 1        | 85%          | 60%  |
+| Energy Needs   | 2        | 32%          | 27%  |
+| Children’s Camp| 1        | 40%          | 35%  |
+| Freezer        | 1        | 45%          | 35%  |
+| Freezer        | 2        | 50%          | 46%  |
