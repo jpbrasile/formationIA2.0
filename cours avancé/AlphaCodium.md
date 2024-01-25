@@ -38,18 +38,42 @@ python -m alpha_codium.solve_problem --dataset_name "C:\Users\test\Documents\For
 -  Il faut télécharger la base de données https://huggingface.co/datasets/talrid/CodeContests_valid_and_test_AlphaCodium/resolve/main/codecontests_valid_and_test_processed_alpha_codium.zip
 -  Nous avons modifié le code de "C:\Users\test\Documents\Formation IA\AlphaCodium\AlphaCodium\alpha_codium\llm\ai_handler.py" pour le faire fonctionner avec lm studio (mixtral-8x7b-instruct-v0.1.Q5_0.gguf)
   ```   try:
+        try:
             if "gpt" in get_settings().get("config.model").lower():
-                #openai.api_key = get_settings().openai.key
-                openai.api_key = "not needed"
-                openai.api_base = "http://localhost:1234/v1"
-                litellm.api_base = "http://localhost:1234/v1"
-                #litellm.openai_key = get_settings().openai.key
-                litellm.openai_key = "not needed"
+
+                # Accessing the LOCAL variable from environment
+                LOCAL = os.getenv('LOCAL', '0') # Default to '0' if not set
+
+                if "gpt" in get_settings().get("config.model").lower():
+                    if LOCAL == '1':
+                        # Configuration for local server
+                        openai.api_key = "not needed"
+                        openai.api_base = "http://localhost:1234/v1"
+                        litellm.api_base = "http://localhost:1234/v1"
+                        litellm.openai_key = "not needed"
+                    else:
+                        # Configuration for OpenAI's API
+                        openai.api_key = get_settings().openai.key
+                        #openai.api_base = "https://api.openai.com/v1"
+                        #litellm.api_base = "https://api.openai.com/v1"
+                        litellm.openai_key = get_settings().openai.key
+
    ```
 -AlphaCodium est lancé sur le premier problème avec :
  ```
+$env:LOCAL = "1" # Sets LOCAL to 1 for local server
+# or
+$env:LOCAL = "0" # Sets LOCAL to 0 for using OpenAI's API
+```
+- Il faut créer un fichier "C:\Users\test\Documents\Formation IA\AlphaCodium\AlphaCodium\alpha_codium\settings\.secrets.toml" contenant:
+```
+[openai]
+key="sk-wsZQ.....vPyiuaDA"
+```
+- Puis on lance la résolution d'un problème avec :
+``` 
  python -m alpha_codium.solve_problem --dataset_name "C:\Users\test\Documents\Formation IA\AlphaCodium\AlphaCodium\codecontests_valid_and_test_processed_alpha_codium\valid_and_test_processed" --split_name test --problem_number 0
  ```
-- Il faut rajouter:  "'\u2264'    # 0xE2 -> LESS-THAN OR EQUAL TO" dans le fichier C:\Users\test\anaconda3\envs\alphacodium\Lib\encodings\cp1252.py
+
   
 
