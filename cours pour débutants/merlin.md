@@ -1,4 +1,4 @@
-## MERLIN : le all in one !
+## [MERLIN](https://www.getmerlin.in/) : le all in one !
 ![image](https://github.com/jpbrasile/formationIA2.0/assets/8331027/4a2eda41-8a81-41eb-8a2e-edd762e9ab95)
 
 ## Création d'image et API
