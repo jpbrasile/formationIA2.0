@@ -70,10 +70,19 @@ $env:LOCAL = "0" # Sets LOCAL to 0 for using OpenAI's API
 [openai]
 key="sk-wsZQ.....vPyiuaDA"
 ```
+- Nous avons modifié le GPT par défaut d'OpenAI dans C:\Users\test\Documents\Formation IA\AlphaCodium\AlphaCodium\alpha_codium\settings\configuration.toml
+- En effet GPT-4-1106-preview est 3 fois [moins cher](https://openai.com/pricing) pour les mêmes performances
+```
+[config]
+model="gpt-4-1106-preview"
+#model="gpt-4-0613"
+```
 - Puis on lance la résolution d'un problème avec :
 ``` 
  python -m alpha_codium.solve_problem --dataset_name "C:\Users\test\Documents\Formation IA\AlphaCodium\AlphaCodium\codecontests_valid_and_test_processed_alpha_codium\valid_and_test_processed" --split_name test --problem_number 0
  ```
+
+- Les problèmes traités se retrouvent [ici](https://huggingface.co/datasets/deepmind/code_contests)
 
   
 
