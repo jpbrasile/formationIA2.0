@@ -71,3 +71,4 @@ La durée de ces programmes varie généralement entre 1 et 2 ans
 Il est recommandé de vérifier les pré-requis, le programme proposé, et les débouchés offerts par chaque Mastère Spécialisé avant de faire son choix
 5
 .
+https://www.youtube.com/playlist?list=PLkDaE6sCZn6Fowk0hfL5O5uZWWQegaQz5
