@@ -96,3 +96,6 @@ https://www.youtube.com/playlist?list=PLkDaE6sCZn6Fowk0hfL5O5uZWWQegaQz5
 | Children’s Camp| 1        | 40%          | 35%  |
 | Freezer        | 1        | 45%          | 35%  |
 | Freezer        | 2        | 50%          | 46%  |
+
+
+- [10  exemples de formations existantes](https://www.blogdumoderateur.com/selection-formation-intelligence-artificielle-187/)
