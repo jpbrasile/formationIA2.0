@@ -1,4 +1,10 @@
 ## Autogen studio
+- Initialisation des codes API:
+  ```
+  $env:OAI_CONFIG_LIST = Get-Content .\OAI_CONFIG_LIST
+
+  ``` 
+
 - [00:00](https://www.youtube.com/watch?v=4ZqJSfV4818&t=0s) 🚀 Introduction à Autogen Studio 2.0
 
   - Nouvelles fonctionnalités et expansion de la fonctionnalité.
@@ -83,14 +89,19 @@ print(fetch_youtube_transcript(video_url))
 
 ```
 ## Création d'un agent pour récupérer les transcripts Youtube (transcript_getter)
-System prompt: "You are AI agent that uses the "fetch_youtube_transcript" skill to get a YouTube transcript for subsequent processing
-Outils: "fetch_youtube_transcript"
+- Lancement de autogen studio:
+```
+ autogenstudio ui --port 8081
+```
+- On doit initialiser
+- System prompt: "You are AI agent that uses the "fetch_youtube_transcript" skill to get a YouTube transcript for subsequent processing
+- Outils: "fetch_youtube_transcript"
 ## Agent content_writer
-Description : "Takes raw YouTube video transcripts and converts it into blog posts and tweet threads."
-System prompt:"You are an insightful, intelligent, and witty content writer who is able to take raw YouTube video transcripts and turn them into blog posts and tweet threads."
+- Description : "Takes raw YouTube video transcripts and converts it into blog posts and tweet threads."
+- System prompt:"You are an insightful, intelligent, and witty content writer who is able to take raw YouTube video transcripts and turn them into blog posts and tweet threads."
 ## Workflow (User et les deuxagents précédents)
-The workflow is described as taking a YouTube URL, getting the transcript of the video, and then creating a blog post and tweet thread from that transcript
-System prompt:You are a helpful assistant skilled at coordinating a group of other assistants to solve a task. The task you will solve is taking a YouTube URL, having an agent use the fetch_youtube_transcript skill to get the transcript from the YouTube video, pass that transcript to a content writer, and then having the content writer create a blog post and tweet thread based on that transcript
+- The workflow is described as taking a YouTube URL, getting the transcript of the video, and then creating a blog post and tweet thread from that transcript
+- **System prompt**:You are a helpful assistant skilled at coordinating a group of other assistants to solve a task. The task you will solve is taking a YouTube URL, having an agent use the fetch_youtube_transcript skill to get the transcript from the YouTube video, pass that transcript to a content writer, and then having the content writer create a blog post and tweet thread based on that transcript
 
 ## Installation pour que Autogen V2 fonctionne en local 
 - Nous avons créé le fichier "C:\Users\test\Documents\Formation IA\Autogen2\autogen\OAI_CONFIG_LIST"
