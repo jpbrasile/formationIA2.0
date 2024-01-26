@@ -1,4 +1,4 @@
-## Autogen V2:
+## Autogen studio
 - [00:00](https://www.youtube.com/watch?v=4ZqJSfV4818&t=0s) 🚀 Introduction à Autogen Studio 2.0
 
   - Nouvelles fonctionnalités et expansion de la fonctionnalité.
@@ -39,8 +39,51 @@
   - Récapitulation des étapes du tutoriel.
   - Appel à l'intérêt pour des tutoriels supplémentaires avec des cas d'utilisation réels.
   - Invitation à aimer, s'abonner et commenter.
+ 
+## ChatGpt pour avoir les API fonctions
+```
+from youtube_transcript_api import YouTubeTranscriptApi
+from youtube_transcript_api._errors import TranscriptsDisabled, NoTranscriptFound
 
-## Installation pour que Autogen fonctionne en local 
+def fetch_youtube_transcript(video_url: str) -> Optional[str]:
+    """
+    Fetches the transcript of a YouTube video without using the YouTube Data API.
+
+    Args:
+        video_url (str): The URL of the YouTube video.
+
+    Returns:
+        Optional[str]: The transcript of the video as a string if available, otherwise None.
+    """
+
+    # Extract video ID from URL
+    video_id = video_url.split('v=')[1]
+
+    try:
+        # Retrieve the available transcripts
+        transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+
+        # Fetch the transcript in the desired language, let's assume English
+        transcript = transcript_list.find_transcript(['en'])
+
+        # Fetch the actual transcript data
+        transcript_data = transcript.fetch()
+
+        # Convert the transcript into a single string
+        transcript_text = "\n".join([entry['text'] for entry in transcript_data])
+
+        return transcript_text
+    except (TranscriptsDisabled, NoTranscriptFound):
+        # If transcripts are disabled or not found return None
+        return None
+
+# Example usage:
+video_url = 'https://www.youtube.com/watch?v=your_video_id'
+print(fetch_youtube_transcript(video_url))
+
+```
+
+## Installation pour que Autogen V2 fonctionne en local 
 - Nous avons créé le fichier "C:\Users\test\Documents\Formation IA\Autogen2\autogen\OAI_CONFIG_LIST"
 ```
 [   
