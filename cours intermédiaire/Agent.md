@@ -2,7 +2,10 @@
 - Initialisation des codes API:
   ```
   $env:OAI_CONFIG_LIST = Get-Content .\OAI_CONFIG_LIST
-  ``` 
+  ```
+
+  - A étudier :https://medium.com/@LakshmiNarayana_U/a-beginners-guide-to-agents-using-autogen-studio-and-lm-studio-0e5da8aea17e
+  - Advenced course:https://www.youtube.com/watch?v=PUPO2tTyPOo
 
 - [00:00](https://www.youtube.com/watch?v=4ZqJSfV4818&t=0s) 🚀 Introduction à Autogen Studio 2.0
 
