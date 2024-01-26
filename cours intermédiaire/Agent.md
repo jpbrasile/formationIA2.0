@@ -1,3 +1,77 @@
+## Autogen V2:
+- [00:00](https://www.youtube.com/watch?v=4ZqJSfV4818&t=0s) 🚀 Introduction à Autogen Studio 2.0
+
+  - Nouvelles fonctionnalités et expansion de la fonctionnalité.
+  - Objectif de création d'une équipe d'agents.
+  - Création d'un agent pour extraire le transcript d'une vidéo YouTube.
+
+- [02:20](https://www.youtube.com/watch?v=4ZqJSfV4818&t=140s) 🤖 Nouveautés dans Autogen Studio 2.0
+
+  - Présentation des nouvelles fonctionnalités de l'interface.
+  - Introduction à la création de modèles personnalisés.
+  - Possibilité d'avoir des équipes d'agents plus grandes.
+
+- [03:29](https://www.youtube.com/watch?v=4ZqJSfV4818&t=209s) 🗝️ Configuration de l'API OpenAI
+
+  - Création d'une clé API pour Autogen Studio.
+  - Ajout de l'API Key à Autogen Studio.
+  - Préparation de l'utilisation de l'API OpenAI dans le projet.
+
+- [08:11](https://www.youtube.com/watch?v=4ZqJSfV4818&t=491s) 🔄 Création d'un Flux de Travail (Workflow)
+
+  - Création d'un workflow pour coordonner les actions des agents.
+  - Attribution des rôles aux agents dans le workflow.
+  - Configuration du flux de travail pour réaliser une tâche spécifique.
+
+- [10:48](https://www.youtube.com/watch?v=4ZqJSfV4818&t=648s) 🛠️ Débogage et Test du Workflow
+
+  - Résolution d'un problème lié à l'API Key.
+  - Exécution du workflow dans l'environnement Autogen Studio.
+  - Observation des interactions entre les agents et les résultats du workflow.
+
+- [14:22](https://www.youtube.com/watch?v=4ZqJSfV4818&t=862s) 📄 Résultats du Workflow
+
+  - Analyse des résultats du workflow, y compris le transcript et la structure suggérée pour un blog post et un tweet thread.
+  - Remarque sur l'absence d'affichage des résultats dans l'interface utilisateur d'Autogen Studio.
+
+- [15:04](https://www.youtube.com/watch?v=4ZqJSfV4818&t=904s) ✅ Conclusion et Perspectives
+
+  - Récapitulation des étapes du tutoriel.
+  - Appel à l'intérêt pour des tutoriels supplémentaires avec des cas d'utilisation réels.
+  - Invitation à aimer, s'abonner et commenter.
+
+## Installation pour que Autogen fonctionne en local 
+- Nous avons créé le fichier "C:\Users\test\Documents\Formation IA\Autogen2\autogen\OAI_CONFIG_LIST"
+```
+[   
+    {
+        "model": "lm studio api",
+        "api_key": "not needed",
+        "base_url": "http://localhost:1234/v1"
+        
+    },
+    {
+        "model": "gpt-4-turbo-preview",
+        "api_key": "sk-YqwdMu.... yJ3eJgKDJ"
+    },
+    {
+        "model": "<your Azure OpenAI deployment name>",
+        "api_key": "<your Azure OpenAI API key here>",
+        "base_url": "<your Azure OpenAI API base here>",
+        "api_type": "azure",
+        "api_version": "2023-07-01-preview"
+    },
+    {
+        "model": "<your Azure OpenAI deployment name>",
+        "api_key": "<your Azure OpenAI API key here>",
+        "base_url": "<your Azure OpenAI API base here>",
+        "api_type": "azure",
+        "api_version": "2023-07-01-preview"
+    }
+]
+
+```
+
 ## Autogen:
 - [00:00](https://youtu.be/Cl19yWHhc2g?t=0s) 🤖 AutoGen Studio vous permet de construire des agents IA capables d'accomplir des tâches de manière efficace.
 - [00:55](https://youtu.be/Cl19yWHhc2g?t=55s) 🛡️ AutoGen a accompli une tâche en 45 secondes, ce qui prendrait de 30 à 60 minutes à un assistant humain.
