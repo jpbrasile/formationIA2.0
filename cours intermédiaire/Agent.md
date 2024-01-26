@@ -40,7 +40,7 @@
   - Appel à l'intérêt pour des tutoriels supplémentaires avec des cas d'utilisation réels.
   - Invitation à aimer, s'abonner et commenter.
  
-## ChatGpt pour avoir les API fonctions
+## ChatGpt pour avoir les "skills" de nos agents  (les outils)
 ```
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import TranscriptsDisabled, NoTranscriptFound
