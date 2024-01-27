@@ -85,3 +85,27 @@ Le site propose une bibliothèque complète pour l'entraînement et la fine-tuni
   - Présentation des comparaisons de mémoire entre Lama, fft, Laura, Spa et Rosa,
   - Le code de Rosa n'est pas encore disponible, ce qui est une préoccupation,
   - L'auteur invite les commentaires et les abonnements à la chaîne.
+ 
+## Génération de la base de données
+00:00 📜 Introduction à l'application de génération de questions et réponses
+
+Présentation de l'application pour créer des jeux de données personnalisés à partir de documents PDF,
+01:17 📄 Présentation de la démonstration avec un document PDF médical
+
+Importation et affichage d'un document PDF médical de 37 pages,
+02:13 🧠 Génération de questions et réponses à partir du document
+
+Démonstration de la génération de questions et réponses à partir du document PDF,
+03:45 🛠️ Configuration des prérequis et code
+
+Configuration des exigences et du code pour l'application de génération de questions et réponses.
+42:04 🧩 Configuration de l'application et initialisation du modèle
+
+Configuration des paramètres et initialisation du modèle de génération de questions et réponses,
+52:11 📂 Sauvegarde des résultats dans un fichier CSV
+
+Création d'un fichier CSV contenant les questions et réponses générées à partir du document PDF,
+55:55 💻 Exécution de l'application et démonstration
+
+Exécution de l'application, génération de questions et réponses à partir d'un document PDF, et téléchargement des résultats.
+✅ Summary complete.
