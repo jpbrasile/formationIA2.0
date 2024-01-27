@@ -1,17 +1,14 @@
 ## Comment créer une formation IA 
 
 ### Objectif:
-- L'IA évolue actuellementavec un rhytme très rapide qu'il est difficile de suivre même pour les personnes les plus averties.
+- L'IA progresse actuellement à un rythme si rapide qu'il est difficile même pour les initiés de suivre.
 - Nous allons donc, si l'on ne fait rien, assister à un décrochage entre ceux qui maîtrisent cette technologie et les autres.
 - Car avec l'IA on peut produire mieux, plus vite , moins cher: la tendance au niveau des entreprises sera donc, évidemment, de privilégier ceux ayant ce savoir-faire.
-- La formation de nos étudiants est pourtant très éloignée de cet objectif
+- La formation de nos étudiants est pourtant très éloignée de cet objectif:
   - Les formations actuelles sont essentiellement faites par des professeurs ne maîtrisant pas l'IA, ils ne peuvent donc pas l'enseigner. Parfois même ils l'interdisent!
-  - Les [formations IA proposées]((https://www.blogdumoderateur.com/selection-formation-intelligence-artificielle-187/)) sont mal adaptées: elles sont soit trop générales, soit trop spécifiques, soit destinée à former des spécialistes.
-  - Le vrai besoin est pourtant d'accompagner l'étudiant en renforçant son apprentissage classique, dans le domaine qu'il a choisi, par les outils IA. Ces outils lui permettront de mieux apprendre puis, plus tard, d'être plus efficace dans son travail
-  - Le complément de formation qu'il convient de lui fournir est donc la capacité **d'adapter l'IA à ses besoins** du moment: mieux apprendre en tant qu'étudiant puis travailler mieux dans sa vie professionnelle.  Ce savoir-faire lui servira toute sa vie et lui permettra de créer un "turbo IA" chaque fois qu'il en aura besoin.     
-
-
-
+  - Les [formations IA proposées]((https://www.blogdumoderateur.com/selection-formation-intelligence-artificielle-187/)) sont mal adaptées: elles sont soit trop générales, soit trop spécifiques, soit destinées à former des spécialistes.
+  - Le vrai besoin est pourtant d'accompagner l'étudiant en renforçant son apprentissage classique, dans le domaine qu'il a choisi, par des outils IA. Ces outils lui permettront de mieux apprendre puis, plus tard, d'être plus efficace dans son travail
+  - Le complément de formation qu'il convient de lui fournir est donc la capacité *d'adapter l'IA à ses besoins* du moment: mieux apprendre en tant qu'étudiant puis travailler mieux dans sa vie professionnelle.  Ce savoir-faire lui servira toute sa vie et lui permettra de créer un "turbo IA" chaque fois qu'il en aura besoin.
 
 Draft:
 Les métiers pour faire Abracadabra
