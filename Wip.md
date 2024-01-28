@@ -19,11 +19,11 @@ Un llm pour étre efficace a besoin de données et d accès à des ressources ex
 Nous allons réaliser un tuto pour que le llm puisse programmer de lui même le code Langchain associé à des tâches complexes.
 
 ## Installation des packages et initialisation des variables (sous windows)
-'''
+```
 pip install langchain langgraph langchain_openai langchainhub langsmith duckduckgo-search beautifulsoup4 gradio
 $env OPENAI_API_KEY=xxxxxxxxxx
 $env LANGCHAIN_API_KEY=xxxxxxxxxx
-'''
+```
 ## Programme principal : app.py
 ### import des packages requis ( à adapter au besoin spécifique)
 ```
@@ -194,7 +194,7 @@ Workflow Ends: Since "FINISH" maps to END, the workflow understands that no furt
 
 This example demonstrates how the conditional_map guides the workflow's path based on conditions evaluated at the supervisor node
 
-#### Run the graph
+#### Run the graph in python
 ```
 for s in graph.stream({
     "messages": [HumanMessage(content="""Search for the latest AI technology trends in 2024,
@@ -215,4 +215,20 @@ for s in graph.stream({
 # print(final_response['messages'][1].content)
 ```
 
+#### Run the graph in gradio:
+```
+# Run the graph
+def run_graph(input_message):
+    response = graph.invoke({
+        "messages": [HumanMessage(content=input_message)]
+    })
+    return json.dumps(response['messages'][1].content, indent=2)
 
+inputs = gr.inputs.Textbox(lines=2, placeholder="Enter your query here...")
+outputs = gr.outputs.Textbox()
+
+demo = gr.Interface(fn=run_graph, inputs=inputs, outputs=outputs)
+demo.launch()
+```
+
+#### [ChatGPT](https://chat.openai.com/share/90b7c379-f675-49d0-9cec-212c980ef1a5) prend bien en compte le tuto pour rajouter un agent 
