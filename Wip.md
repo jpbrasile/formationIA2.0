@@ -34,10 +34,10 @@ Un llm pour étre efficace a besoin de données et d accès à des ressources ex
      - des modèles
      - des agents
      - des workflows
-- Nous pouvons ensuite demander à ChatGPT d'uliser le savoir du tuto pour répondre à d'autres demandes. Plus besoin de logiciel intermédiaire comme AutoGen ou CrewAI qui simplifie l'utilisation de Langchain.
+- Nous pouvons ensuite demander à ChatGPT d'utiliser le savoir du tuto pour répondre à d'autres demandes. Plus besoin de logiciel intermédiaire comme AutoGen ou CrewAI qui simplifient l'utilisation de Langchain.
 - Nous passons directement du "no code" au code de base 
   
-Nous allons réaliser un tuto pour que le llm puisse programmer de lui même le code Langchain associé à des tâches complexes.
+Nous allons réaliser un tuto pour que le llm puisse programmer de lui même le code Langchain associé à des tâches complexes en suivant le framework "LangGraph".
 
 ## Installation des packages et initialisation des variables (sous windows)
 ```
