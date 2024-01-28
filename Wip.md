@@ -1,4 +1,4 @@
-## LanGraph
+## LangGraph
 
 - [00:00](https://www.youtube.com/watch?v=v9fkbTxPzs0&t=0s) 🧩 Introduction à LangGraph
 
