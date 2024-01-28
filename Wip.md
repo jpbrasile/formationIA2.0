@@ -5,16 +5,13 @@ Un llm pour étre efficace a besoin de données et d accès à des ressources ex
 - via un web query (première ressource externe)
 - via des api et un traitement python
 
-  Coder une ia en langchain est très performant mais difficile. ce n est plus le cas si on lui dit comment : l idée est de lui faire digérer une video youtube avec un exemple donné sur le site.
-  A partir de là il crée un mode d emploi:
-  comment créer des skills
-  comment créer des modèles
-  comment créer des agents
-  comment créer des workflows
-
-  plus besoin d ihm comme autogen studio.
-
-  il reste à bâtir le workflow mais des pistes existent pour l optimiser
+- Nous avons créé un tutoriel pour l'emploi de LangGraph qui permet de créer 
+     - des skills
+     - des modèles
+     - des agents
+     - des workflows
+- Nous pouvons ensuite demander à ChatGPT d'uliser le savoir du tuto pour répondre à d'autres demandes. Plus besoin de logiciel intermédiaire comme AutoGen ou CrewAI qui simplifie l'utilisation de Langchain.
+- Nous passons directement du "no code" au code de base 
   
 Nous allons réaliser un tuto pour que le llm puisse programmer de lui même le code Langchain associé à des tâches complexes.
 
