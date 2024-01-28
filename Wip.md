@@ -1,3 +1,27 @@
+## LanGraph
+
+- [00:00](https://www.youtube.com/watch?v=v9fkbTxPzs0&t=0s) 🧩 Introduction à LangGraph
+
+  - Création d'agents linguistiques pour diverses tâches.
+
+- [01:11](https://www.youtube.com/watch?v=v9fkbTxPzs0&t=71s) 🌐 Création d'agents Internet
+
+  - Deux agents : Analyste de recherche et Chercheur en insights.
+  - L'un effectue des recherches, l'autre fournit des analyses.
+
+- [08:10](https://www.youtube.com/watch?v=v9fkbTxPzs0&t=490s) 🔀 Création du flux de travail
+
+  - Définition des états et des connexions.
+  - Collaboration structurée entre agents et outils.
+
+- [10:11](https://www.youtube.com/watch?v=v9fkbTxPzs0&t=611s) 🚀 Exécution du flux
+
+  - Recherche sur Internet et suivi de la progression.
+
+- [12:16](https://www.youtube.com/watch?v=v9fkbTxPzs0&t=736s) 💡 Résultats et avenir
+
+  - Présentation des résultats et discussion sur le potentiel de LangGraph.
+
 Un llm pour étre efficace a besoin de données et d accès à des ressources externes 
 - en interne dans ses paramètres
 - dans son contexte
