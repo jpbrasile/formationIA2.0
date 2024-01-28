@@ -40,10 +40,11 @@ Un llm pour étre efficace a besoin de données et d accès à des ressources ex
 Nous allons réaliser un tuto pour que le llm puisse programmer de lui même le code Langchain associé à des tâches complexes en suivant le framework "LangGraph".
 
 ## Installation des packages et initialisation des variables (sous windows)
+- La variable LANGCHAIN_API_KEY est nécessaire pour LangSmith mais non activable actuellement (liste d'attente) 
 ```
 pip install langchain langgraph langchain_openai langchainhub langsmith duckduckgo-search beautifulsoup4 gradio
-$env OPENAI_API_KEY=xxxxxxxxxx
-$env LANGCHAIN_API_KEY=xxxxxxxxxx
+$env:OPENAI_API_KEY='your_openai_api_key_here'
+$env:LANGCHAIN_API_KEY=xxxxxxxxxx 
 ```
 ## Programme principal : app.py
 ### import des packages requis ( à adapter au besoin spécifique)
