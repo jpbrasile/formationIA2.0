@@ -74,12 +74,7 @@ llm = ChatOpenAI(model="gpt-4-turbo-preview")
 ```
 ### Initialize model (local)
 ```
-from langchain.chat_models.openai import ChatOpenAI
-openai = ChatOpenAI(
-    model_name="your-model-name",
-    openai_api_key="not needed ",
-    openai_api_base="http://localhost:1234/v1"
-)
+llm = ChatOpenAI(model="any on lm studio",base_url="http://localhost:1234/v1", api_key="not-needed")
 ```
 ### Define custom tools (à adapter au besoin)
 ```
