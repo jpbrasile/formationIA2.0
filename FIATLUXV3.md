@@ -1,20 +1,22 @@
-# Le guide du consommACTEUR
-## Vous voulez un outil qui répond à votre besoin ? ça n'existe pas ? Alors créez le !!!
+# Le guide du consommACTEUR: L'IA n'sest plus un risque si vous la maîtrisez ! 
+
+## Vous révez d'un outil qui vous obéit au doigt et à l'oeil, il n'existe pas ? Alors créez-le !!!
 
 ## Le plus dur: ne pas se tromper d'objectif
-- Un bon objectif est un objectif qui vous fera plaisir d'atteindre et qui pourrait être utile à d'autres
-- Copier est plus facile que créer : d'autres ont-il atteint un tel objectif ? comment ont-ils fait ? 
-- Sinon créez cet outil !
+- Votre temps est précieux ne le consommez pas en restant spectateur.
+- Que voulez-vous faire ? Choisissez un objectif qui vous aurez plaisir à atteindre et qui pourrait être utile à d'autres
+- Déjà atteint par d'autres ? Comment ont-ils fait car copier est plus facile que créer ! 
+- Sinon donnez vous les moyens de créer cet outil !
 
 ## Première étape: Décomposer votre objectif en sous objectifs déjà réalisés par d'autres
 
-- Ap**prendre** à le faire
-- Com**prendre** comment c'est fait
+- Ap***prendre*** à le faire
+- Com***prendre*** comment c'est fait
 
 ## Deuxième étape: Créer votre propre outil
 
-- **Prenez** les briques à assembler
-- Sur**prenez**- nous en créant votre propre outil
+- ***Prenez*** les briques à assembler
+- Sur***prenez***- nous en créant votre propre outil
 
 ## FIATLUXV3 : l'outil qui vous aidera à devenir consommacteur
 
