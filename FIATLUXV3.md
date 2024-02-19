@@ -13,4 +13,19 @@
 ## Deuxième étape: Créer votre propre outil
 
 - **Prenez** les briques à assembler
-- Sur**prenez**- nous en créant votre propre outil 
+- Sur**prenez**- nous en créant votre propre outil
+
+## FIATLUXV3 : l'outil qui vous aidera à créer cet outil
+
+### Collecte d'information sur les briques à apprendre 
+- Perplexity et ChatGPT
+- Un outil qui s'adapte à vous (langue, niveau)
+- Un outil multimodal (texte, voix , carte mentale)
+
+   
+### Comprendre les briques:
+- FIATLUX vous pose des questions
+- FIATLUX gère votre apprentissage dans le temps pour une acquisition complète
+- FIATLUX gère votre dose de dopamine dans cet apprentissaage
+
+### Automatisez l'usage des briques et devenez maçon pour les assembler
