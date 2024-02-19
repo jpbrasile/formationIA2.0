@@ -2,9 +2,9 @@
 ## Vous voulez un outil qui répond à votre besoin ? ça n'existe pas ? Alors créez le !!!
 
 ## Le plus dur: ne pas se tromper d'objectif
-- C'est un objectif qui vous fera plaisir d'atteindre
-- Copier est plus facile que créer : d'autres l'ont-il atteint, comment ont-ils fait ? 
-- C'est la création d'un outil qui sera utile à d'autre
+- Un bon objectif est un objectif qui vous fera plaisir d'atteindre et qui pourrait être utile à d'autres
+- Copier est plus facile que créer : d'autres ont-il atteint un tel objectif ? comment ont-ils fait ? 
+- Sinon créez cet outil !
 
 ## Première étape: Décomposer votre objectif en sous objectifs déjà réalisés par d'autres
 
@@ -16,16 +16,16 @@
 - **Prenez** les briques à assembler
 - Sur**prenez**- nous en créant votre propre outil
 
-## FIATLUXV3 : l'outil qui vous aidera à créer cet outil
+## FIATLUXV3 : l'outil qui vous aidera à devenir consommacteur
 
-### Collecte d'information sur les briques à apprendre 
-- Perplexity et ChatGPT
-- Un outil qui s'adapte à vous (langue, niveau)
-- Un outil multimodal (texte, voix , carte mentale)
+### Préalable: Les briques à maîtriser 
+- Collecte des informations avec Perplexity et ChatGPT
+- FIATLUX s'adapte à vous (langue, niveau)
+- FIATLUX est multimodal pour faciliter votre apprentissage : texte, voix , carte mentale
 
    
 ### Comprendre les briques:
-- FIATLUX vous pose des questions
+- FIATLUX vous pose des questions pour vous maintenir en mode acteur
 - FIATLUX gère votre apprentissage dans le temps pour une acquisition complète
 - FIATLUX gère votre dose de dopamine dans cet apprentissaage
 
