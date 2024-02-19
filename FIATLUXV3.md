@@ -13,6 +13,9 @@
 - Ap***prendre*** à le faire:
    - Il faut décomposer le problème en sous-problèmes  et identifier les ressources nécessaires pour les maîtriser     
 - Com***prendre***: Vous devez faire siennes ces ressources, savoir les mettre en oeuvre et en connaître les limites.
+ - Par exmple Harpa.ai vous propose des kit de motorisation à divers prix. Il faut comprendre les diverses offres pour faire un choix éclairé:
+![Capture d'écran 2024-02-19 163528](https://github.com/jpbrasile/formationIA2.0/assets/8331027/083e371e-3e9b-450f-ad7d-79ef46b10f09)
+   
 
 ### Deuxième étape: Créer votre propre outil
 
