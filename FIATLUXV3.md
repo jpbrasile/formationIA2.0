@@ -21,7 +21,7 @@
 ## FIATLUX vous aide à devenir consommacteur: 
 
 ### Préalable: Les briques à maîtriser 
-- Collecte des informations avec Perplexity et ChatGPT
+- Collecte des informations avec [Perplexity](https://www.perplexity.ai/search/comment-amliorer-la-jLBk1EvTSPCE4gSstVJIdQ?s=u)  et ChatGPT
    - Un  exemple: Je veux réaliser un trike en bambou, motorisé avec un toit en cellules solaires. Pour ce faire je dois maîtriser des savoir et des savoir-faire avant de les intégrer dans mon projet. Donne moi les étapes à franchir et comment y parvenir
 
 Answer
@@ -118,6 +118,13 @@ Citations:
 [23] https://universe.roboflow.com/search?q=class%3Abamboo
 [24] https://www.librairie-permaculturelle.fr/plantes/1963-livre-travailler-le-bambou-yves-crouzet.html
 [25] https://ozo-electric.com/fr/kits-moteurs-electriques-pour-trottinettes-tout-terrain/990897-kit-moteur-roue-electrique-20-pouces-trottinette-et-drift-trike-1000w-1500w-sans-batterie.html
+
+![Capture d'écran 2024-02-19 162410](https://github.com/jpbrasile/formationIA2.0/assets/8331027/6777b5ac-b2a0-490f-a1ae-932c2d9c7577)
+
+
+
+
+
 - FIATLUX s'adapte à vous (langue, niveau)
 - FIATLUX est multimodal pour faciliter votre apprentissage : texte, voix , carte mentale
 
