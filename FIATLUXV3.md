@@ -5,58 +5,59 @@
 ### Le plus dur: ne pas se tromper d'objectif:
 - Votre temps est précieux, ne le consommez pas en restant spectateur.
 - Que voulez-vous faire ? Choisissez un objectif que vous aurez plaisir à atteindre et qui pourrait être utile à d'autres.
-- Déjà atteint par d'autres ? Comment ont-ils fait car copier c'est plus facile que créer ! 
+- Déjà atteint par d'autres ? Comment ont-ils fait ? car copier c'est plus facile que créer ! 
 - Sinon, pas grave, donnez vous les moyens de créer cet outil avec FIATLUX!
 
-### Première étape: Décomposer votre objectif en sous objectifs déjà réalisés par d'autres
+### Première étape: Décomposer votre objectif en sous-objectifs :
 
 - Ap***prendre*** à le faire:
    - Il faut décomposer le problème en sous-problèmes  et identifier les ressources nécessaires pour les maîtriser     
 - Com***prendre***: Vous devez faire siennes ces ressources, savoir les mettre en oeuvre et en connaître les limites.
- - Par exmple Harpa.ai vous propose des kit de motorisation à divers prix. Il faut comprendre les diverses offres pour faire un choix éclairé:
+ - Par exemple Harpa.ai vous propose des kits de motorisation à divers prix. Il faut comprendre les diverses offres pour faire un choix éclairé:
 ![Capture d'écran 2024-02-19 163528](https://github.com/jpbrasile/formationIA2.0/assets/8331027/083e371e-3e9b-450f-ad7d-79ef46b10f09)
+- Un autre risque est d'utiliser un modèle en dehors de ces limites d'application
    
 
 ### Deuxième étape: Créer votre propre outil
 
 - ***Prenez*** les briques précédentes et sur***prenez***- nous en les assemblant pour créer votre propre outil
 
-## FIATLUX vous aide à devenir consommacteur: 
+## Devenez consomm-Acteur avec FIATLUX: 
 
 ### Préalable: Les briques à maîtriser 
-- Collecte des informations avec [Perplexity](https://www.perplexity.ai/search/comment-amliorer-la-jLBk1EvTSPCE4gSstVJIdQ?s=u)  et ChatGPT
-   - Un  exemple: Je veux réaliser un trike en bambou, motorisé avec un toit en cellules solaires. Pour ce faire je dois maîtriser des savoir et des savoir-faire avant de les intégrer dans mon projet. Donne moi les étapes à franchir et comment y parvenir
+- Collecte des informations avec [Perplexity](https://www.perplexity.ai/search/comment-amliorer-la-jLBk1EvTSPCE4gSstVJIdQ?s=u)  et [ChatGPT](https://chat.openai.com/c/c2db3b63-20f5-4969-a963-246354eb7ae7)  
+   - Un  exemple de demande à Perplexity et sa réponse: Je veux réaliser un trike en bambou, motorisé avec un toit en cellules solaires. Pour ce faire je dois maîtriser des savoirs et des savoir-faire avant de les intégrer dans mon projet. Donne moi les étapes à franchir et comment y parvenir
 
 Answer
 La réalisation d'un trike en bambou motorisé avec un toit en cellules solaires est un projet ambitieux qui combine des compétences en ingénierie mécanique, en électronique, en énergies renouvelables, et en travail du bambou. Voici les étapes générales et des conseils sur comment acquérir les compétences nécessaires pour mener à bien ce projet.
-1. Conception et Planification
+1. **Conception et Planification**
 Savoirs et savoir-faire nécessaires :
 Connaissances en design de véhicules et en ingénierie mécanique.
 Capacité à travailler avec des logiciels de CAO (Conception Assistée par Ordinateur) pour la modélisation 3D.
 Comment y parvenir :
 Suivez des cours en ligne sur des plateformes comme Coursera ou edX sur l'ingénierie mécanique et la conception de produits.
 Pratiquez l'utilisation de logiciels de CAO tels que SolidWorks, AutoCAD, ou Fusion 360, disponibles via des tutoriels gratuits en ligne.
-2. Travail du Bambou
+2. **Travail du Bambou**
 Savoirs et savoir-faire nécessaires :
 Techniques de sélection, de traitement, et d'assemblage du bambou.
 Comment y parvenir :
 Participez à des ateliers ou des cours sur le travail du bambou. Recherchez des ressources locales ou en ligne.
 Consultez des tutoriels et des guides sur le travail du bambou disponibles sur YouTube ou dans des livres spécialisés.
-3. Motorisation
+3. **Motorisation**
 Savoirs et savoir-faire nécessaires :
 Connaissances en électronique et en mécanique pour intégrer un moteur électrique.
 Compréhension des systèmes de transmission et de freinage.
 Comment y parvenir :
 Étudiez les bases de l'électronique et de la mécanique à travers des cours en ligne ou des livres.
 Expérimentez avec des kits de motorisation pour vélos ou trikes disponibles sur le marché pour comprendre leur fonctionnement.
-4. Intégration des Cellules Solaires
+4. **Intégration des Cellules Solaires**
 Savoirs et savoir-faire nécessaires :
 Compréhension des principes de l'énergie solaire et des systèmes photovoltaïques.
 Capacité à dimensionner et installer un système solaire pour alimenter le moteur.
 Comment y parvenir :
 Suivez des cours sur l'énergie solaire et les systèmes photovoltaïques. Des plateformes comme Udemy offrent des cours pertinents.
 Pratiquez l'installation de petits systèmes solaires via des kits éducatifs pour acquérir de l'expérience.
-5. Assemblage et Tests
+5. **Assemblage et Tests**
 Savoirs et savoir-faire nécessaires :
 Compétences en assemblage mécanique et en soudure.
 Capacité à tester et à dépanner les systèmes mécaniques et électriques.
@@ -67,8 +68,9 @@ Ressources Complémentaires
 Forums et Communautés : Rejoignez des forums en ligne tels que Reddit ou des groupes Facebook dédiés à la construction de véhicules DIY, au travail du bambou, ou aux énergies renouvelables.
 Documentation et Livres : Recherchez des livres et des guides techniques sur chaque aspect de votre projet. La bibliothèque locale ou les librairies en ligne sont de bonnes sources.
 Mentorat et Réseautage : Si possible, trouvez un mentor ayant de l'expérience dans des projets similaires. Le réseautage peut être crucial pour obtenir des conseils pratiques et éviter des erreurs courantes.
-Ce projet nécessite une approche multidisciplinaire et un engagement à apprendre et à expérimenter dans plusieurs domaines. La patience et la persévérance seront vos meilleurs alliés tout au long de ce processus.    
-- **En approfondissant ave Perplexity**
+Ce projet nécessite une approche multidisciplinaire et un engagement à apprendre et à expérimenter dans plusieurs domaines. La patience et la persévérance seront vos meilleurs alliés tout au long de ce processus.
+
+- **En approfondissant ave Perplexity**:
 Pour réaliser un trike en bambou motorisé avec un toit en cellules solaires, vous devrez vous concentrer sur plusieurs aspects clés à chaque étape du projet. Voici les principaux aspects à considérer :
 
 ### Travail du Bambou
@@ -125,12 +127,15 @@ Citations:
 ![Capture d'écran 2024-02-19 162410](https://github.com/jpbrasile/formationIA2.0/assets/8331027/6777b5ac-b2a0-490f-a1ae-932c2d9c7577)
 
 
+- FIATLUX s'adapte à vous (): Langue, Niveau, Carte Mentale 
 
 
+| ![](https://github.com/jpbrasile/formationIA2.0/assets/8331027/ff004685-3ff5-4c5c-a771-e13330b8c190) | ![](https://github.com/jpbrasile/formationIA2.0/assets/8331027/6f657e8e-2366-40af-9372-8c39ff23565a) |
+|:--:|:--:|
 
-- FIATLUX s'adapte à vous (langue, niveau)
-- FIATLUX est multimodal pour faciliter votre apprentissage : texte, voix , carte mentale
 
+- FIATLUX est multimodal pour faciliter votre apprentissage : texte, voix , 
+ ![Capture d'écran 2024-02-20 091706](https://github.com/jpbrasile/formationIA2.0/assets/8331027/927bb886-048b-42ab-87b3-f488a03f202a)
    
 ### Comprendre les briques:
 - FIATLUX vous pose des questions pour vous maintenir en mode acteur
