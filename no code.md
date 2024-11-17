@@ -477,3 +477,14 @@ interface Email {
 ```
 
 If there is existing code, it will be provided below in <existing_code> tags. Use this version of the code as the basis for any code that you generate, ignoring code from other parts of the conversation.
+
+
+## Comment faire ?
+- Nous pouvons utiliser un chat pour affiner le cahier des charges.
+- Commencer étape par étape
+- Pour des "petits codes" qui ne nécessitent pas plus de 300 lignes de codes utiliser townie.
+- Pour des codes plus sérieux utiliser bolt.new soit celui de référence soit [celui fonctionnant en local](https://github.com/coleam00/bolt.new-any-llm). J'utilise qwen 2.5 coder 32b avec ollama. Suivre les instructions pour avoir un contexte étendu.
+- lancer le "bon llm" sur ollama (3 heures de débuggage inutile parce que j'avais lancé le mauvais.
+- pour débugger un code complexe existant : surfwind permet de prendre en compte
+- mettre dans tous les cas les informations importantes dans le readme. 
+- 
