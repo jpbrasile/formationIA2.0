@@ -6,7 +6,7 @@ Ceci est un tutoriel sur la façon d'utiliser les outils IA pour produire une ap
 - Pour accéder au service, les clients doivent s'enregistrer et s'abonner
 - La création de vidéos se fait en utilisant les ressources d'API (chaque client se procure ses propres clefs API)
 - Le stockage des clefs api se fait sur un serveur dédié à chaque client, qui n'a donc plus besoin de générer les clefs à chaque session
-## Cahier des charges après interaction avec le llm
+## Cahier des charges après interaction avec le llm [Gemini Exp 1114](https://aistudio.google.com/) 
 
 ## 1. Objectif
 - Plateforme web de gestion d'APIs personnalisées.
