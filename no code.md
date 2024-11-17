@@ -480,11 +480,11 @@ If there is existing code, it will be provided below in <existing_code> tags. Us
 
 
 ## Comment faire ?
-- Nous pouvons utiliser un chat pour affiner le cahier des charges.
+- Nous pouvons utiliser **un chat pour affiner** le cahier des charges.
 - Commencer étape par étape
-- Pour des "petits codes" qui ne nécessitent pas plus de 300 lignes de codes utiliser townie.
-- Pour des codes plus sérieux utiliser bolt.new soit celui de référence soit [celui fonctionnant en local](https://github.com/coleam00/bolt.new-any-llm). J'utilise qwen 2.5 coder 32b avec ollama. Suivre les instructions pour avoir un contexte étendu.
-- lancer le "bon llm" sur ollama (3 heures de débuggage inutile parce que j'avais lancé le mauvais.
+- Pour des "petits codes" qui ne nécessitent pas plus de 300 lignes de codes utiliser **townie**.
+- Pour des codes plus sérieux utiliser **bolt.new** soit celui de référence soit [celui fonctionnant en **local**](https://github.com/coleam00/bolt.new-any-llm). J'utilise qwen 2.5 coder 32b (quantization 4b) avec ollama. Suivre les instructions pour avoir un contexte étendu. Il faut avoir la mémoire GPU (J'ai 24B)
+- lancer le "bon llm" sur ollama (3 heures de débuggage inutile parce que j'avais lancé le mauvais !).
 - pour débugger un code complexe existant : surfwind permet de prendre en compte
 - mettre dans tous les cas les informations importantes dans le readme. 
-- 
+- En cas de problème persistant. demander à WindSurf de formaliser le problème et demander à Perplexity de le résoudre.
