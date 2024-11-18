@@ -487,4 +487,4 @@ If there is existing code, it will be provided below in <existing_code> tags. Us
 - lancer le "bon llm" sur ollama (3 heures de débuggage inutile parce que j'avais lancé le mauvais !).
 - pour débugger un code complexe existant : surfwind permet de prendre en compte
 - mettre dans tous les cas les informations importantes dans le readme. 
-- En cas de problème persistant. demander à WindSurf de formaliser le problème et demander à Perplexity de le résoudre.
+- En cas de problème persistant. demander à WindSurf de formaliser le problème et demander à Perplexity de le résoudre.Ici [Un exemple pour permettre l'enregistrement sur supabase](https://www.perplexity.ai/search/supabase-authorization-with-go-Cd8cnxMbRUOh6AxQ2Um.Kg)
