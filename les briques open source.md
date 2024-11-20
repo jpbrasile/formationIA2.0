@@ -1,4 +1,4 @@
-Pour apprendre l'intelligence artificielle sans disposer d'un ordinateur puissant ni dépenser d'argent, il est essentiel de tirer parti des ressources disponibles en ligne. Voici un guide structuré pour vous accompagner dans cette démarche.
+Pour apprendre l'intelligence artificielle sans disposer d'un ordinateur puissant ni dépenser d'argent, il est essentiel de tirer parti des ressources disponibles en ligne. Voici un guide structuré pour vous accompagner dans cette démarche. Pour la partie "multimédia" voir [ici](  
 
 1. Clarifier les concepts avec Perplexity AI
 
