@@ -26,7 +26,7 @@ Lorsque vous travaillez sur des projets hébergés sur GitHub, évitez de publie
 
 7. Outils de codage en ligne et locaux
 
-Des plateformes comme Websim, Cline, Townie et Bolt.new permettent de coder directement en ligne. En local, des outils comme WindSurf.ai, AIDER et Visual Studio Code, avec des extensions telles que Cline et Bolt.new (version any LLM), offrent un environnement de développement robuste.
+Des plateformes comme Websim, Cline, Townie et Bolt.new permettent de coder directement en ligne. En local, des outils comme [WindSurf.ai](https://www.youtube.com/watch?v=3xk2qG2QPdU), AIDER et Visual Studio Code, avec des extensions telles que Cline et Bolt.new (version any LLM), offrent un environnement de développement robuste.
 
 8. [Utiliser des chatbots via des API open source](https://www.youtube.com/watch?v=GuKG4mtq_v8)
 
