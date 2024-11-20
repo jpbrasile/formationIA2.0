@@ -41,4 +41,11 @@ Le résultat avec ChatGPT": [Podcast]
 
 [Voix 2] : Pas du tout ! En fait, on peut méditer partout : assis sur une chaise, allongé, ou même en marchant. L'important, c'est d'être à l'aise.[/podcast]
 
-- La voix 1 doit maintenat être enregistrée sous la forme d'un mp3: 
+- La voix 1 doit maintenant être enregistrée sous la forme d'un mp3. Il faut pour ça rediriger le flux sonore sur VLC media player 
+- Ensuite changer de voix dans le prompt système et enregistrer la voix 2
+### Création des deux avatars parlant à partir d'une vidéo
+- pouvant provenir d'un text --> image --> video)
+- [référence open source](https://github.com/TMElyralab/MuseTalk?tab=readme-ov-file)
+
+### Montage final de la video sur Capcut ou Canva:
+- coupure des blancs dans la bande son pour que le podcast se fasse sans latence
