@@ -1,18 +1,39 @@
-Pour apprendre l'IA, sans ordinateur puissant disponible et sans dépenser d'argent, il nous faut trouver ces ressources sur le net
-- En premier lieu, Perplexity qui nous expliquera ce qu'y n'est pas clair pour nous 
-- En second lieu, un chatbot ChatGPT Mistral et Sonnet sont les incontournables
-  
-Avec ces deux outils, on peut apprendre l'IA mais en mode manuel. 
-Pour se tenir au courant de l'actualité et des bon plans pour l'IA :*YouTube*
+Pour apprendre l'intelligence artificielle sans disposer d'un ordinateur puissant ni dépenser d'argent, il est essentiel de tirer parti des ressources disponibles en ligne. Voici un guide structuré pour vous accompagner dans cette démarche.
 
-Pour aller plus loin, il faut coder mais pas de panique l'IA code pour nous
-- Il faut pouvoir accéder aux ressources via le web (par des requêtes API pour les initiés)
-  - Pour accéder à ces ressources, le provider vous donnent les clefs (les clefs sont dites "API" ou "API_Key"). On s'enregistre chez eux en général via notre compte *Google*
-  - Il faut les garder caché car celui qui en dispose peut rentrer chez vous ( on les mets dans un *.env* en local ou sur *cloudfare* sur le web)
-  - On évite d'enregistrer le .env de nos applications et on peut les mettre sur le cloud avec *GitHub* grâce à un fichier *.gitignore* qui contient tous les fichiers qu'il est inutile de sauvegarder lors du paassage sur le cloud.
-  - Pour coder avec *Websim*, *Cline*, *Townie* et *Bolt.new* et en local *windSurf.ai* et *VS code* avec son extension *Cline*, *bolt.new dans sa version any llm*    
-  - Pour des chatBots via API opensource : 
-  - Pour que notre chatbot dispose de mémoire Firebase, Suprabase
-  - Etc ... 
+1. Clarifier les concepts avec Perplexity AI
 
-Tous cela est obscur, pour le comment faire ? Demandez à Perplexity, je ne vais pas faire du Ctrl C, Ctl V pour vous expliquera lui même très bien avec des réponses à jour des évolutions rapides de l'IA
+Perplexity AI est un moteur de recherche conversationnel alimenté par l'IA, conçu pour fournir des réponses précises et sourcées à vos questions. Il vous aide à comprendre des notions complexes en explorant des informations fiables sur le web.
+
+2. Utiliser des chatbots avancés
+
+Des modèles tels que ChatGPT, Mistral et Sonnet sont incontournables pour interagir avec des IA conversationnelles. Ils permettent de poser des questions, d'obtenir des explications détaillées et de pratiquer des conversations en langage naturel.
+
+3. Se tenir informé via YouTube
+
+YouTube regorge de chaînes dédiées à l'IA, offrant des tutoriels, des conférences et des mises à jour sur les dernières avancées. C'est une ressource précieuse pour rester à jour et découvrir des astuces pratiques.
+
+4. Passer à la pratique avec le codage assisté par l'IA
+
+L'IA peut générer du code pour vous, facilitant ainsi l'apprentissage du développement. Des outils comme GitHub Copilot ou des plateformes en ligne permettent de coder sans avoir à tout écrire manuellement.
+
+5. Accéder aux ressources via des API
+
+Les API (Application Programming Interface) vous donnent accès à des services et des données en ligne. Pour les utiliser, vous devez obtenir des clés API auprès des fournisseurs, souvent en vous inscrivant avec votre compte Google. Il est crucial de garder ces clés confidentielles, car elles permettent l'accès à vos ressources. Stockez-les dans des fichiers .env en local ou utilisez des services comme Cloudflare pour les gérer en ligne.
+
+6. Gérer les clés API avec GitHub
+
+Lorsque vous travaillez sur des projets hébergés sur GitHub, évitez de publier vos fichiers .env contenant des informations sensibles. Utilisez un fichier .gitignore pour exclure ces fichiers de votre dépôt, assurant ainsi la sécurité de vos données.
+
+7. Outils de codage en ligne et locaux
+
+Des plateformes comme Websim, Cline, Townie et Bolt.new permettent de coder directement en ligne. En local, des outils comme WindSurf.ai et Visual Studio Code, avec des extensions telles que Cline et Bolt.new (version any LLM), offrent un environnement de développement robuste.
+
+8. Créer des chatbots via des API open source
+
+Pour développer des chatbots personnalisés, des solutions open source sont disponibles. Elles permettent de concevoir des agents conversationnels adaptés à vos besoins spécifiques.
+
+9. Ajouter de la mémoire à votre chatbot avec Firebase ou Supabase
+
+Pour que votre chatbot conserve une mémoire contextuelle, des services comme Firebase ou Supabase offrent des bases de données en temps réel. Ils facilitent la gestion des données utilisateur et améliorent l'interactivité de votre agent conversationnel.
+
+Si certains aspects vous semblent encore flous, n'hésitez pas à consulter Perplexity AI pour obtenir des explications détaillées et à jour sur ces sujets.
