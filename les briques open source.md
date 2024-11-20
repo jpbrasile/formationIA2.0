@@ -26,13 +26,11 @@ Lorsque vous travaillez sur des projets hébergés sur GitHub, évitez de publie
 
 7. Outils de codage en ligne et locaux
 
-Des plateformes comme Websim, Cline, Townie et Bolt.new permettent de coder directement en ligne. En local, des outils comme WindSurf.ai et Visual Studio Code, avec des extensions telles que Cline et Bolt.new (version any LLM), offrent un environnement de développement robuste.
+Des plateformes comme Websim, Cline, Townie et Bolt.new permettent de coder directement en ligne. En local, des outils comme WindSurf.ai, AIDER et Visual Studio Code, avec des extensions telles que Cline et Bolt.new (version any LLM), offrent un environnement de développement robuste.
 
-8. Créer des chatbots via des API open source
+8. [Utiliser des chatbots via des API open source](https://www.youtube.com/watch?v=GuKG4mtq_v8)
 
-Pour développer des chatbots personnalisés, des solutions open source sont disponibles. Elles permettent de concevoir des agents conversationnels adaptés à vos besoins spécifiques.
-
-9. Ajouter de la mémoire à votre chatbot avec Firebase ou Supabase
+9. Ajouter de la mémoire à votre chatbot avec [Firebase](https://www.youtube.com/watch?v=2Q5-i6lbI-U) ou Supabase en vous aidant de Cline
 
 Pour que votre chatbot conserve une mémoire contextuelle, des services comme Firebase ou Supabase offrent des bases de données en temps réel. Ils facilitent la gestion des données utilisateur et améliorent l'interactivité de votre agent conversationnel.
 
