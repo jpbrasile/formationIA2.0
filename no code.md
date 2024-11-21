@@ -490,7 +490,7 @@ If there is existing code, it will be provided below in <existing_code> tags. Us
 - En cas de problème persistant. demander à WindSurf de formaliser le problème et demander à Perplexity de le résoudre.Ici [Un exemple pour permettre l'enregistrement sur supabase](https://www.perplexity.ai/search/supabase-authorization-with-go-Cd8cnxMbRUOh6AxQ2Um.Kg)
 
 
-### Premier pas avec townie.ai
+### Premier exercice avec townie.ai
 - Je me suis inscrit pour 10 €/mois
 - Mon premier objectif est de réaliser "une web api additionnant deux nombres" c'est à dire une application hébergé sur le net qui fait une addition via une requ^te à partir d'un terminal.
 - Dis comme ça , c'est simple mais il faut créer un front end (la calculette que l'on voit) et un backend (sur un serveur, là où se font les calculs). Avec townie, tout est automatique
@@ -545,3 +545,197 @@ $response = Invoke-RestMethod `
 # Afficher le résultat
 $response
 ```
+###  Deuxième exercice : Addition avec API sécurisée
+
+- Le problème est formulé via abacus.ai
+``` json
+{
+  "project": "Calculatrice Sécurisée",
+  "architecture": {
+    "type": "full-stack",
+    "framework": "townie",
+    "security_level": "high",
+    "components": ["frontend", "backend", "database"]
+  },
+  "frontend": {
+    "framework": "React",
+    "pages": [
+      {
+        "name": "login",
+        "components": [
+          "LoginForm",
+          "RegistrationForm",
+          "ErrorDisplay"
+        ],
+        "security": ["input_validation", "csrf_protection"]
+      },
+      {
+        "name": "calculator",
+        "access": "protected",
+        "components": [
+          "NumberInputs",
+          "CalculateButton",
+          "ResultDisplay",
+          "SessionTimer"
+        ]
+      }
+    ],
+    "security_features": {
+      "session_storage": "JWT",
+      "token_location": "sessionStorage",
+      "auto_logout": true,
+      "inactivity_timeout": 3600
+    }
+  },
+  "backend": {
+    "authentication": {
+      "endpoints": [
+        {
+          "path": "/api/auth/login",
+          "method": "POST",
+          "body": {
+            "email": "string",
+            "password": "string"
+          }
+        },
+        {
+          "path": "/api/auth/register",
+          "method": "POST",
+          "body": {
+            "email": "string",
+            "password": "string"
+          }
+        }
+      ],
+      "security": {
+        "password_hash": "bcrypt",
+        "jwt_expiration": 3600,
+        "rate_limiting": true
+      }
+    },
+    "calculator_api": {
+      "endpoint": {
+        "path": "/api/calculate",
+        "method": "POST",
+        "authentication": "required",
+        "body": {
+          "number1": "number",
+          "number2": "number"
+        }
+      },
+      "security": {
+        "input_validation": true,
+        "rate_limiting": true,
+        "logging": true
+      }
+    },
+    "middleware": [
+      "jwt_validation",
+      "rate_limiter",
+      "input_sanitizer",
+      "security_headers",
+      "error_handler"
+    ]
+  },
+  "database": {
+    "type": "secure_storage",
+    "tables": {
+      "users": {
+        "fields": [
+          {"name": "id", "type": "UUID", "primary": true},
+          {"name": "email", "type": "string", "unique": true},
+          {"name": "password_hash", "type": "string"},
+          {"name": "created_at", "type": "timestamp"},
+          {"name": "last_login", "type": "timestamp"}
+        ],
+        "indexes": ["email"]
+      },
+      "calculations": {
+        "fields": [
+          {"name": "id", "type": "UUID", "primary": true},
+          {"name": "user_id", "type": "UUID", "foreign_key": "users.id"},
+          {"name": "number1", "type": "number"},
+          {"name": "number2", "type": "number"},
+          {"name": "result", "type": "number"},
+          {"name": "timestamp", "type": "timestamp"}
+        ],
+        "indexes": ["user_id", "timestamp"]
+      }
+    },
+    "security": {
+      "encryption": true,
+      "backup": true,
+      "audit_logging": true
+    }
+  },
+  "api_responses": {
+    "success_login": {
+      "status": "success",
+      "data": {
+        "token": "string",
+        "expiresIn": "number"
+      }
+    },
+    "success_calculation": {
+      "status": "success",
+      "data": {
+        "result": "number",
+        "timestamp": "string"
+      }
+    },
+    "error": {
+      "status": "error",
+      "message": "string"
+    }
+  },
+  "environment_variables": {
+    "required": [
+      "JWT_SECRET",
+      "DB_CONNECTION",
+      "RATE_LIMIT_WINDOW",
+      "RATE_LIMIT_MAX",
+      "SESSION_DURATION"
+    ]
+  },
+  "security_requirements": {
+    "mandatory": [
+      "HTTPS",
+      "XSS_Protection",
+      "SQL_Injection_Protection",
+      "Input_Validation",
+      "Output_Encoding",
+      "Audit_Logging"
+    ],
+    "rate_limiting": {
+      "window": 3600,
+      "max_requests": 100
+    },
+    "session": {
+      "duration": 3600,
+      "renewal": true
+    }
+  },
+  "testing": {
+    "types": [
+      "unit",
+      "integration",
+      "security",
+      "load"
+    ],
+    "security_tests": [
+      "penetration",
+      "vulnerability_scan",
+      "authentication_bypass"
+    ]
+  },
+  "documentation": {
+    "required": [
+      "API_Documentation",
+      "Security_Guidelines",
+      "Installation_Guide",
+      "User_Manual"
+    ]
+  }
+}
+```
+- Et townie gère la sécurité (login possible avec admin@gmail.com password adxxn) . Le xx est à deviner
