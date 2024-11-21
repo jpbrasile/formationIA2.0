@@ -739,3 +739,4 @@ $response
 }
 ```
 - Et townie gère la sécurité (login possible avec admin@gmail.com password adxxn) . Le xx est à deviner
+- le site pour l'addition est à https://jpbrasile-safe_additions.web.val.run 
