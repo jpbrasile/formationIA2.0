@@ -546,7 +546,8 @@ $response = Invoke-RestMethod `
 $response
 ```
 ###  Deuxième exercice : Addition avec API sécurisée
-
+[réf abacus](https://apps.abacus.ai/chatllm/?convoId=149cd65b17&appId=14bfa2dea0)
+[réf townie](https://www.val.town/townie/2b44ab4d-b4b7-4c2c-8881-45998b4a0cb0)
 - Le problème est formulé via abacus.ai
 ``` json
 {
@@ -740,3 +741,7 @@ $response
 ```
 - Et townie gère la sécurité (login possible avec admin@gmail.com password adxxn) . Le xx est à deviner
 - le site pour l'addition est à https://jpbrasile-safe_additions.web.val.run 
+- la requête via un terminal powershell
+```
+$loginBody = @{ email = "admin@gmail.com"; password = "admin" } | ConvertTo-Json; $loginResponse = Invoke-RestMethod -Uri "https://jpbrasile-safe_additions.web.val.run/api/auth/login" -Method Post -Body $loginBody -ContentType "application/json"; $token = $loginResponse.data.token; $calculationBody = @{ number1 = 15; number2 = 25 } | ConvertTo-Json; Invoke-RestMethod -Uri "https://jpbrasile-safe_additions.web.val.run/api/calculate" -Method Post -Headers @{ "Authorization" = "Bearer $token"; "Content-Type" = "application/json" } -Body $calculationBody
+```
