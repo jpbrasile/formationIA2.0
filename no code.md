@@ -520,8 +520,28 @@ Merci de générer le code complet pour cette calculatrice d'addition simple."
 ```
 - L'application est créé sur https://jpbrasile-phenomenallimeboa.web.val.run/
 - et ChatLLM me dit comment y accéder à partir d'un terminal powershell:
-  ```
+```
 #### Test de l'addition avec curl
 Invoke-RestMethod -Uri "https://jpbrasile-phenomenallimeboa.web.val.run/api/add" -Method Post -ContentType "application/json" -Body '{"number1": 5, "number2": 3}'
+```
+-  Nousa vons modifer le code pour qu'il n'agisse que si on dispose d'une clef api ( ici admin)
+```
+$headers = @{
+    "Content-Type" = "application/json"
+    "Authorization" = "Bearer admin"  # "admin" est la clé API par défaut
+}
 
-  ```
+$body = @{
+    number1 = 10
+    number2 = 20
+} | ConvertTo-Json
+
+$response = Invoke-RestMethod `
+    -Uri "https://jpbrasile-phenomenallimeboa.web.val.run/api/add" `
+    -Method Post `
+    -Headers $headers `
+    -Body $body
+
+# Afficher le résultat
+$response
+```
