@@ -488,3 +488,40 @@ If there is existing code, it will be provided below in <existing_code> tags. Us
 - pour débugger un code complexe existant : surfwind permet de prendre en compte
 - mettre dans tous les cas les informations importantes dans le readme. 
 - En cas de problème persistant. demander à WindSurf de formaliser le problème et demander à Perplexity de le résoudre.Ici [Un exemple pour permettre l'enregistrement sur supabase](https://www.perplexity.ai/search/supabase-authorization-with-go-Cd8cnxMbRUOh6AxQ2Um.Kg)
+
+
+### Premier pas avec townie.ai
+- Je me suis inscrit pour 10 €/mois
+- Mon premier objectif est de réaliser "une web api additionnant deux nombres" c'est à dire une application hébergé sur le net qui fait une addition via une requ^te à partir d'un terminal.
+- Dis comme ça , c'est simple mais il faut créer un front end (la calculette que l'on voit) et un backend (sur un serveur, là où se font les calculs). Avec townie, tout est automatique
+- Une reformulation de mon problème par chatLLM Teams :
+```
+"Créer une application full-stack avec Townie qui :
+
+Frontend :
+Affiche une interface simple avec deux champs de saisie numérique
+Inclut un bouton pour déclencher l'addition
+Affiche le résultat de l'addition
+Backend :
+Expose un endpoint HTTP qui :
+Accepte deux nombres en paramètres
+Effectue leur addition
+Retourne le résultat
+Spécifications techniques :
+Utiliser l'architecture full-stack de Townie
+Implémenter la validation des entrées
+Gérer les erreurs de manière appropriée
+Assurer une réponse JSON formatée
+Routes API :
+POST /api/add
+Body: { number1: number, number2: number }
+Response: { result: number }
+Merci de générer le code complet pour cette calculatrice d'addition simple."
+```
+- L'application est créé sur https://jpbrasile-phenomenallimeboa.web.val.run/
+- et ChatLLM me dit comment y accéder à partir d'un terminal powershell:
+  ```
+#### Test de l'addition avec curl
+Invoke-RestMethod -Uri "https://jpbrasile-phenomenallimeboa.web.val.run/api/add" -Method Post -ContentType "application/json" -Body '{"number1": 5, "number2": 3}'
+
+  ```
