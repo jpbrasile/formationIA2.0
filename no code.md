@@ -763,3 +763,4 @@ $loginBody = @{ email = "admin@gmail.com"; password = "admin" } | ConvertTo-Json
 - Une astuce : faire corriger le code s'il bugge par chatGPT en lui demandant de fournir la correction sous la forme "diff" afin de consommer encore moins de tokens
 - Bonus: Chat GPT peut surfer sur le net pour trouver des images
 - [Mon premier test avec Haiku](http://127.0.0.1:5500/hello-world/) pour 0,5 € . N'oubliez pas de clicker sur le chat   
+- [Voici un site plus sérieux]https://joy-coffee-shop.vercel.app/) fait en 5 mn voir la vidéo dans [cette page](https://github.com/kodu-ai/claude-coder?tab=readme-ov-file) : 
