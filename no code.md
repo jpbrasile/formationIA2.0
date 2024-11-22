@@ -756,3 +756,10 @@ $loginBody = @{ email = "admin@gmail.com"; password = "admin" } | ConvertTo-Json
 ### [Choisir son LLM et son provider](https://artificialanalysis.ai/leaderboards/providers)
 ### [FLUX TOOLS]((https://www.youtube.com/watch?v=PrazoJZtN3A)) - Run Local - Inpaint, Redux, Depth, Canny
 - available via our partners [fal.ai](https://fal.ai/models?keywords=flux) , [Replicate](https://replicate.com/collections/flux), [Together.ai](https://www.together.ai/blog/flux-tools-models-together-apis-canny-depth-image-generation?utm_source=bfl&utm_medium=blog-post&utm_campaign=flux-tools), [Freepik](https://www.freepik.com/ai/image-generator) and [krea.ai](https://www.krea.ai/apps/image/flux).
+
+### Tester l'extension [Kodu](https://www.youtube.com/watch?v=KapDedHqjz0&t=8s) dans vs code avec 14 €de crédit
+- 10 € de credit + 4 en likant sur github.
+- N'oublier ps d'enregistrer vos crédit en cliquant sur la petite roue pour vous inscrire au Claude Coder une fois l'inscription faite 
+- Une astuce : faire corriger le code s'il bugge par chatGPT en lui demandant de fournir la correction sous la forme "diff" afin de consommer encore moins de tokens
+- Bonus: Chat GPT peut surfer sur le net pour trouver des images
+- [Mon premier test avec Haiku](http://127.0.0.1:5500/hello-world/) pour 0,5 € . N'oubliez pas de clicker sur le chat   
