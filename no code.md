@@ -745,3 +745,14 @@ $response
 ```
 $loginBody = @{ email = "admin@gmail.com"; password = "admin" } | ConvertTo-Json; $loginResponse = Invoke-RestMethod -Uri "https://jpbrasile-safe_additions.web.val.run/api/auth/login" -Method Post -Body $loginBody -ContentType "application/json"; $token = $loginResponse.data.token; $calculationBody = @{ number1 = 15; number2 = 25 } | ConvertTo-Json; Invoke-RestMethod -Uri "https://jpbrasile-safe_additions.web.val.run/api/calculate" -Method Post -Headers @{ "Authorization" = "Bearer $token"; "Content-Type" = "application/json" } -Body $calculationBody
 ```
+
+### Coder pour pas cher avec bolt.new any llm
+| Model              | Price MTOK (Input / Output) | HumanEval Score |
+|---------------------|----------------------------|-----------------|
+| DeepSeek 2.5       | $0.14 (input), $0.28 (output) | 89%            |
+| Claude 3.5 Sonnet  | $3 (input), $15 (output)     | 92%            |
+| GPT 4o (08-06)     | $2.5 (input), $10 (output)   | 90.2%          |
+
+### [Choisir son LLM et son provider](https://artificialanalysis.ai/leaderboards/providers)
+### [FLUX TOOLS]((https://www.youtube.com/watch?v=PrazoJZtN3A)) - Run Local - Inpaint, Redux, Depth, Canny
+- available via our partners [fal.ai](https://fal.ai/models?keywords=flux) , [Replicate](https://replicate.com/collections/flux), [Together.ai](https://www.together.ai/blog/flux-tools-models-together-apis-canny-depth-image-generation?utm_source=bfl&utm_medium=blog-post&utm_campaign=flux-tools), [Freepik](https://www.freepik.com/ai/image-generator) and [krea.ai](https://www.krea.ai/apps/image/flux).
