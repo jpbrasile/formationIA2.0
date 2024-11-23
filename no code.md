@@ -768,4 +768,10 @@ $loginBody = @{ email = "admin@gmail.com"; password = "admin" } | ConvertTo-Json
   ### Une landing page en moins d'une minute
   - [Demander à ChatGPT](https://chatgpt.com/share/67419add-31a0-8006-a11b-ead87cbbe543) ce que c'est et comment la spécifier pour qu'un LLM la fasse
   - Demander à Sonnet 3.5 (Abacus ChatLLM Team pour moi)  qui dispose de Sonnet de la réaliser
-  - La couper coller dans [Townie.ai](https://www.val.town/townie) de la prendre en compte, de la modifier si besoin (j'ai rajouté un bouton pour le dark mode) et [voilà](https://jpbrasile-heavenlysilverkite.web.val.run/#) 
+  - La couper coller dans [Townie.ai](https://www.val.town/townie) de la prendre en compte, de la modifier si besoin (j'ai rajouté un bouton pour le dark mode) et [voilà](https://jpbrasile-heavenlysilverkite.web.val.run/#)
+ 
+  ### Evaluation des coding assistants
+  - Townie:  le plus efficace pour arriver rapidement au résultat souhaité : Abonnement 10 € par mois, il crée un "val", ce qui est une  application "full stack" . Un seul fichier par applcation, hébergée sur le site Val Town , utilise des vals publiques pour remplir certaines fonctions
+  - WindSurf : Ne suis pas facilement les directives, fonctionne en local, activé par sonnet 3.5 , gpt4o ou cascade-base. Actuellement gratuit. Multi fichiers, C'est à nous de faire le déploiement  
+  - Bolt.new : version net : Suit les directives (il faut mieux les avoir affiner parailleurs pour consommer moins de crédit), sonnet ou haiku . Payant , multifichiers, telechargement en local en zip. Le plus utilisé par les développeurs en ce moment
+  - Claude coder : En extension de VS studio, coûte cher (2 $ pour une landing page non parfaite) , c'est à nous de faire le déploiement        
