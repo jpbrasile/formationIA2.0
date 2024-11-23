@@ -774,4 +774,5 @@ $loginBody = @{ email = "admin@gmail.com"; password = "admin" } | ConvertTo-Json
   - Townie:  le plus efficace pour arriver rapidement au résultat souhaité : Abonnement 10 € par mois, il crée un "val", ce qui est une  application "full stack" . Un seul fichier par applcation, hébergée sur le site Val Town , utilise des vals publiques pour remplir certaines fonctions
   - WindSurf : Ne suis pas facilement les directives, fonctionne en local, activé par sonnet 3.5 , gpt4o ou cascade-base. Actuellement gratuit. Multi fichiers, C'est à nous de faire le déploiement  
   - Bolt.new : version net : Suit les directives (il faut mieux les avoir affiner parailleurs pour consommer moins de crédit), sonnet ou haiku . Payant , multifichiers, telechargement en local en zip. Le plus utilisé par les développeurs en ce moment
+  - [https://bolt.myaibuilt.app/](https://youtu.be/J5iuC7Te2l4?list=PL66Y6GLTMgUOZM9G7GwWqcUgCAKrx5TmI) : variante multi llm de bolt.new , fonctionne sur le net en fournissant sa clef API , bugge actuellement.
   - Claude coder : En extension de VS studio, coûte cher (2 $ pour une landing page non parfaite) , c'est à nous de faire le déploiement        
