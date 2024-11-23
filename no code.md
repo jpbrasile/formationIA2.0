@@ -768,4 +768,4 @@ $loginBody = @{ email = "admin@gmail.com"; password = "admin" } | ConvertTo-Json
   ### Une landing page en moins d'une minute
   - [Demander à ChatGPT](https://chatgpt.com/share/67419719-5860-8006-8592-f65d6334323d ce que c'est et comment la spécifier pour qu'un LLM la fasse
   - Demander à Sonnet 3.5 (Abacus ChatLLM Team pour moi)  qui dispose de Sonnet de la réaliser
-  - La couper coller dans [Townie.ai](https://www.val.town/townie) de la prendree ncompte, de la modifier si besoin (j'ai rajouté un bouton pour le dark mode) et [voilà](https://jpbrasile-heavenlysilverkite.web.val.run/#) 
+  - La couper coller dans [Townie.ai](https://www.val.town/townie) de la prendre en compte, de la modifier si besoin (j'ai rajouté un bouton pour le dark mode) et [voilà](https://jpbrasile-heavenlysilverkite.web.val.run/#) 
