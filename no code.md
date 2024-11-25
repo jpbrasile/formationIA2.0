@@ -1,5 +1,14 @@
 # objectifs
 Ceci est un tutoriel sur la façon d'utiliser les outils IA pour produire une application complexe
+## Executive summary
+- Townie est vraiment excellent pour du prototypage rapide avec un programme en  un seul fichier
+- ChtGPT peut créer des programme multifichier et les conditionner e nun .zip (lancement très facile possible avec Docker)
+- Abacus.ai (ChatLLM) a un mode agent qui déploie des applications simplements
+- Bolt.new me semble le meilleur outil pour coder des applications complexes à ce jour
+- Perplexity permet de trouver sur le net comment corriger les erreur les plus courantes
+-    
+
+
 # Première étape : S'aider de l'IA (ChatGPT ou Sonnet) pur établir le cahier des charges. 
 ## Expression du besoin
 - Je souhaite faire une application qui produit des vidéos à partir d'un front end client, par contre j'engrange les vidéos ainsi produites sur mon propre serveur
