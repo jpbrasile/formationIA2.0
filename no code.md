@@ -6,7 +6,11 @@ Ceci est un tutoriel sur la façon d'utiliser les outils IA pour produire une ap
 - Abacus.ai (ChatLLM) a un mode agent qui déploie des applications simplements
 - Bolt.new me semble le meilleur outil pour coder des applications complexes à ce jour
 - Perplexity permet de trouver sur le net comment corriger les erreur les plus courantes
--    
+
+## To do
+- Créer par ia des web api locale avec docker, accessible pour l'agent local
+- Déploiement sous forme de zip
+- Voir la connexion IA base de données comme github https://www.youtube.com/watch?v=FVuZ1wwxI5U
 
 
 # Première étape : S'aider de l'IA (ChatGPT ou Sonnet) pur établir le cahier des charges. 
