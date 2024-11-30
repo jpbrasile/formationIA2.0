@@ -11,6 +11,10 @@ Ceci est un tutoriel sur la façon d'utiliser les outils IA pour produire une ap
 - Créer par ia des web api locale avec docker, accessible pour l'agent local
 - Déploiement sous forme de zip
 - Voir la connexion IA base de données comme github https://www.youtube.com/watch?v=FVuZ1wwxI5U
+- Un assistant prospection tout IA:
+  - Trouver les coordonnées et le profil avec perplexity eyt ChatGPT playground mis en oeuvre avec open interpreter
+  - Utiliser Twilio + elevenlabs ou équivalent pour enclencher une discusion téléphonique
+  - Base de données lié à l'IA pour contexte specifique client potentiel et mise à jour après le call     
 
 
 # Première étape : S'aider de l'IA (ChatGPT ou Sonnet) pur établir le cahier des charges. 
