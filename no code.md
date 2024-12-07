@@ -38,13 +38,13 @@ Cette intégration offre une flexibilité accrue pour développer des solutions 
 ## LLM et outils
 -  [Prompting pour faire raisonner les llm](https://youtu.be/YoeNwp9je6E?si=l2JrVz4DhM2XyzeU)
 -  [MCP avec une clef openai](https://www.youtube.com/watch?v=5ibVBG0TrD8)
--  [Web scraping](https://youtu.be/LSPmrCX_cJI?si=sCafNZUZv3Zg2KnU)
+-  [Web scraping](https://youtu.be/LSPmrCX_cJI?si=sCafNZUZv3Zg2KnU) and [research agent](https://www.youtube.com/watch?v=MkqkiJgnDxk&t=939s)
 -  [Faire une Web app payante](https://youtu.be/5SI9lqHh0ZU?si=89hXLene_NB6ixfb)
 -  [Automation : répondre aux emails](https://youtu.be/4drzg9A5gjs?si=0nNczQcL6m9an0rD)
 -  [code with AI : mieux utiliser Bolt](https://www.youtube.com/watch?v=dADsFU7DHO4)
--  [**Connect your LLM to anything with MCP**](https://youtu.be/VNb4tGAHgos?si=U5wz4TAOWszVuGro)
+-  [**Connect your LLM to anything with MCP**](https://youtu.be/VNb4tGAHgos?si=U5wz4TAOWszVuGro) and [also](https://www.youtube.com/watch?v=7_skr3BGGVA&t=316s)
 -  [optimisation du contexte](https://youtu.be/Giv3ps7B0Mk?si=LWrDMz6x8bDyJKlG)
--  [QwQ meta prompt craked](https://www.youtube.com/watch?v=YoeNwp9je6E&t=860s )
+-  [QwQ meta prompt cracked](https://www.youtube.com/watch?v=YoeNwp9je6E&t=860s )
 
 
 ## Pour les vidéos
