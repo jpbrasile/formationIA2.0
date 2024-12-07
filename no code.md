@@ -6,6 +6,8 @@ Ceci est un tutoriel sur la façon d'utiliser les outils IA pour produire une ap
 - Abacus.ai (ChatLLM) a un mode agent qui déploie des applications simplements
 - Bolt.new me semble le meilleur outil pour coder des applications complexes à ce jour
 - Perplexity permet de trouver sur le net comment corriger les erreur les plus courantes
+- Llama 70B V3.3 en open source et accessible sur groq ![image](https://github.com/user-attachments/assets/f08511d3-edd5-4ac0-8b35-5e18633d0203)
+
 
 ## To do
 - Créer par ia des web api locale avec docker, accessible pour l'agent local
@@ -14,7 +16,46 @@ Ceci est un tutoriel sur la façon d'utiliser les outils IA pour produire une ap
 - Un assistant prospection tout IA:
   - Trouver les coordonnées et le profil avec perplexity eyt ChatGPT playground mis en oeuvre avec open interpreter
   - Utiliser Twilio + elevenlabs ou équivalent pour enclencher une discusion téléphonique
-  - Base de données lié à l'IA pour contexte specifique client potentiel et mise à jour après le call     
+  - Base de données lié à l'IA pour contexte specifique client potentiel et mise à jour après le call
+- Une appli en no code: le meilleur moyen de faire des applications modulaires complexes sans coder et en y accédant via un llm: 
+Le Model Context Protocol (MCP) d'Anthropic est un outil open-source conçu pour connecter les assistants IA directement à diverses sources de données, facilitant ainsi l'accès et l'utilisation de ces informations sans nécessiter de code personnalisé pour chaque ensemble de données. 
+THE VERGE
+
+Val Town est une plateforme qui permet de déployer rapidement des scripts et des intégrations via des URL publiques, simplifiant le prototypage et le test de workflows conversationnels intégrant des webhooks.
+
+En combinant MCP avec les API de Val Town, il est possible de créer des assistants IA capables d'interagir de manière fluide avec des scripts et des intégrations personnalisées. Cette synergie permet aux développeurs de :
+
+Prototyper rapidement des intégrations : en utilisant Val Town pour créer et déployer des scripts, puis en les connectant via MCP pour que l'IA puisse les utiliser.
+Accéder à des données en temps réel : les assistants IA peuvent interagir avec des scripts Val Town pour obtenir des informations actualisées ou effectuer des actions spécifiques.
+Automatiser des workflows complexes : en orchestrant plusieurs scripts et sources de données via MCP et Val Town, il est possible de créer des processus automatisés sophistiqués.
+Cette intégration offre une flexibilité accrue pour développer des solutions IA personnalisées et efficaces, en tirant parti des points forts de MCP et de Val Town.
+ 
+## Productivité
+- [Brainstrom with llm](https://www.youtube.com/watch?v=DqLFXGVLoSw)
+- [linkdedin automation](https://youtu.be/IPFGgTIVj4s?si=H8Z3tC2sQXDD3VS_) [et aussi](https://www.youtube.com/watch?v=Pwt422HPti0)
+- [Chercher dans le catalogue mouser](https://www.perplexity.ai/search/how-to-automate-search-in-mous-vLqXPwX3T6KaD7mNodOLew)
+- [a voiced assistant sell on "le boncoin"](https://youtu.be/5paw1DhtReM?si=fHSdt30Jns4eVOs6)
+## LLM et outils
+-  [Prompting pour faire raisonner les llm](https://youtu.be/YoeNwp9je6E?si=l2JrVz4DhM2XyzeU)
+-  [MCP avec une clef openai](https://www.youtube.com/watch?v=5ibVBG0TrD8)
+-  [Web scraping](https://youtu.be/LSPmrCX_cJI?si=sCafNZUZv3Zg2KnU)
+-  [Faire une Web app payante](https://youtu.be/5SI9lqHh0ZU?si=89hXLene_NB6ixfb)
+-  [Automation : répondre aux emails](https://youtu.be/4drzg9A5gjs?si=0nNczQcL6m9an0rD)
+-  [code with AI : mieux utiliser Bolt](https://www.youtube.com/watch?v=dADsFU7DHO4)
+-  [**Connect your LLM to anything with MCP**](https://youtu.be/VNb4tGAHgos?si=U5wz4TAOWszVuGro)
+-  [optimisation du contexte](https://youtu.be/Giv3ps7B0Mk?si=LWrDMz6x8bDyJKlG)
+-  [QwQ meta prompt craked](https://www.youtube.com/watch?v=YoeNwp9je6E&t=860s )
+
+
+## Pour les vidéos
+-  [Un avatar qui bouge les mains](https://antgroup.github.io/ai/echomimic_v2/)
+-  [Talking video open source](https://github.com/zachysaur/memo)
+-  [Remove background from video](https://github.com/zachysaur/video-background-remove)
+-  [Text to video gratuit (Kling)](https://youtu.be/G6xjZeL-7Lk?si=BfsvFu3UiLN23Gj6)
+-  [Créer des caractères consistants](https://www.youtube.com/watch?v=5ibVBG0TrD8) [et aussi](https://www.youtube.com/watch?v=0YJ2eGr9rD4) [ou encore](https://youtu.be/h-7SIFL6gP4?si=k6IrdWYhWIQ1xHH_)
+
+## Pour les images
+- [Le photoshop open source](https://youtu.be/V_gBODfqMuE?si=pQVdxnByxAeE5wud)
 
 
 # Première étape : S'aider de l'IA (ChatGPT ou Sonnet) pur établir le cahier des charges. 
