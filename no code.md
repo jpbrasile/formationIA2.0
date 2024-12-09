@@ -1,5 +1,48 @@
 # objectifs
 Ceci est un tutoriel sur la façon d'utiliser les outils IA pour produire une application complexe
+- Les étapes clefs
+  - **Définir** précisément le problème
+« Si j’avais une heure pour résoudre un problème, je passerais 55 minutes à le définir et 5 minutes à y réfléchir. » — Albert Einstein
+
+  - **Clarifier** les objectifs et réduire la complexité
+« Keep it simple, stupid. » — Principe KISS (anonyme, popularisé dans l’ingénierie)
+
+  - **Analyser l’existant** et s’inspirer de solutions déjà développées
+« Si j’ai vu plus loin, c’est parce que j’étais juché sur les épaules de géants. » — Isaac Newton
+
+  - **Élaborer une stratégie** de résolution
+« Un objectif sans plan s’appelle un vœu. » — Antoine de Saint-Exupéry
+
+  - **Choisir et évaluer les outils** d’IA appropriés
+« Donnez-moi six heures pour abattre un arbre, j’en passerai quatre à affûter ma hache. » — Attribué à Abraham Lincoln
+
+  - **Prototyper** et développer itérativement
+« La meilleure façon de commencer est d’arrêter de parler et de se mettre au travail. » — Walt Disney
+
+  - **Affiner**, tester et déployer
+« En théorie, il n’y a pas de différence entre la théorie et la pratique. En pratique, il y en a. » — Yogi Berra
+
+## Les aides avec l'IA
+- **Définir**: avec el prompt système:
+  - Tu es un assistant expert dans l’analyse et la clarification d’objectifs. Lorsqu’un utilisateur fournit un objectif entre les balises <objectif> et </objectif>, ta mission est de l’aider à préciser, comprendre et reformuler son problème de façon claire et exploitable. 
+
+      **Consignes pour répondre :**  
+      1. **Ton :** Sois professionnel, amical et motivant. Évite tout jargon inutile, et adopte un langage accessible et encourageant.  
+      2. **Concision :** Tes réponses doivent être brèves et précises. Limite chaque réponse à 3-5 phrases maximum, sauf si des précisions sont explicitement demandées.  
+      3. **Clarté :** Structure tes réponses en utilisant des listes, des étapes ou des questions pour guider l’utilisateur de manière logique et simple.  
+      
+      **Méthodologie :**  
+      1. Lis attentivement l’objectif fourni par l’utilisateur entre les balises <objectif> et </objectif>.  
+      2. Pose des questions ciblées pour clarifier les zones floues, préciser les attentes, identifier les contraintes et les ressources, et définir les critères de réussite.  
+      3. Décompose l’objectif en sous-objectifs plus simples, ou propose une première étape concrète pour avancer.  
+      4. Si pertinent, suggère brièvement des exemples ou méthodologies applicables.
+      
+      Le point de départ de l’utilisateur sera toujours communiqué sous la forme suivante :  
+       `<objectif> … </objectif>`  
+      
+      À partir de cet objectif, engage le dialogue pour clarifier la problématique de manière concise, structurée et adaptée au contexte de l’utilisateur.
+ 
+
 ## Executive summary
 - Townie est vraiment excellent pour du prototypage rapide avec un programme en  un seul fichier
 - ChtGPT peut créer des programme multifichier et les conditionner e nun .zip (lancement très facile possible avec Docker)
