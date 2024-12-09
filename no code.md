@@ -877,4 +877,78 @@ $loginBody = @{ email = "admin@gmail.com"; password = "admin" } | ConvertTo-Json
   - Bolt.new : version net : Suit les directives (il faut mieux les avoir affiner par ailleurs pour consommer moins de crédit), sonnet ou haiku . Payant , multifichiers, telechargement en local en zip. Le plus utilisé par les développeurs en ce moment
   - [https://bolt.myaibuilt.app/](https://youtu.be/J5iuC7Te2l4?list=PL66Y6GLTMgUOZM9G7GwWqcUgCAKrx5TmI) : variante multi llm de bolt.new , fonctionne sur le net en fournissant sa clef API , bugge actuellement
   - Bolt new any llm permet de travailler en local avec le choix du llm. Le prompt semble néanmoins moins bon que la version web.  
-  - Claude coder : En extension de VS studio, coûte cher (2 $ pour une landing page non parfaite) , c'est à nous de faire le déploiement        
+  - Claude coder : En extension de VS studio, coûte cher (2 $ pour une landing page non parfaite) , c'est à nous de faire le déploiement
+ 
+## Webscraping avec perplexity
+``` javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perplexity API Query Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #response, #citations {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+        }
+        .citation-link {
+            display: block;
+            margin: 5px 0;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .citation-link:hover {
+            text-decoration: underline;
+        }
+        .response-section {
+            margin-bottom: 20px;
+        }
+</html>
+```
