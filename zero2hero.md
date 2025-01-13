@@ -9,7 +9,10 @@
     - [_html_](https://jpbrasile-wholesomeindigotortoise.web.val.run/) 
     - [_REACT_](https://jpbrasile-illustriousbeigechimpanzee.web.val.run) (Ici j'ai demandé que les styles soient réalisés avec Tailwind, j'ai utilisé le large contexte de Gemini pour écrire le code complet, à partir d'une base qui provenait d'Abacus. En cas de bugs, comme le code est grand (1000 lignes de code), je demandais les corrections en mode diff. Ensuite j'ai fait le portage sur Townie pour un déploiement en un clic.   
 
-### Teaser
+### Création d'un teaser, déployée sur le web à partir des données mise au format markdown, en suivant un style que l'on maîtrise avec Townie 
+<details>
+  <summary>[En entrée]</summary>
+  
 ## 💡 Le Thésard 2.0 : Architecte d'un Futur Décarboné
 
 ### 🚀 Thésard 2.0 : L'avenir se réinvente.
@@ -42,3 +45,12 @@ C’est **travailler en équipe** pour un but commun : ensemble, thésards 2.0, 
 
 ### 💼 Du thésard 2.0 au professionnel 2.0
 Au-delà de la thèse vous partez sur le chemin professionnel avec un **réseau professionnel** solide car bâti sur un travail commun, un **jumeau numérique** et d’un autre outil multi-usage : celui d’avoir appris à **apprendre à apprendre** !
+</details>
+
+[et en sortie](https://jpbrasile-teasertemplate.web.val.run/)
+
+- Le code est réutilisable pour l'adapter à tout contenu en markdown. On y arrive avec ce prompt dans townie:
+
+`
+Je veux que la partie code soit indépendante du contenu fourni en mode markdown.  ce n'est pas le cas actuellement Il faut passer par une étape préalable qui transforme la syntaxe markdown en syntaxe Tailwind via l'appel à une fonction   
+`
