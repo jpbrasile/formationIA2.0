@@ -114,8 +114,8 @@ Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et
           - SEARXNG_HOSTNAME=${SEARXNG_HOSTNAME:-":8006"}
           - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL:-internal}
         - ollama: http://localhost:11434
-
-    - J'ai rajouté :
+- hostinger : systeme d'exploitation avec docker (application)
+    - J'ai rajouté en local:
   ```
     environment:
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true 
