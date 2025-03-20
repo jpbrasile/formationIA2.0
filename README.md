@@ -96,3 +96,23 @@ Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et
   ## L'open-source proche de GPT4
   ![Capture d'écran 2024-01-24 155607](https://github.com/jpbrasile/formationIA2.0/assets/8331027/0ef1137e-e79c-405d-8816-cad6a82e41b6)
 
+  ## Un stack local ou déployable sur hostinger domaine: atthesametime.eu
+  -  fait à partir de [Colin](https://github.com/coleam00/local-ai-packaged)
+  -  url:
+      - n8N:    http://localhost:5678/
+      - flowise: http://localhost:3001/
+      - Searxng: http://localhost:8080/
+      - openrouter: https://openrouter.ai/
+      - openwebui: http://localhost:3000/
+      - qdrant: http://localhost:6333/
+      - caddy avec
+          -  N8N_HOSTNAME=${N8N_HOSTNAME:-":8001"}
+          - WEBUI_HOSTNAME=${WEBUI_HOSTNAME:-":8002"}
+          - FLOWISE_HOSTNAME=${FLOWISE_HOSTNAME:-":8003"}
+          - OLLAMA_HOSTNAME=${OLLAMA_HOSTNAME:-":8004"}
+          - SUPABASE_HOSTNAME=${SUPABASE_HOSTNAME:-":8005"}
+          - SEARXNG_HOSTNAME=${SEARXNG_HOSTNAME:-":8006"}
+          - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL:-internal}
+        - ollama: http://localhost:11434
+          
+
