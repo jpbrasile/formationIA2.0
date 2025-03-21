@@ -129,3 +129,20 @@ sudo ufw allow in on docker0
 sudo ufw allow out on docker0
 ```
 
+Issue :Issue: LocalAI stack failing to start properly due to DNS resolution problems in Docker containers.
+
+Findings:
+
+Docker containers couldn't resolve domain names (DNS timeout)
+Host system uses systemd-resolved (127.0.0.53) which containers can't access
+Hostinger VPS with DNS servers: 89.116.146.10, 1.1.1.1, 8.8.4.4
+Fixed by configuring Docker's DNS in daemon.json to use public DNS servers
+Ollama containers were failing to download models due to DNS timeouts
+Network "localai_default" showing "Resource still in use" when trying cleanup
+Current status:
+
+DNS resolution now working in containers
+Restarted Ollama containers to retry downloads
+Need to monitor if model downloads succeed
+May need complete stack restart if issues persist
+
