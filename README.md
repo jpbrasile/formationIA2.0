@@ -165,3 +165,152 @@ Network "localai_default" shows as "Resource still in use" during cleanup attemp
 Stack fails to start completely despite network pruning attempts
 The system is in a state where DNS works but Docker networking is preventing proper container startup.
 
+Ceci a résolu le problème
+```
+Claude Sonnet 3.7
+Thought for 8 seconds
+I see multiple containers in various states using the localai_default network. The issue appears to be related to some containers in problematic states (especially the restarting Supabase pooler and created-but-not-started n8n).
+
+Let's clean this up systematically:
+
+Stop all running containers in this network:
+bash
+Copy Code
+docker stop $(docker ps -q --filter network=localai_default)
+Disconnect each container from the network:
+bash
+Copy Code
+for container in $(docker ps -a -q --filter network=localai_default); do
+  docker network disconnect -f localai_default $container
+done
+Now try removing the network:
+bash
+Copy Code
+docker network rm localai_default
+If you still encounter issues, try restarting Docker:
+bash
+Copy Code
+sudo systemctl restart docker
+Then restart your LocalAI stack with a fresh network configuration.
+The key problem appears to be Supabase-pooler continuously restarting, which keeps the network in use. The forced disconnect should resolve this.
+```
+# Setting Up LocalAI Stack on a Docker VM
+
+## Prerequisites
+- A VM with Ubuntu/Debian (recommended 4+ CPU cores, 16GB+ RAM)
+- Root access
+- Public internet access
+
+## 1. Update System
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y git curl
+2. Install Docker
+bash
+Copy Code
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+Log out and back in to apply group changes.
+
+3. Configure Docker DNS
+Create or modify Docker daemon configuration:
+
+bash
+Copy Code
+sudo mkdir -p /etc/docker
+sudo nano /etc/docker/daemon.json
+Add the following:
+
+json
+Copy Code
+{
+  "dns": ["8.8.8.8", "8.8.4.4"]
+}
+Restart Docker:
+
+bash
+Copy Code
+sudo systemctl restart docker
+4. Get LocalAI Stack
+bash
+Copy Code
+git clone https://github.com/your-repo/local-ai-packaged.git
+cd local-ai-packaged
+5. Configure Environment
+bash
+Copy Code
+cp .env.example .env
+nano .env
+Adjust settings as needed, particularly:
+
+Model settings
+Port mappings
+Resource limits
+6. Start the Stack
+bash
+Copy Code
+python start_services.py --profile cpu
+Available profiles: cpu, gpu-nvidia, gpu-amd, none
+
+7. Pull Models
+bash
+Copy Code
+docker exec -it ollama ollama pull qwen2.5:7b-instruct
+docker exec -it ollama ollama pull nomic-embed-text
+8. Verify Services
+bash
+Copy Code
+docker ps
+9. Accessing Services
+OpenWebUI: http://your-vm-ip:3000
+Flowise: http://your-vm-ip:3001
+Supabase Studio: http://your-vm-ip:8000
+10. Updating the Stack
+To update all containers to their latest versions:
+
+bash
+Copy Code
+# Stop all services
+docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml down
+
+# Pull latest versions of all containers
+docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml pull
+
+# Start services again with your desired profile
+python start_services.py --profile <your-profile>
+Replace <your-profile> with one of: cpu, gpu-nvidia, gpu-amd, or none.
+
+Troubleshooting
+DNS Issues
+If containers have DNS problems:
+
+Check Docker DNS configuration in daemon.json
+Verify container networking by running ping google.com inside containers
+Network Conflicts
+If you encounter "network not found" or "resource in use" errors:
+
+bash
+Copy Code
+# Stop all containers
+docker stop $(docker ps -q --filter network=localai_default)
+
+# Disconnect containers from network
+for container in $(docker ps -a -q --filter network=localai_default); do
+  docker network disconnect -f localai_default $container
+done
+
+# Remove network
+docker network rm localai_default
+
+# Restart Docker
+sudo systemctl restart docker
+Performance Issues
+Adjust model sizes in .env
+Monitor resources with docker stats
+Consider using GPU acceleration if available
+Basic Usage
+Use OpenWebUI for chat with models
+Configure Flowise for AI workflows
+Use Supabase for data storage and vector search
+
