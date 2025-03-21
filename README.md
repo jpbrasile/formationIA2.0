@@ -122,3 +122,10 @@ Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et
   ```
   dans docker-compose.yml pour n8n et n8n-import
 
+  !!! : un point important pour le déploiement :il y a des incompatibilité de parefeu entre docker et ufw, donc faire
+  ```
+  # Allow traffic within Docker's internal network
+sudo ufw allow in on docker0
+sudo ufw allow out on docker0
+```
+
