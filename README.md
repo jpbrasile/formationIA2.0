@@ -349,10 +349,10 @@ Try the swap solution first, then restart Ollama:
 ```bash
 docker restart ollama
 ```
-http://host.docker.internal:11434/ 66> ollama   // https://ollama.atthesametime.eu/
-http://host.docker.internal:6333/ -->  qdrant  //http://localhost:6333/  --> curl http://localhost:6333  dans hostinger
-https://searxng.atthesametime.eu/ 
-https://flowise.atthesametime.eu/
-https://supabase.atthesametime.eu/
-https://openwebui.atthesametime.eu/
-https://n8n.atthesametime.eu/
+- http://host.docker.internal:11434/ 66> ollama   // https://ollama.atthesametime.eu/
+- http://host.docker.internal:6333/ -->  qdrant  //http://localhost:6333/  --> curl http://localhost:6333  dans hostinger
+- https://searxng.atthesametime.eu/   http://localhost:8080/
+- https://flowise.atthesametime.eu/   http://localhost:3001/
+- https://supabase.atthesametime.eu/   http://localhost:5678/home/workflows
+- https://openwebui.atthesametime.eu/      http://localhost:3000/
+- https://n8n.atthesametime.eu/    http://localhost:5678/home/workflows
