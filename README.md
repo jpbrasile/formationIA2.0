@@ -146,3 +146,22 @@ Restarted Ollama containers to retry downloads
 Need to monitor if model downloads succeed
 May need complete stack restart if issues persist
 
+Initial Problem:
+
+LocalAI stack failing due to DNS resolution problems in Docker containers
+Containers couldn't resolve domain names, causing timeouts
+Host system used systemd-resolved (127.0.0.53) which containers couldn't access
+Solution Applied:
+
+Configured Docker's DNS in daemon.json to use public DNS servers
+Successfully fixed DNS resolution
+Models (qwen2.5:7b-instruct and nomic-embed-text) were downloaded correctly
+Current Problem:
+
+Docker networking issue when restarting the stack
+Error: "failed to set up container networking: network 30bebdc331dc423f594d6b5497739c04dd37a0a648114ae70b0bfd637e72f1ef not found"
+Docker is trying to connect to a network that exists but with reference issues
+Network "localai_default" shows as "Resource still in use" during cleanup attempts
+Stack fails to start completely despite network pruning attempts
+The system is in a state where DNS works but Docker networking is preventing proper container startup.
+
