@@ -314,3 +314,39 @@ Use OpenWebUI for chat with models
 Configure Flowise for AI workflows
 Use Supabase for data storage and vector search
 
+The logs show a memory issue. Your VM doesn't have enough RAM to load the Qwen2.5 7B model:
+
+```
+error="model requires more system memory (5.4 GiB) than is available (4.5 GiB)"
+```
+
+You have several options:
+
+1. **Add swap space** to your VM:
+   ```bash
+   sudo fallocate -l 8G /swapfile
+   sudo chmod 600 /swapfile
+   sudo mkswap /swapfile
+   sudo swapon /swapfile
+   echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+   ```
+
+2. **Use a smaller model** instead:
+   ```bash
+   docker exec -it ollama ollama pull phi3:mini
+   # or
+   docker exec -it ollama ollama pull mistral:instruct
+   ```
+
+3. **Free memory** by stopping unnecessary services:
+   ```bash
+   docker stop supabase-analytics supabase-imgproxy
+   ```
+
+4. **Increase VM RAM** to at least 8GB (ideally 16GB for comfortable use)
+
+Try the swap solution first, then restart Ollama:
+```bash
+docker restart ollama
+```
+
