@@ -356,3 +356,19 @@ docker restart ollama
 - https://supabase.atthesametime.eu/   http://localhost:5678/home/workflows
 - https://openwebui.atthesametime.eu/      http://localhost:3000/
 - https://n8n.atthesametime.eu/    http://localhost:5678/home/workflows
+
+## IA Comment suivre le rithme ?
+- Tout va très vite et pour ma^triser l'IA et ne pas être seulement spectateur il faut une méthode, je propse le couper/coller
+- Un acteur [Cole Melin](https://www.youtube.com/@ColeMedin) sur youtube, (créateur de bolt) travaille à temps plein pour apporter sur la base de 2 vidéos par semaine le résultat de son travail. Il vise à trouver des soutions généralements open source, et il est complètement transparent sur ces propres travaux que l'on peut dupliquer .
+- Ce travail de couper/coller demande néanmoins des efforts, mais c'est la meilleure façon d'apprendre à apprendre , en étant acteur.
+- J'ai ainsi dupliquer , temps en local que sur Hostinger avec mon domaine atthesametime.eu un stack qui correspond à l'état de l'art actuel avec
+    - n8n : on peut automaiser près de 500 tâches , elles sont accessibles via des nodes webhooks qui fournissent les url d'accès et en créant les crédentials requis
+    - flowise: qui en nos code permet de créer des agents
+    - openwebui : qui permet d'interagir avec notre stack en no code aavec un interface rsssemblant à celui de chatGPT
+    - searxng pour les recherches sur le net
+    - supabase et GDrant pour base de données
+    - ollama pour les llm locaux.J'utilise aussi openrouter pour des llm plus performants (certains sont gratuits comme mistralai/mistral-small-3.1-24b-instruct:free 
+    - caddy pour le cryptage
+ 
+- Le portage sur Hostinger avec une configuration CPU 2 cores 8GB, 100GB ne coûte que ~ 6 € /mois et permet de partager le stack sur un réseau délocalisé    
+-   
