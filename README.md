@@ -114,241 +114,83 @@ Dans le tableau ci-après: 3 niveaux de formation : Débutant, intermédiaire et
           - SEARXNG_HOSTNAME=${SEARXNG_HOSTNAME:-":8006"}
           - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL:-internal}
         - ollama: http://localhost:11434
-- hostinger : systeme d'exploitation avec docker (application)
-    - J'ai rajouté en local:
-  ```
-    environment:
-      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true 
-  ```
-  dans docker-compose.yml pour n8n et n8n-import
+- Hostinger : systeme d'exploitation avec docker (application)
+ # Configuration complète pour LocalAI Stack sur VM
 
-  !!! : un point important pour le déploiement :il y a des incompatibilité de parefeu entre docker et ufw, donc faire
-  ```
-  # Allow traffic within Docker's internal network
-sudo ufw allow in on docker0
-sudo ufw allow out on docker0
-```
-
-Issue :Issue: LocalAI stack failing to start properly due to DNS resolution problems in Docker containers.
-
-Findings:
-
-Docker containers couldn't resolve domain names (DNS timeout)
-Host system uses systemd-resolved (127.0.0.53) which containers can't access
-Hostinger VPS with DNS servers: 89.116.146.10, 1.1.1.1, 8.8.4.4
-Fixed by configuring Docker's DNS in daemon.json to use public DNS servers
-Ollama containers were failing to download models due to DNS timeouts
-Network "localai_default" showing "Resource still in use" when trying cleanup
-Current status:
-
-DNS resolution now working in containers
-Restarted Ollama containers to retry downloads
-Need to monitor if model downloads succeed
-May need complete stack restart if issues persist
-
-Initial Problem:
-
-LocalAI stack failing due to DNS resolution problems in Docker containers
-Containers couldn't resolve domain names, causing timeouts
-Host system used systemd-resolved (127.0.0.53) which containers couldn't access
-Solution Applied:
-
-Configured Docker's DNS in daemon.json to use public DNS servers
-Successfully fixed DNS resolution
-Models (qwen2.5:7b-instruct and nomic-embed-text) were downloaded correctly
-Current Problem:
-
-Docker networking issue when restarting the stack
-Error: "failed to set up container networking: network 30bebdc331dc423f594d6b5497739c04dd37a0a648114ae70b0bfd637e72f1ef not found"
-Docker is trying to connect to a network that exists but with reference issues
-Network "localai_default" shows as "Resource still in use" during cleanup attempts
-Stack fails to start completely despite network pruning attempts
-The system is in a state where DNS works but Docker networking is preventing proper container startup.
-
-Ceci a résolu le problème
-```
-Claude Sonnet 3.7
-Thought for 8 seconds
-I see multiple containers in various states using the localai_default network. The issue appears to be related to some containers in problematic states (especially the restarting Supabase pooler and created-but-not-started n8n).
-
-Let's clean this up systematically:
-
-Stop all running containers in this network:
-bash
-Copy Code
-docker stop $(docker ps -q --filter network=localai_default)
-Disconnect each container from the network:
-bash
-Copy Code
-for container in $(docker ps -a -q --filter network=localai_default); do
-  docker network disconnect -f localai_default $container
-done
-Now try removing the network:
-bash
-Copy Code
-docker network rm localai_default
-If you still encounter issues, try restarting Docker:
-bash
-Copy Code
-sudo systemctl restart docker
-Then restart your LocalAI stack with a fresh network configuration.
-The key problem appears to be Supabase-pooler continuously restarting, which keeps the network in use. The forced disconnect should resolve this.
-```
-# Setting Up LocalAI Stack on a Docker VM
-
-## Prerequisites
-- A VM with Ubuntu/Debian (recommended 4+ CPU cores, 16GB+ RAM)
-- Root access
-- Public internet access
-
-## 1. Update System
+## 1. Installation de Docker
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git curl
-2. Install Docker
-bash
-Copy Code
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker $USER
-Log out and back in to apply group changes.
-
-3. Configure Docker DNS
-Create or modify Docker daemon configuration:
-
-bash
-Copy Code
-sudo mkdir -p /etc/docker
-sudo nano /etc/docker/daemon.json
-Add the following:
-
-json
-Copy Code
-{
-  "dns": ["8.8.8.8", "8.8.4.4"]
-}
-Restart Docker:
-
-bash
-Copy Code
-sudo systemctl restart docker
-4. Get LocalAI Stack
-bash
-Copy Code
-git clone https://github.com/your-repo/local-ai-packaged.git
-cd local-ai-packaged
-5. Configure Environment
-bash
-Copy Code
-cp .env.example .env
-nano .env
-Adjust settings as needed, particularly:
-
-Model settings
-Port mappings
-Resource limits
-6. Start the Stack
-bash
-Copy Code
-python start_services.py --profile cpu
-Available profiles: cpu, gpu-nvidia, gpu-amd, none
-
-7. Pull Models
-bash
-Copy Code
-docker exec -it ollama ollama pull qwen2.5:7b-instruct
-docker exec -it ollama ollama pull nomic-embed-text
-8. Verify Services
-bash
-Copy Code
-docker ps
-9. Accessing Services
-OpenWebUI: http://your-vm-ip:3000
-Flowise: http://your-vm-ip:3001
-Supabase Studio: http://your-vm-ip:8000
-10. Updating the Stack
-To update all containers to their latest versions:
-
-bash
-Copy Code
-# Stop all services
-docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml down
-
-# Pull latest versions of all containers
-docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml pull
-
-# Start services again with your desired profile
-python start_services.py --profile <your-profile>
-Replace <your-profile> with one of: cpu, gpu-nvidia, gpu-amd, or none.
-
-Troubleshooting
-DNS Issues
-If containers have DNS problems:
-
-Check Docker DNS configuration in daemon.json
-Verify container networking by running ping google.com inside containers
-Network Conflicts
-If you encounter "network not found" or "resource in use" errors:
-
-bash
-Copy Code
-# Stop all containers
-docker stop $(docker ps -q --filter network=localai_default)
-
-# Disconnect containers from network
-for container in $(docker ps -a -q --filter network=localai_default); do
-  docker network disconnect -f localai_default $container
-done
-
-# Remove network
-docker network rm localai_default
-
-# Restart Docker
-sudo systemctl restart docker
-Performance Issues
-Adjust model sizes in .env
-Monitor resources with docker stats
-Consider using GPU acceleration if available
-Basic Usage
-Use OpenWebUI for chat with models
-Configure Flowise for AI workflows
-Use Supabase for data storage and vector search
-
-The logs show a memory issue. Your VM doesn't have enough RAM to load the Qwen2.5 7B model:
-
-```
-error="model requires more system memory (5.4 GiB) than is available (4.5 GiB)"
+# Déconnectez-vous et reconnectez-vous pour appliquer les changements
 ```
 
-You have several options:
-
-1. **Add swap space** to your VM:
-   ```bash
-   sudo fallocate -l 8G /swapfile
-   sudo chmod 600 /swapfile
-   sudo mkswap /swapfile
-   sudo swapon /swapfile
-   echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-   ```
-
-2. **Use a smaller model** instead:
-   ```bash
-   docker exec -it ollama ollama pull phi3:mini
-   # or
-   docker exec -it ollama ollama pull mistral:instruct
-   ```
-
-3. **Free memory** by stopping unnecessary services:
-   ```bash
-   docker stop supabase-analytics supabase-imgproxy
-   ```
-
-4. **Increase VM RAM** to at least 8GB (ideally 16GB for comfortable use)
-
-Try the swap solution first, then restart Ollama:
+## 2. Configuration de la mémoire swap
 ```bash
-docker restart ollama
+# Créer un fichier swap de 8GB
+sudo fallocate -l 8G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+# Rendre le swap permanent
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
+
+## 3. Configuration du pare-feu UFW pour Docker
+```bash
+# Permettre le trafic sur l'interface docker0
+sudo ufw allow in on docker0
+sudo ufw allow out on docker0
+
+# Permettre le trafic depuis le sous-réseau Docker
+sudo ufw allow from 172.17.0.0/16
+sudo ufw route allow in on docker0
+sudo ufw route allow out on docker0
+
+# Autoriser les ports nécessaires
+sudo ufw allow 11434/tcp  # Pour Ollama
+sudo ufw allow 3000/tcp   # Pour OpenWebUI
+sudo ufw allow 3001/tcp   # Pour Flowise
+sudo ufw allow 5678/tcp   # Pour n8n
+sudo ufw allow 8080/tcp   # Pour SearxNG
+sudo ufw allow 6333/tcp   # Pour Qdrant
+
+# Recharger UFW
+sudo ufw reload
+```
+
+## 4. Configuration de Docker Compose
+Assurez-vous d'ajouter `extra_hosts` à tous les services qui doivent communiquer avec d'autres services :
+
+```yaml
+services:
+  votre-service:
+    # ...autres configurations...
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+```
+
+Ou mieux, utilisez les noms de services directement (par exemple `http://ollama:11434`) puisque les conteneurs sont sur le même réseau Docker.
+
+## 5. Choix du modèle adapté aux ressources
+Pour les VMs avec moins de 8GB de RAM :
+```bash
+docker exec -it ollama ollama pull phi3:mini
+# ou
+docker exec -it ollama ollama pull mistral:instruct
+```
+
+## Points importants à retenir
+- Le pare-feu UFW et Docker ont des interactions complexes qui nécessitent une configuration spécifique
+- Utilisez les noms de services pour la communication entre conteneurs sur le même réseau
+- Adaptez les modèles LLM à vos ressources matérielles disponibles
+- Vérifiez les connexions avec `curl` pour diagnostiquer les problèmes
+
+Cette configuration devrait résoudre les problèmes de communication entre Docker et le système hôte, ainsi que les limitations de mémoire pour les modèles LLM.
+
+
 - http://host.docker.internal:11434/ --> ollama   // https://ollama.atthesametime.eu/
 - http://host.docker.internal:6333/ -->  qdrant  //http://localhost:6333/  --> curl http://localhost:6333  dans hostinger
 - https://searxng.atthesametime.eu/   http://localhost:8080/
@@ -357,7 +199,7 @@ docker restart ollama
 - https://openwebui.atthesametime.eu/      http://localhost:3000/
 - https://n8n.atthesametime.eu/    http://localhost:5678/home/workflows
 
-## IA Comment suivre le rithme ?
+## IA Comment suivre le rythme ?
 - Tout va très vite et pour ma^triser l'IA et ne pas être seulement spectateur il faut une méthode, je propse le couper/coller
 - Un acteur [Cole Melin](https://www.youtube.com/@ColeMedin) sur youtube, (créateur de bolt) travaille à temps plein pour apporter sur la base de 2 vidéos par semaine le résultat de son travail. Il vise à trouver des soutions généralements open source, et il est complètement transparent sur ces propres travaux que l'on peut dupliquer .
 - Ce travail de couper/coller demande néanmoins des efforts, mais c'est la meilleure façon d'apprendre à apprendre , en étant acteur.
