@@ -213,4 +213,32 @@ Cette configuration devrait résoudre les problèmes de communication entre Dock
     - caddy pour le cryptage
  
 - Le portage sur Hostinger avec une configuration CPU 2 cores 8GB, 100GB ne coûte que ~ 6 € /mois et permet de partager le stack sur un réseau délocalisé    
--   
+
+### Synthèse : Création de l'utilisateur avec les droits Docker
+- Création de l'utilisateur jpb :
+L'utilisateur jpb a été créé avec la commande suivante :
+```
+sudo adduser jpb
+```
+- Cette commande a permis de créer un utilisateur avec un répertoire personnel et de définir un mot de passe.
+- Ajout de jpb au groupe Docker :
+    - Pour permettre à jpb d'exécuter des commandes Docker sans utiliser sudo, il a été ajouté au groupe docker :
+```
+sudo usermod -aG docker jpb
+```
+    	- Cette commande associe l'utilisateur jpb au groupe docker, qui dispose des permissions nécessaires pour gérer Docker.
+- Application des modifications :
+    - Après avoir ajouté jpb au groupe docker, il a été nécessaire de se reconnecter en tant que jpb pour appliquer les changements :
+```
+su - jpb
+``` 
+
+- Cela a permis à l'utilisateur jpb de bénéficier des droits Docker sans redémarrer le système.
+- Vérification des droits Docker :
+    - Pour confirmer que jpb pouvait exécuter des commandes Docker, la commande suivante a été testée :
+```
+docker ps
+```
+    - Si cette commande a affiché les conteneurs en cours d'exécution sans erreur, cela a confirmé que les droits Docker étaient correctement configurés.
+- Problème des applications Docker demandant un email et un mot de passe :
+    - Bien que jpb ait obtenu les droits Docker, certaines applications Docker nécessitaient une configuration supplémentaire (email et mot de passe). Cela a été identifié comme une étape distincte à configurer pour chaque application.
