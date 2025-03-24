@@ -221,6 +221,7 @@ L'utilisateur jpb a été créé avec la commande suivante :
 sudo adduser jpb
 ```
 - Cette commande a permis de créer un utilisateur avec un répertoire personnel et de définir un mot de passe.
+- mais cela à planté le terminal d'où un reset du SSH et un redémarrage de la VDS pour débloqier. 
 - Ajout de jpb au groupe Docker :
     - Pour permettre à jpb d'exécuter des commandes Docker sans utiliser sudo, il a été ajouté au groupe docker :
 ```
