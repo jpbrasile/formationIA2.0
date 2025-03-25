@@ -315,7 +315,7 @@ Copy Code
 ssh -L 5679:localhost:5678 root@93.127.203.205
 Étape 4: Accéder au lien d'invitation
 Ouvrez votre navigateur et accédez à:
-
+https://n8n.atthesametime.eu/signup?inviterId=ID_INVITANT&inviteeId=ID_INVITE
 http://localhost:5679/signup?inviterId=ID_INVITANT&inviteeId=ID_INVITE
 Étape 5: Finaliser l'inscription
 L'utilisateur peut maintenant:
