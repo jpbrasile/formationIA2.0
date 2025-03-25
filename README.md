@@ -243,3 +243,26 @@ docker ps
     - Si cette commande a affiché les conteneurs en cours d'exécution sans erreur, cela a confirmé que les droits Docker étaient correctement configurés.
 - Problème des applications Docker demandant un email et un mot de passe :
     - Bien que jpb ait obtenu les droits Docker, certaines applications Docker nécessitaient une configuration supplémentaire (email et mot de passe). Cela a été identifié comme une étape distincte à configurer pour chaque application.
+
+
+step-by-step process to properly reset and restart your environment:
+
+First, check what's currently running:
+docker ps
+Stop all services completely, including Supabase:
+docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml down
+Remove any orphaned containers:
+docker container prune -f
+Clean up networks (optional, but helpful if networking issues persist):
+docker network prune -f
+Pull the latest versions of all containers:
+docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml pull
+Start services again using the start_services.py script:
+python start_services.py --profile cpu
+This comprehensive approach should:
+
+Remove all conflicting containers
+Clean up network configurations
+Update to latest container versions
+Start everything fresh without conflicts
+The key was including both the LocalAI and Supabase configurations when stopping and pulling, as your error messages showed conflicts between these environments.
