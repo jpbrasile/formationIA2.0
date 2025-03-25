@@ -268,30 +268,30 @@ Start everything fresh without conflicts
 The key was including both the LocalAI and Supabase configurations when stopping and pulling, as your error messages showed conflicts between these environments.
 
 
-Guide pour ajouter un nouvel utilisateur à n8n
-Prérequis
-Accès SSH au serveur n8n (Hostinger)
-Clé API n8n valide (obtenue par l'administrateur)
-PowerShell ou terminal sur votre machine locale
-Étape préliminaire: Obtenir la clé API (Admin uniquement)
-L'administrateur doit se connecter à https://n8n.atthesametime.eu
-Aller dans Paramètres > API n8n
-Cliquer sur Créer une clé API
-Copier la clé générée pour l'utiliser dans les commandes
-Étape 0: Ouvrir le port SSH (si nécessaire)
-Si le port SSH (22) n'est pas ouvert, connectez-vous au terminal Hostinger en tant que root et exécutez:
+## Guide pour ajouter un nouvel utilisateur à n8n
+- Prérequis
+    -  Accès SSH au serveur n8n (Hostinger)
+    - Clé API n8n valide (obtenue par l'administrateur)
+    - PowerShell ou terminal sur votre machine locale
+- Étape préliminaire: Obtenir la clé API (Admin uniquement)
+    - L'administrateur doit se connecter à https://n8n.atthesametime.eu
+    - Aller dans Paramètres > API n8n
+    - Cliquer sur Créer une clé API
+    - Copier la clé générée pour l'utiliser dans les commandes
+- Étape 0: Ouvrir le port SSH (si nécessaire)
+    - Si le port SSH (22) n'est pas ouvert, connectez-vous au terminal Hostinger en tant que root et exécutez:
 
-bash
-Copy Code
+```
 # Autoriser le port SSH dans le pare-feu UFW
 sudo ufw allow 22/tcp
 sudo ufw reload
 
 # Vérifier que la règle a été ajoutée
 sudo ufw status
-Étape 1: Créer l'utilisateur via l'API
-bash
-Copy Code
+```
+
+- Étape 1: Créer l'utilisateur via l'API
+```
 # Sur le serveur n8n
 curl -X POST "https://n8n.atthesametime.eu/api/v1/users" \
 -H "Content-Type: application/json" \
@@ -302,24 +302,25 @@ curl -X POST "https://n8n.atthesametime.eu/api/v1/users" \
   "lastName": "Nom",
   "role": "global:member"
 }]'
-Étape 2: Récupérer le lien d'invitation
-Dans la réponse, notez:
+```
+- Étape 2: Récupérer le lien d'invitation
+    - Dans la réponse, notez:
 
-L'ID de l'utilisateur invité (inviteeId)
-L'ID de l'invitant (inviterId)
-Le lien d'invitation complet
-Étape 3: Configurer le tunnel SSH
-bash
-Copy Code
+        - L'ID de l'utilisateur invité (inviteeId)
+        - L'ID de l'invitant (inviterId)
+        - Le lien d'invitation complet
+- Étape 3: Configurer le tunnel SSH
+```
 # Sur votre machine locale
 ssh -L 5679:localhost:5678 root@93.127.203.205
-Étape 4: Accéder au lien d'invitation
-Ouvrez votre navigateur et accédez à:
+```
+- Étape 4: Accéder au lien d'invitation
+    - Ouvrez votre navigateur et accédez à:
 https://n8n.atthesametime.eu/signup?inviterId=ID_INVITANT&inviteeId=ID_INVITE
-http://localhost:5679/signup?inviterId=ID_INVITANT&inviteeId=ID_INVITE
-Étape 5: Finaliser l'inscription
+
+- Étape 5: Finaliser l'inscription
 L'utilisateur peut maintenant:
 
-Définir son mot de passe
-Accepter les conditions d'utilisation
-Accéder à n8n
+    - Définir son mot de passe
+    - Accepter les conditions d'utilisation
+    - Accéder à n8n
