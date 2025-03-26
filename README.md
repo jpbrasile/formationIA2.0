@@ -245,20 +245,32 @@ docker ps
     - Bien que jpb ait obtenu les droits Docker, certaines applications Docker nécessitaient une configuration supplémentaire (email et mot de passe). Cela a été identifié comme une étape distincte à configurer pour chaque application.
 
 
-step-by-step process to properly reset and restart your environment:
+## Step-by-step process to properly reset and restart your environment:
 
-First, check what's currently running:
+- First, check what's currently running:
+```
 docker ps
-Stop all services completely, including Supabase:
+```
+- Stop all services completely, including Supabase:
+```
 docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml down
-Remove any orphaned containers:
+```
+- Remove any orphaned containers:
+```
 docker container prune -f
-Clean up networks (optional, but helpful if networking issues persist):
+``
+- Clean up networks (optional, but helpful if networking issues persist):
+```
 docker network prune -f
-Pull the latest versions of all containers:
+```
+- Pull the latest versions of all containers:
+```
 docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml pull
-Start services again using the start_services.py script:
-python start_services.py --profile cpu
+```
+- Start services again using the start_services.py script:
+```
+python start_services.py --profile cpu  # ou gpu-nvidia 
+```
 This comprehensive approach should:
 
 Remove all conflicting containers
