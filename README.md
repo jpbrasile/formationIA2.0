@@ -195,7 +195,7 @@ Cette configuration devrait résoudre les problèmes de communication entre Dock
 - http://host.docker.internal:6333/ -->  qdrant  //http://localhost:6333/  --> curl http://localhost:6333  dans hostinger
 - https://searxng.atthesametime.eu/   http://localhost:8080/
 - https://flowise.atthesametime.eu/   http://localhost:3001/
-- https://supabase.atthesametime.eu/   http://localhost:5678/home/workflows
+- https://supabase.atthesametime.eu/   http://localhost:8000 (via kong)
 - https://openwebui.atthesametime.eu/      http://localhost:3000/
 - https://n8n.atthesametime.eu/    http://localhost:5678/home/workflows
 
