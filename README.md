@@ -258,7 +258,7 @@ docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compos
 - Remove any orphaned containers:
 ```
 docker container prune -f
-``
+```
 - Clean up networks (optional, but helpful if networking issues persist):
 ```
 docker network prune -f
@@ -268,16 +268,18 @@ docker network prune -f
 docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml pull
 ```
 - Start services again using the start_services.py script:
+
 ```
 python start_services.py --profile cpu  # ou gpu-nvidia 
 ```
-This comprehensive approach should:
 
-Remove all conflicting containers
-Clean up network configurations
-Update to latest container versions
-Start everything fresh without conflicts
-The key was including both the LocalAI and Supabase configurations when stopping and pulling, as your error messages showed conflicts between these environments.
+- This comprehensive approach should:
+
+    - Remove all conflicting containers
+    - Clean up network configurations
+    - Update to latest container versions
+    - Start everything fresh without conflicts
+    - The key was including both the LocalAI and Supabase configurations when stopping and pulling, as your error messages showed conflicts between these environments.
 
 
 ## Guide pour ajouter un nouvel utilisateur à n8n
