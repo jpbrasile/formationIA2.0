@@ -521,3 +521,24 @@ Notre objectif était de rendre fonctionnel l'enregistrement et la connexion d'u
     *   Configuration du pare-feu local bloquant l'accès ? (Peu probable si l'accès direct fonctionnait).
 
 Nous sommes à un cheveu du succès. Il faut comprendre pourquoi le navigateur ne parvient pas à se connecter à `localhost:64663` *uniquement* lorsqu'on clique sur le lien, alors que l'accès direct fonctionne et que le serveur `serve` est censé tourner.
+## Issue Analysis and Solution
+
+### The Problem
+The original code failed to initialize the Supabase client due to **script loading sequence issues**. Specifically:
+
+1. Using `defer` on both scripts created a race condition
+2. The Supabase library wasn't fully loaded when your code tried to use it
+3. Error handling was insufficient to diagnose the problem
+
+### The Solution
+Fixed by implementing a proper loading sequence:
+
+1. **Loading the library first**: Removed `defer` attribute to ensure Supabase loads completely
+2. **Initialization timing**: Used `window.addEventListener('load', ...)` to guarantee correct sequence
+3. **Comprehensive error handling**: Added detailed logging and visual feedback
+4. **Direct testing**: Implemented test buttons to verify specific services (Auth/API)
+
+### Technical details
+- Script race conditions are common when libraries must be fully initialized before use
+- Local Supabase requires proper connectivity to multiple services (Kong, Auth, PostgreSQL)
+- The error "_dummy_query_ does not exist" confirms successful database connectivity
