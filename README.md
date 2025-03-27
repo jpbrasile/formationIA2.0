@@ -354,15 +354,6 @@ Impossible d'enregistrer de nouveaux utilisateurs dans l'instance locale Supabas
 *   Un utilisateur a pu être **créé avec succès** en utilisant la fonction *administrateur* "Add user" dans Supabase Studio.
 *   Toute tentative d'utiliser une éventuelle fonction d'"enregistrement" (Sign Up) *publique* directement depuis l'interface de Studio (`http://localhost:8000`) échoue toujours avec l'erreur `403 Forbidden` sur `/admin/users`.
 *   La **connexion (login)** de l'utilisateur créé manuellement depuis une autre application cliente (par ex. Open WebUI) **échoue toujours**.
+*   Le problème a été résolu en procédent à un arrêt redémarrage de docker compose
 
-## Hypothèse sur l'Échec d'Enregistrement via Studio
-
-L'interface de Supabase Studio (`http://localhost:8000`) est principalement un outil d'administration. Si elle expose une fonction "Sign Up" distincte de "Authentication -> Add user", cette fonction pourrait être mal configurée ou buggée dans cette version locale, l'amenant à appeler le mauvais endpoint API. La méthode correcte pour *ajouter* des utilisateurs via Studio est la fonction admin dédiée.
-
-## Prochaines Étapes Suggérées
-
-1.  **Diagnostiquer l'échec de connexion (Login) :**
-    *   Tenter de connecter l'utilisateur créé manuellement depuis l'application cliente où la connexion est nécessaire (par ex. Open WebUI).
-    *   Analyser les logs de `supabase-auth` *pendant cette tentative de connexion* pour en identifier la cause. Utiliser `docker logs --tail 50 supabase-auth`.
-2.  **Utiliser la Méthode Correcte dans Studio :** Pour ajouter des utilisateurs via l'interface, utiliser systématiquement "Authentication" -> "Users" -> "Add user". Ne pas utiliser d'éventuels autres formulaires "Sign Up" présents dans Studio.
-3.  **Corriger l'Application Externe (si applicable) :** Si une autre application comme Open WebUI doit permettre l'enregistrement, s'assurer qu'elle utilise `supabase.auth.signUp()`.
+## Prochaine étape : faire l'enregisterment d'un utilisateur sur la VDS Hostinger
