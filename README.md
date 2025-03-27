@@ -439,4 +439,85 @@ Impossible d'enregistrer de nouveaux utilisateurs ("Sign Up") via l'interface Su
 (Les points clés restent les mêmes que dans la réponse précédente : préparation VPS, config Supabase pour production via self-hosting officiel, gestion des secrets, domaine/HTTPS, SMTP réel, ressources, tests...)
 
 *Cette version inclut bien la vérification JWT, le bug du lien email sur le port 3000 et l'observation sur le port 8000. La correction du bug du lien email local devient une étape intermédiaire avant de passer sereinement à la production.*
- 
+
+
+ ## Résumé des Obstacles Franchis : Débogage Supabase Local (Point d'Étape)
+
+Notre objectif était de rendre fonctionnel l'enregistrement et la connexion d'utilisateurs sur une instance Supabase locale, gérée via une configuration Docker Compose personnalisée. Voici les étapes et les obstacles surmontés :
+
+### 1. Échec Initial d'Enregistrement "Public" via Studio
+
+*   **Problème :** Tentative d'utiliser un formulaire "Sign Up" dans Supabase Studio (`http://localhost:8000` initialement) résultant en erreurs ("API error...", `403 Forbidden`).
+*   **Diagnostic :** L'interface Studio appelait incorrectement l'endpoint admin (`/admin/users`) au lieu de l'endpoint public (`/signup`).
+*   **Solution :** Comprendre que Studio est un outil *d'administration*. Utiliser les fonctions dédiées `Authentication -> Users -> Add user` ou `Invite user` pour créer des utilisateurs. L'enregistrement public doit se faire via l'API (`supabase.auth.signUp()`) depuis un frontend.
+
+### 2. Désynchronisation JWT Secret & Clés API (Plusieurs Fois)
+
+*   **Problème :** Échecs d'appels API (via PowerShell, puis via Studio pour `/invite`) avec des erreurs `403 Forbidden`, `invalid JWT`, `signature is invalid`.
+*   **Diagnostic :** Incohérence entre le `JWT_SECRET` utilisé par le service `auth` (GoTrue) et celui utilisé pour signer les clés API (`ANON_KEY`, `SERVICE_ROLE_KEY`) fournies dans les requêtes ou dans la configuration. Problème initial lié à une confusion d'encodage Base64 vs littéral. Le problème est réapparu pour la `SERVICE_ROLE_KEY` plus tard.
+*   **Solution :** Utiliser systématiquement le `JWT_SECRET` littéral (non encodé Base64). Vérifier la cohérence des 3 éléments (`JWT_SECRET`, `ANON_KEY`, `SERVICE_ROLE_KEY`) via jwt.io (case Base64 décochée). Regénérer les clés API si nécessaire en utilisant le `JWT_SECRET` actuel du `.env`. Redémarrer *complètement* la stack Docker après toute modification du `.env`.
+
+### 3. Erreur 500 / Connexion Base de Données Échouée (`broken pipe`)
+
+*   **Problème :** Les tentatives de connexion utilisateur via l'API (`/token`) échouaient avec une erreur `500 Internal Server Error`.
+*   **Diagnostic :** Les logs de `supabase-auth` montraient une erreur "broken pipe". Les logs de `supabase-db` (Postgres) indiquaient que la base de données n'acceptait pas les connexions à certains moments (probablement pendant ou après un démarrage instable).
+*   **Solution :** Assurer un arrêt propre (`docker compose ... down`) et un redémarrage complet (`python start_services.py ...`) de l'ensemble de la stack Docker, en laissant le temps à la base de données de s'initialiser correctement.
+
+### 4. Confusion : Authentification Kong vs Authentification Utilisateur Supabase
+
+*   **Problème :** Affichage de "Kong Error: Invalid authentication credentials" lors de l'accès à l'interface Studio (`http://localhost:8000`).
+*   **Diagnostic :** Tentative d'utiliser les identifiants (email/mot de passe) d'un *utilisateur Supabase final* pour passer l'authentification basique mise en place par Kong devant Studio.
+*   **Solution :** Clarifier les deux niveaux :
+    *   **Kong (Accès Studio) :** Utilise `DASHBOARD_USERNAME` / `DASHBOARD_PASSWORD` définis dans le `.env` et demandés par une pop-up du navigateur.
+    *   **Supabase Auth (Utilisateurs Finaux) :** Utilise l'email/mot de passe de l'utilisateur + `ANON_KEY` via les appels API (`/token`, `/signup`, etc.) depuis une application frontend.
+
+### 5. CLI Supabase (`supabase`) Non Reconnue
+
+*   **Problème :** La commande `supabase start` (ou autre) échouait avec "Le terme «supabase» n'est pas reconnu...".
+*   **Diagnostic :** L'outil CLI Supabase n'était pas installé globalement ou son chemin d'installation n'était pas dans le `PATH` système. Confusion initiale car les *services* Supabase tournent sur Docker, mais la *CLI* est un outil hôte.
+*   **Solution :** Installer la CLI Supabase *localement* dans le projet (`npm install supabase --save-dev`) et utiliser systématiquement `npx supabase ...` pour exécuter les commandes CLI dans ce contexte. **NOTE :** Cette approche a été abandonnée par la suite au profit de la gestion exclusive via Docker Compose.
+
+### 6. Découverte de Deux Stacks Supabase Conflictuelles
+
+*   **Problème :** Les configurations semblaient ne pas être prises en compte, `npx supabase stop` n'arrêtait pas les services visibles.
+*   **Diagnostic :** La commande `docker ps` a révélé deux ensembles complets de conteneurs Supabase tournant simultanément : un lancé via `npx supabase start` (utilisant `config.toml` et des ports comme 5432x) et un autre lancé via `python start_services.py` et `docker-compose` (utilisant `.env` et des ports comme 8000).
+*   **Solution :** Standardiser sur **UNE SEULE** méthode : celle de `docker-compose` pilotée par `python start_services.py`. Arrêter *tous* les conteneurs Supabase des deux stacks (`docker compose down ...` ET `docker stop ...` pour les anciens conteneurs `npx`), nettoyer (`docker container prune`), et n'utiliser que la méthode `docker compose` pour démarrer/arrêter. Ignorer `config.toml` pour la configuration d'exécution ; utiliser le `.env` lu par `docker-compose`.
+
+### 7. Service Email Local (Mailpit/Inbucket) Manquant
+
+*   **Problème :** Les emails d'invitation n'étaient pas reçus/visibles localement, même après avoir corrigé les problèmes JWT.
+*   **Diagnostic :** La commande `docker ps` (après nettoyage des stacks) a montré qu'aucun conteneur `mailpit`, `inbucket`, ou `supabase-mail` n'était démarré par la configuration `docker-compose`.
+*   **Solution :** **Ajouter** la définition du service `mailpit` dans le fichier `supabase/docker/docker-compose.yml`. Configurer les variables d'environnement SMTP (`SMTP_HOST=mailpit`, `SMTP_PORT=1025`, etc.) dans le fichier `.env` pour que `supabase-auth` puisse communiquer avec le service `mailpit`. Redémarrer la stack complète.
+
+### 8. Lien Email Incorrect (Port 3000/8000 au lieu de 64663)
+
+*   **Problème :** Le lien d'invitation dans l'email (une fois Mailpit ajouté) pointait vers le mauvais port (`3000` ou `8000`) au lieu du port du serveur frontend (`64663`).
+*   **Diagnostic :** La variable d'environnement `SITE_URL` dans le fichier `.env` (lue par `docker compose` et passée à `GOTRUE_SITE_URL`) avait une valeur incorrecte.
+*   **Solution :** Modifier la variable `SITE_URL` dans le fichier `.env` pour qu'elle corresponde à l'URL et au port exacts du serveur frontend (`http://localhost:64663`). Redémarrer la stack complète.
+
+### 9. Erreur d'Initialisation du Frontend (`index.html`)
+
+*   **Problème :** La page frontend minimale (`index.html` servie sur `http://localhost:64663`) affichait "Erreur lors de l'initialisation du client Supabase...".
+*   **Diagnostic :** Les constantes `SUPABASE_URL` ou `SUPABASE_ANON_KEY` dans le code Javascript de `index.html` étaient incorrectes pour la stack Docker Compose active. Elles utilisaient peut-être une mauvaise URL API (port `54321`) ou une clé Anon invalide/désynchronisée.
+*   **Solution :** Mettre à jour `index.html` pour utiliser l'URL API correcte exposée par Kong (`SUPABASE_URL = 'http://localhost:8000'`) et la `SUPABASE_ANON_KEY` correspondant exactement à la valeur `ANON_KEY` dans le fichier `.env` utilisé par la stack Docker Compose.
+
+---
+
+### Point Actuel: ERR_CONNECTION_REFUSED
+
+*   **État :**
+    *   La stack Docker Compose (incluant `mailpit`) est démarrée proprement et seule.
+    *   Le serveur frontend (`serve`) tourne sur `http://localhost:64663`.
+    *   Le fichier `.env` est configuré avec `SITE_URL=http://localhost:64663` et les bonnes clés/secrets (vérifiés).
+    *   `index.html` est configuré avec l'API sur `http://localhost:8000` et la bonne clé Anon. L'accès direct à `http://localhost:64663` ne montre plus d'erreur d'initialisation.
+    *   L'invitation depuis Studio réussit (status 200 pour `/invite` dans les logs `supabase-auth`).
+    *   L'email est reçu dans Mailpit (`http://localhost:54324`).
+    *   Le lien dans l'email **pointe (normalement) vers `http://localhost:64663/...`**.
+*   **NOUVEAU PROBLÈME :** Cliquer sur ce lien dans l'email reçu dans Mailpit aboutit à une erreur `ERR_CONNECTION_REFUSED` dans le navigateur pour l'adresse `http://localhost:64663`.
+*   **Hypothèses Actuelles :**
+    *   Le serveur `serve` sur `64663` s'est arrêté ou a crashé entre-temps ?
+    *   Le lien contient-il une erreur subtile *malgré tout* (par exemple, `http://127.0.0.1:64663` vs `http://localhost:64663`) ?
+    *   Problème de cache navigateur ou de redirection inattendue ?
+    *   Configuration du pare-feu local bloquant l'accès ? (Peu probable si l'accès direct fonctionnait).
+
+Nous sommes à un cheveu du succès. Il faut comprendre pourquoi le navigateur ne parvient pas à se connecter à `localhost:64663` *uniquement* lorsqu'on clique sur le lien, alors que l'accès direct fonctionne et que le serveur `serve` est censé tourner.
