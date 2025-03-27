@@ -338,3 +338,31 @@ L'utilisateur peut maintenant:
     - Définir son mot de passe
     - Accepter les conditions d'utilisation
     - Accéder à n8n
+Impossible d'enregistrer de nouveaux utilisateurs dans l'instance locale Supabase depuis l'application cliente accessible via `http://localhost:8000` (Supabase Studio via Kong). L'erreur était : "Failed to create user: API error happened while trying to communicate with the server." (Initialement, des logs pointaient vers `localhost:3000` - Open WebUI? - mais la tentative actuelle se fait depuis `localhost:8000`).
+
+## Processus de Diagnostic et Découvertes
+
+1.  **Configuration Email Vérifiée :** Écartée comme cause racine.
+2.  **Analyse des Logs (`supabase-auth`) :** Révèle que l'application cliente (`http://localhost:8000` - Studio) appelle incorrectement l'endpoint Admin API (`/auth/v1/admin/users`) au lieu de l'endpoint public (`/auth/v1/signup`), résultant en une erreur `403 Forbidden`.
+3.  **Tentative de Contournement (Admin API via PowerShell) :** Met en évidence un problème de désynchronisation entre `JWT_SECRET`, `SERVICE_ROLE_KEY` et `ANON_KEY` après un changement manuel du secret.
+4.  **Vérification des JWTs :** En utilisant l'outil en ligne **jwt.io**, il a été confirmé que la `SERVICE_ROLE_KEY` utilisée n'était valide que si le `JWT_SECRET` était interprété comme étant encodé en Base64, alors que GoTrue l'utilisait littéralement. Cela a nécessité de regénérer correctement les `ANON_KEY` et `SERVICE_ROLE_KEY` en utilisant le secret littéral pour la signature (avec l'option "secret base64 encoded" décochée sur jwt.io) et de redémarrer les services.
+5.  **Accès à Supabase Studio via Kong :** Confirmé que Supabase Studio est accessible via `http://localhost:8000`. L'accès est protégé par l'authentification basique (`basic-auth`) de Kong (`DASHBOARD_USERNAME/PASSWORD`).
+6.  **Contournement Fonctionnel (Fonction Admin de Studio) :** La création manuelle d'un utilisateur a été réalisée avec succès en utilisant **spécifiquement** le panneau **"Authentication" -> "Users" -> "Add user"** dans l'interface Supabase Studio.
+
+## Statut Actuel
+
+*   Un utilisateur a pu être **créé avec succès** en utilisant la fonction *administrateur* "Add user" dans Supabase Studio.
+*   Toute tentative d'utiliser une éventuelle fonction d'"enregistrement" (Sign Up) *publique* directement depuis l'interface de Studio (`http://localhost:8000`) échoue toujours avec l'erreur `403 Forbidden` sur `/admin/users`.
+*   La **connexion (login)** de l'utilisateur créé manuellement depuis une autre application cliente (par ex. Open WebUI) **échoue toujours**.
+
+## Hypothèse sur l'Échec d'Enregistrement via Studio
+
+L'interface de Supabase Studio (`http://localhost:8000`) est principalement un outil d'administration. Si elle expose une fonction "Sign Up" distincte de "Authentication -> Add user", cette fonction pourrait être mal configurée ou buggée dans cette version locale, l'amenant à appeler le mauvais endpoint API. La méthode correcte pour *ajouter* des utilisateurs via Studio est la fonction admin dédiée.
+
+## Prochaines Étapes Suggérées
+
+1.  **Diagnostiquer l'échec de connexion (Login) :**
+    *   Tenter de connecter l'utilisateur créé manuellement depuis l'application cliente où la connexion est nécessaire (par ex. Open WebUI).
+    *   Analyser les logs de `supabase-auth` *pendant cette tentative de connexion* pour en identifier la cause. Utiliser `docker logs --tail 50 supabase-auth`.
+2.  **Utiliser la Méthode Correcte dans Studio :** Pour ajouter des utilisateurs via l'interface, utiliser systématiquement "Authentication" -> "Users" -> "Add user". Ne pas utiliser d'éventuels autres formulaires "Sign Up" présents dans Studio.
+3.  **Corriger l'Application Externe (si applicable) :** Si une autre application comme Open WebUI doit permettre l'enregistrement, s'assurer qu'elle utilise `supabase.auth.signUp()`.
