@@ -542,3 +542,50 @@ Fixed by implementing a proper loading sequence:
 - Script race conditions are common when libraries must be fully initialized before use
 - Local Supabase requires proper connectivity to multiple services (Kong, Auth, PostgreSQL)
 - The error "_dummy_query_ does not exist" confirms successful database connectivity
+
+# Logbook : Configuration SMTP Supabase sur VDS (Hostinger)
+
+**Objectif :** Activer l'envoi d'emails réels (invitation, confirmation, etc.) depuis l'instance Supabase self-hosted sur le VDS (`supabase.atthesametime.eu`) en utilisant un compte email Hostinger.
+
+**Étapes Réalisées :**
+
+1.  **Identification Fournisseur SMTP :**
+    *   Le fournisseur SMTP utilisé sera Hostinger, associé au compte email fonctionnel `jp.brasile@atthesametime.eu`.
+
+2.  **Récupération Paramètres SMTP Hostinger :**
+    *   Les paramètres serveur ont été identifiés via l'interface hPanel Hostinger :
+        *   Serveur sortant (Host) : `smtp.hostinger.com`
+        *   Port : `465` (avec SSL/TLS)
+
+3.  **Modification du Fichier `.env` sur VDS :**
+    *   **URLs Publiques :**
+        *   `API_EXTERNAL_URL` corrigée pour pointer vers l'URL publique : `https://supabase.atthesametime.eu`.
+        *   `SITE_URL` corrigée pour pointer vers l'URL **réelle** du frontend où l'utilisateur finalise l'action (ex: `https://VOTRE_URL_FRONTEND_REELLE`). *Note : Doit être l'URL accessible par l'utilisateur.*
+    *   **Configuration Email (`[auth]` section) :**
+        *   `ENABLE_EMAIL_AUTOCONFIRM` mis à `false` (**CRUCIAL** pour la production, nécessite confirmation par clic).
+        *   `SMTP_HOST` mis à `smtp.hostinger.com`.
+        *   `SMTP_PORT` mis à `465`.
+        *   `SMTP_USER` mis à `jp.brasile@atthesametime.eu`.
+        *   `SMTP_PASS` mis à le mot de passe **spécifique** du compte email `jp.brasile@atthesametime.eu`. (Utilisé `********` dans le log pour sécurité).
+        *   `SMTP_SENDER_NAME` défini à un nom d'expéditeur approprié (ex: "Votre Application").
+        *   Les anciennes valeurs "fake" ou liées à Mailpit/supabase-mail ont été remplacées.
+
+4.  **Mise à Jour Fichier `.env` :**
+    *   Le contenu du fichier `.env` sur le VDS a été remplacé par la nouvelle configuration (via `cat > .env` ou `nano`). Une sauvegarde (`.env.bak`) a été potentiellement créée.
+
+5.  **Redémarrage Stack Supabase :**
+    *   Les conteneurs Docker Supabase ont été redémarrés pour prendre en compte les nouvelles variables d'environnement :
+        ```bash
+        docker compose down
+        docker compose up -d
+        ```
+
+**État Actuel :**
+
+*   La stack Supabase sur le VDS est en cours d'exécution avec la configuration SMTP pointant vers les serveurs Hostinger en utilisant les identifiants de `jp.brasile@atthesametime.eu`.
+*   `ENABLE_EMAIL_AUTOCONFIRM` est désactivé, forçant la validation par email.
+
+**Prochaines Étapes Recommandées :**
+
+1.  **Tester l'envoi d'email :** Inviter un nouvel utilisateur (email externe réel) via Supabase Studio et vérifier la réception.
+2.  **Vérifier la Déliverabilité :** Si les emails n'arrivent pas ou vont en spam, vérifier la configuration **DNS (SPF, DKIM)** pour le domaine `atthesametime.eu` chez Hostinger.
