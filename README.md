@@ -589,3 +589,50 @@ Fixed by implementing a proper loading sequence:
 
 1.  **Tester l'envoi d'email :** Inviter un nouvel utilisateur (email externe réel) via Supabase Studio et vérifier la réception.
 2.  **Vérifier la Déliverabilité :** Si les emails n'arrivent pas ou vont en spam, vérifier la configuration **DNS (SPF, DKIM)** pour le domaine `atthesametime.eu` chez Hostinger.
+
+# Logbook : Difficultés d'Implantation Backend - Supabase Self-Hosted sur VDS
+
+**Objectif Initial :** Configurer l'envoi d'emails via SMTP (Hostinger) pour une instance Supabase self-hosted.
+
+**Environnement :**
+*   VDS Hostinger
+*   Stack Docker gérée via `docker compose` (lancée depuis `~/local-ai-packaged/`)
+*   Supabase auto-hébergé (incluant Supavisor, GoTrue, Realtime, etc.)
+*   Caddy comme reverse proxy.
+*   Fichier `.env` principal utilisé : `~/local-ai-packaged/.env`
+
+**Difficultés d'Implantation Backend Rencontrées :**
+
+1.  **Instabilité de `supabase-pooler` (Service `supavisor`)**
+    *   **Symptôme :** Conteneur `supabase-pooler` redémarrait en boucle (`Restarting`).
+    *   **Investigation :** Analyse des logs (`docker logs <ID_pooler>`).
+    *   **Cause Racine Identifiée :** Erreur cryptographique `(ErlangError) Erlang error: {:badarg, {~c"aead.c", 90}, ~c"Unknown cipher or invalid key size"}` lors de l'appel à `:crypto.crypto_one_time_aead`. La clé utilisée était initialement un placeholder (`"your-encryption-key-32-chars-exactly"`) puis une clé hexadécimale de 64 caractères (`"6bbcfa..."`), toutes deux considérées comme invalides par la librairie pour `aes_256_gcm` dans ce contexte. La variable d'environnement lue par Supavisor dans cette configuration était `VAULT_ENC_KEY`. Confusion initiale entre `VAULT_ENC_KEY` et `PGBOUNCER_ENCRYPTION_KEY`.
+    *   **Résolution :** Remplacement de la valeur de `VAULT_ENC_KEY` dans le fichier `~/local-ai-packaged/.env` par une clé **hexadécimale de 32 caractères** (générée via `openssl rand -hex 16`), suivie d'un redémarrage de la stack (`docker compose down && docker compose up -d`).
+
+2.  **Instabilité de `supabase-auth` (Service `auth`)**
+    *   **Symptôme :** Après stabilisation du pooler, le conteneur `supabase-auth` a commencé à redémarrer en boucle.
+    *   **Investigation :** Analyse des logs (`docker logs <ID_auth>`).
+    *   **Cause Racine Identifiée :** Erreur fatale au démarrage : `Failed to load configuration: envconfig.Process: assigning GOTRUE_EXTERNAL_ANONYMOUS_USERS_ENABLED to Enabled: converting '' to type bool. details: strconv.ParseBool: parsing \"\": invalid syntax`. La variable d'environnement `ENABLE_ANONYMOUS_USERS` était manquante ou vide dans le fichier `.env`, et GoTrue ne pouvait pas la convertir en booléen (`true`/`false`).
+    *   **Résolution :** Ajout explicite de la ligne `ENABLE_ANONYMOUS_USERS=false` dans le fichier `~/local-ai-packaged/.env`, suivie d'un redémarrage de la stack.
+
+3.  **Statut `unhealthy` de `realtime-dev.supabase-realtime` (Service `realtime`)**
+    *   **Symptôme :** Même avec le pooler et auth stables, le conteneur `realtime` restait `unhealthy`.
+    *   **Investigation :** Analyse des logs (`docker logs <ID_realtime>`). Les logs montraient des requêtes répétées vers `/api/tenants/realtime-dev/health` recevant une réponse `403 Forbidden`. Vérification de la définition du `healthcheck` dans `~/local-ai-packaged/supabase/docker/docker-compose.yml` qui utilise `${ANON_KEY}` pour l'authentification.
+    *   **Cause Racine Identifiée :** La valeur de la variable `ANON_KEY` dans le fichier `~/local-ai-packaged/.env` était incomplète ou incorrecte, probablement suite à une erreur de copier-coller depuis la documentation (clé multiligne mal copiée). Le token Bearer envoyé par le health check était donc invalide.
+    *   **Résolution :** Correction de la valeur de `ANON_KEY` dans `~/local-ai-packaged/.env` en s'assurant que la clé complète et exacte (provenant de la documentation ou de la génération) était présente. Redémarrage de la stack.
+
+4.  **Confusion sur le Fichier `.env` Utilisé**
+    *   **Symptôme :** Les modifications apportées initialement au fichier `.env` dans `~/supabase/docker/` ne semblaient pas prises en compte.
+    *   **Investigation :** Clarification du workflow de démarrage : `docker compose` était lancé depuis le répertoire parent `~/local-ai-packaged/`.
+    *   **Cause Racine Identifiée :** Docker Compose, lancé depuis `~/local-ai-packaged/`, lit par défaut le fichier `~/local-ai-packaged/.env`, et non `~/supabase/docker/.env`. L'écrasement initial du fichier `.env` principal avec le contenu de Supabase a permis (par chance) de faire fonctionner les corrections ultérieures via ce fichier principal.
+    *   **Résolution (Conceptuelle) :** Compréhension que toutes les variables d'environnement pertinentes pour la stack Docker doivent être gérées dans le fichier `.env` du répertoire à partir duquel `docker compose` est exécuté (`~/local-ai-packaged/.env` dans ce cas). Il est recommandé de maintenir la cohérence dans `~/supabase/docker/.env` pour des lancements isolés potentiels.
+
+**État Final du Backend :**
+*   Tous les conteneurs de la stack Supabase (pooler, auth, realtime, db, kong, etc.) sont stables et passent leurs health checks (`Up (healthy)`).
+*   La configuration SMTP pour l'envoi d'emails via Hostinger est fonctionnelle (vérifié par l'envoi réussi d'un email de réinitialisation de mot de passe).
+*   Le backend redirige correctement vers la `SITE_URL` (`https://app.atthesametime.eu`) après les actions d'authentification.
+
+**Prochaines Étapes (Hors Scope de ce Log des Difficultés Backend) :**
+*   Développement/adaptation du frontend (`app.atthesametime.eu`) pour gérer correctement les retours d'authentification (ex: afficher un formulaire de réinitialisation de mot de passe lors de la réception de `type=recovery`).
+*   Sécurisation finale : Remplacement des clés par défaut (`ANON_KEY`, `SERVICE_ROLE_KEY`), renforcement des mots de passe (`POSTGRES_PASSWORD`, `DASHBOARD_PASSWORD`, SMTP, etc.).
+*   Configuration DNS (SPF, DKIM, DMARC) pour améliorer la déliverabilité des emails.
