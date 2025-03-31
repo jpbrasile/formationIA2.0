@@ -255,6 +255,11 @@ docker ps
 ```
 docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml down
 ```
+!!! cela d'arrète pas oolama faire plutôt
+```
+docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml --profile cpu down
+```
+
 - Remove any orphaned containers:
 ```
 docker container prune -f
